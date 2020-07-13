@@ -20,7 +20,8 @@ body {
 header {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $grey;
+  width: 100%;
+  position: absolute;
 }
 
 header .content .logo {
@@ -49,23 +50,29 @@ header .content .nav li a:not(.btn) {
 
 header .content .nav li a.btn {
   background-color: $green;
+  border: 1px solid white;
 }
 
 main .banner {
   display: flex;
   justify-content: center;
+  background-image: url(../images/sq005-banner.jpg);
+  background-position: 50% 0%;
+  padding: 5rem 0 3rem;
 }
 
 main .banner .content {
   flex-direction: column;
+  position: relative;
 }
 
 main .banner .content h2 {
   text-align: center;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 800;
   font-family: "Muli Bold";
   padding: 4rem 1.5rem 0rem;
+  color: white;
 }
 
 main .banner .content h2 span {
@@ -75,49 +82,47 @@ main .banner .content h2 span {
 main .banner .content p {
   padding: 1.5rem 1.5rem 3rem;
   text-align: center;
+  color: white;
 }
 
 main .banner .content .horizontal {
   border-left: 1px solid $green;
-  height: 45px;
+  height: 6rem;
+  position: absolute;
+  bottom: -7rem;
 }
 
-main .girls-illustration {
+main .why-decagon {
   display: flex;
   justify-content: center;
+  background: transparent linear-gradient(180deg, #eaffe6 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  min-height: 200px;
+  padding: 6rem 0 3rem;
 }
 
-main .girls-illustration .content img {
-  width: 100%;
-}
-
-main .statistics {
-  display: flex;
-  justify-content: center;
-}
-
-main .statistics .content {
+main .why-decagon .content {
+  flex-direction: column;
   padding: 1rem 2rem;
 }
 
-main .statistics .content .stats {
+main .why-decagon .content .stats {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 110px;
+  margin: 1rem 0;
 }
 
-main .statistics .content .stats h2 {
-  font-size: 30px;
-  color: $green;
+main .why-decagon .content .stats h2 {
+  font-size: 16px;
   padding-bottom: 1rem;
   font-family: "Muli Bold";
+  text-align: center;
 }
 
-main .statistics .content .stats p {
+main .why-decagon .content .stats p {
   text-align: center;
-  height: 55px;
 }
 
 main .works {
@@ -187,6 +192,25 @@ main .faq-section .content .faq-title {
   align-items: flex-start;
 }
 
+main .faq-section .content .faq-title .title {
+  text-align: left;
+}
+
+main .cta {
+  display: flex;
+  background-image: url(../images/sq005-banner.jpg);
+  padding: 2rem 0;
+}
+
+main .cta .content {
+  flex-direction: column;
+}
+
+main .cta .content .title {
+  color: white;
+  font-size: 30px;
+}
+
 footer {
   display: flex;
   padding: 1rem;
@@ -213,16 +237,17 @@ footer .content p {
 @media (min-width: 480px) {
   header .content .nav li a:not(.btn) {
     display: unset;
+    color: white;
   }
   main .banner .content h2 {
-    font-size: 50px;
+    font-size: 40px;
     padding: 4rem 2.5rem 1rem;
   }
   main .banner .content p {
     padding: 1.5rem 1.5rem 3rem;
   }
   main .banner .content .horizontal {
-    height: 55px;
+    height: 6.5rem;
   }
   main .works .content .work-steps .step .step-img img {
     max-width: 300px;
@@ -231,23 +256,24 @@ footer .content p {
 
 @media (min-width: 768px) {
   main .banner .content h2 {
-    font-size: 60px;
+    font-size: 55px;
     padding: 6rem 2rem 1rem;
   }
   main .banner .content p {
-    padding: 1.5rem 8rem 4rem;
+    padding: 1.5rem 3rem 4rem;
   }
   main .banner .content .horizontal {
-    height: 60px;
+    height: 7rem;
   }
-  main .statistics .content {
+  main .why-decagon .content {
+    flex-direction: row;
     padding: 2rem 4rem;
   }
-  main .statistics .content .stats {
+  main .why-decagon .content .stats {
     max-width: 180px;
   }
-  main .statistics .content .stats h2 {
-    font-size: 40px;
+  main .why-decagon .content .stats h2 {
+    font-size: 18px;
   }
   main .works .content .work-steps .step {
     flex-direction: row;
@@ -296,20 +322,24 @@ footer .content p {
   main .faq-section .content .faq-accordion {
     flex: 0 0 50%;
   }
+  main .cta .content .title {
+    font-size: 35px;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width: 980px) {
   main .banner .content h2 {
-    font-size: 65px;
+    font-size: 60px;
     padding: 6rem 4rem 1rem;
   }
   main .banner .content p {
-    padding: 1.5rem 15rem 4rem;
+    padding: 1.5rem 5rem 4rem;
   }
-  main .statistics .content {
+  main .why-decagon .content {
     padding: 2rem 4rem;
   }
-  main .statistics .content .stats {
+  main .why-decagon .content .stats {
     max-width: 180px;
   }
   main .works .content .work-steps {
@@ -337,6 +367,12 @@ footer .content p {
   main .works .content .work-steps .step.diff-step .step-img img {
     max-width: unset;
   }
+  main .cta .content {
+    padding: 2rem;
+  }
+  main .cta .content .title {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -346,10 +382,10 @@ footer .content p {
   main .banner .content p {
     padding: 1.5rem 20rem 5rem;
   }
-  main .statistics .content {
+  main .why-decagon .content {
     padding: 2rem 10rem;
   }
-  main .statistics .content .stats h2 {
+  main .why-decagon .content .stats h2 {
     font-size: 50px;
   }
   main .works .content .work-steps .step .step-img img,
@@ -360,10 +396,16 @@ footer .content p {
     background-size: 6.25%;
     background-position: 50% 22%;
   }
+  main .cta .content {
+    padding: 2rem 5rem;
+  }
+  main .cta .content .title {
+    font-size: 45px;
+  }
 }
 
 @media (min-width: 1440px) {
-  main .statistics .content {
-    padding: 2rem 15rem;
+  main .cta .content {
+    padding: 2rem 10rem;
   }
 }

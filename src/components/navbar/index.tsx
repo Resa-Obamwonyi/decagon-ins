@@ -10,8 +10,8 @@ const index = () => {
         </div>
         <ul className="nav">
           <li><Link to="/faq">FAQ</Link></li>
-          <li><a className="btn" href="//decagonhq.com" target="_blank">Application closed</a></li>
-          {/* <li><Link className="btn" to="/apply">Application closed</Link></li> */}
+          {/* <li><a className="btn" href="//decagonhq.com" target="_blank">Application closed</a></li> */}
+          <li><Link className="btn" to="/apply">Apply</Link></li>
         </ul>
       </div>
     </header>
