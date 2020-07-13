@@ -147,9 +147,6 @@ main .works .content .work-steps .step {
   align-items: center;
   padding: 0.5rem 2rem 1.5rem;
 }
-main .works .content .work-steps .step:nth-child(2) .step-img img {
-  max-width: 150px;
-}
 
 main .works .content .work-steps .step .step-img {
   padding: 0.5rem 0;
@@ -222,7 +219,7 @@ footer .content {
 }
 
 footer .content .footer-img {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 footer .content .footer-img img {
@@ -275,6 +272,9 @@ footer .content p {
   main .why-decagon .content .stats h2 {
     font-size: 18px;
   }
+  main .works .content .title {
+    padding-bottom: 2rem;
+  }
   main .works .content .work-steps .step {
     flex-direction: row;
     justify-content: space-between;
@@ -285,7 +285,6 @@ footer .content p {
     order: 1;
   }
   main .works .content .work-steps .step:nth-child(2) .step-img img {
-    max-width: 182px;
     margin-left: 3rem;
   }
   main .works .content .work-steps .step:nth-child(2) .step-info {
@@ -340,7 +339,14 @@ footer .content p {
     padding: 2rem 4rem;
   }
   main .why-decagon .content .stats {
-    max-width: 180px;
+    max-width: 200px;
+  }
+  main .why-decagon .content .stats .icon {
+    padding-bottom: 0.5rem;
+  }
+  main .why-decagon .content .stats h2 {
+    font-size: 22px;
+    height: 75px;
   }
   main .works .content .work-steps {
     background-image: url(../images/step-link.jpg);
@@ -358,14 +364,14 @@ footer .content p {
   main .works .content .work-steps .step .step-info {
     padding-left: 3rem;
   }
-  main .works .content .work-steps .step:nth-child(2) .step-img img {
-    max-width: 211px;
-  }
   main .works .content .work-steps .step.diff-step {
     padding-top: 1.5rem;
   }
   main .works .content .work-steps .step.diff-step .step-img img {
     max-width: unset;
+  }
+  main .faq-section {
+    padding: 4rem 0;
   }
   main .cta .content {
     padding: 2rem;
@@ -386,7 +392,7 @@ footer .content p {
     padding: 2rem 10rem;
   }
   main .why-decagon .content .stats h2 {
-    font-size: 50px;
+    font-size: 22px;
   }
   main .works .content .work-steps .step .step-img img,
   main .works .content .work-steps .step .step-info p {
