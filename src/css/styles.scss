@@ -1,0 +1,369 @@
+@import "./fonts.scss";
+@import "./constants.scss";
+@import "./lds-roller.scss";
+
+@import "./_variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-family: "Muli", "Muli Bold";
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $grey;
+}
+
+header .content .logo {
+  max-width: 100px;
+}
+
+header .content .logo img {
+  width: 100%;
+}
+
+header .content .nav {
+  display: flex;
+}
+
+header .content .nav li {
+  margin: 0 1rem;
+}
+
+header .content .nav li:last-child {
+  margin-right: 0rem;
+}
+
+header .content .nav li a:not(.btn) {
+  display: none;
+}
+
+header .content .nav li a.btn {
+  background-color: $green;
+}
+
+main .banner {
+  display: flex;
+  justify-content: center;
+}
+
+main .banner .content {
+  flex-direction: column;
+}
+
+main .banner .content h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  font-family: "Muli Bold";
+  padding: 4rem 1.5rem 0rem;
+}
+
+main .banner .content h2 span {
+  color: $green;
+}
+
+main .banner .content p {
+  padding: 1.5rem 1.5rem 3rem;
+  text-align: center;
+}
+
+main .banner .content .horizontal {
+  border-left: 1px solid $green;
+  height: 45px;
+}
+
+main .girls-illustration {
+  display: flex;
+  justify-content: center;
+}
+
+main .girls-illustration .content img {
+  width: 100%;
+}
+
+main .statistics {
+  display: flex;
+  justify-content: center;
+}
+
+main .statistics .content {
+  padding: 1rem 2rem;
+}
+
+main .statistics .content .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 110px;
+}
+
+main .statistics .content .stats h2 {
+  font-size: 30px;
+  color: $green;
+  padding-bottom: 1rem;
+  font-family: "Muli Bold";
+}
+
+main .statistics .content .stats p {
+  text-align: center;
+  height: 55px;
+}
+
+main .works {
+  display: flex;
+  justify-content: center;
+}
+
+main .works .content {
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+main .works .content .work-steps {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main .works .content .work-steps .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem 1.5rem;
+}
+main .works .content .work-steps .step:nth-child(2) .step-img img {
+  max-width: 150px;
+}
+
+main .works .content .work-steps .step .step-img {
+  padding: 0.5rem 0;
+}
+
+main .works .content .work-steps .step .step-img img {
+  width: 100%;
+  max-width: 280px;
+}
+
+main .works .content .work-steps .step .step-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+
+main .works .content .work-steps .step .step-info .title {
+  font-size: 14px;
+  font-family: "Muli";
+  padding-bottom: 0;
+  text-align: left;
+}
+
+main .works .content .work-steps .step .step-info p {
+  padding: 1rem 0;
+}
+
+main .works .content .work-steps .step .step-info .btn {
+  padding: 1rem;
+}
+
+main .faq-section {
+  display: flex;
+}
+
+main .faq-section .content .faq-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+}
+
+footer .content {
+  flex-direction: column;
+  border-top: 1px solid $grey;
+}
+
+footer .content .footer-img {
+  max-width: 120px;
+}
+
+footer .content .footer-img img {
+  width: 100%;
+  padding: 1rem;
+}
+
+footer .content p {
+  font-size: 12px;
+}
+
+@media (min-width: 480px) {
+  header .content .nav li a:not(.btn) {
+    display: unset;
+  }
+  main .banner .content h2 {
+    font-size: 50px;
+    padding: 4rem 2.5rem 1rem;
+  }
+  main .banner .content p {
+    padding: 1.5rem 1.5rem 3rem;
+  }
+  main .banner .content .horizontal {
+    height: 55px;
+  }
+  main .works .content .work-steps .step .step-img img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .banner .content h2 {
+    font-size: 60px;
+    padding: 6rem 2rem 1rem;
+  }
+  main .banner .content p {
+    padding: 1.5rem 8rem 4rem;
+  }
+  main .banner .content .horizontal {
+    height: 60px;
+  }
+  main .statistics .content {
+    padding: 2rem 4rem;
+  }
+  main .statistics .content .stats {
+    max-width: 180px;
+  }
+  main .statistics .content .stats h2 {
+    font-size: 40px;
+  }
+  main .works .content .work-steps .step {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem 1.5rem;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-img {
+    order: 1;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-img img {
+    max-width: 182px;
+    margin-left: 3rem;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-info {
+    padding-left: 0.5rem;
+  }
+  main .works .content .work-steps .step .step-img,
+  main .works .content .work-steps .step .step-info {
+    flex: 0 0 50%;
+  }
+  main .works .content .work-steps .step .step-info {
+    padding-left: 1.5rem;
+  }
+  main .works .content .work-steps .step.diff-step {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .works .content .work-steps .step.diff-step .step-info {
+    align-items: center;
+    padding-left: 0;
+  }
+  main .works .content .work-steps .step.diff-step .step-info p {
+    text-align: center;
+  }
+  main .works .content .work-steps .step.diff-step .step-img {
+    flex: 0 0 100%;
+  }
+  main .faq-section {
+    padding: 2rem 0;
+  }
+  main .faq-section .content .faq-title {
+    flex: 0 0 30%;
+  }
+  main .faq-section .content .faq-accordion {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 980px) {
+  main .banner .content h2 {
+    font-size: 65px;
+    padding: 6rem 4rem 1rem;
+  }
+  main .banner .content p {
+    padding: 1.5rem 15rem 4rem;
+  }
+  main .statistics .content {
+    padding: 2rem 4rem;
+  }
+  main .statistics .content .stats {
+    max-width: 180px;
+  }
+  main .works .content .work-steps {
+    background-image: url(../images/step-link.jpg);
+    background-repeat: no-repeat;
+    background-size: 7.5%;
+    background-position: 50% 25%;
+  }
+  main .works .content .work-steps .step {
+    padding: 1rem 2rem 1.5rem;
+  }
+  main .works .content .work-steps .step .step-img img,
+  main .works .content .work-steps .step .step-info p {
+    max-width: 320px;
+  }
+  main .works .content .work-steps .step .step-info {
+    padding-left: 3rem;
+  }
+  main .works .content .work-steps .step:nth-child(2) .step-img img {
+    max-width: 211px;
+  }
+  main .works .content .work-steps .step.diff-step {
+    padding-top: 1.5rem;
+  }
+  main .works .content .work-steps .step.diff-step .step-img img {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .banner .content h2 {
+    padding: 8rem 10rem 1rem;
+  }
+  main .banner .content p {
+    padding: 1.5rem 20rem 5rem;
+  }
+  main .statistics .content {
+    padding: 2rem 10rem;
+  }
+  main .statistics .content .stats h2 {
+    font-size: 50px;
+  }
+  main .works .content .work-steps .step .step-img img,
+  main .works .content .work-steps .step .step-info p {
+    max-width: 380px;
+  }
+  main .works .content .work-steps {
+    background-size: 6.25%;
+    background-position: 50% 22%;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .statistics .content {
+    padding: 2rem 15rem;
+  }
+}
