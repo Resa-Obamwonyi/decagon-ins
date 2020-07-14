@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from "../../images/logo-decabelle.png"
-const index = () => {
+import logo from "../../images/logo-institute-white.png";
+
+const index = (props: any) => {
   return (
     <header>
       <div className="content">
