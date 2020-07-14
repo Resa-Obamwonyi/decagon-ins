@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import "./index.scss";
 
 export default () => {
@@ -10,11 +11,7 @@ export default () => {
 					What is Decagon ?
 				</label>
 				<div className="tab-content">
-					Decagon is an elite software engineering and leadership training
-					Institute that equips high potential talents with world-class software
-					engineering and leadership skills combined with practical exposure
-					through apprenticeship and corporate placements thereby ensuring the
-					launch of successful tech careers.
+				Decagon is an elite software engineering and leadership training Institute that equips high potential talents with world-class software engineering and leadership skills combined with practical exposure through real-life projects and corporate placements thereby ensuring the launch of successful tech careers.
 				</div>
 			</div>
 			<div className="tab">
@@ -23,9 +20,7 @@ export default () => {
 					What is the Software Engineering Program about?
 				</label>
 				<div className="tab-content">
-					It is a 6-month intensive course that launches your career as a
-					software engineer. At the end of the Program, you become a competitive
-					industry-ready entry-level software engineer.
+				It is a 6-month intensive course that launches your career as a software engineer. At the end of the Program, you become a competitive industry-ready entry-level software engineer.
 				</div>
 			</div>
 			<div className="tab">
@@ -34,8 +29,7 @@ export default () => {
 					How do I apply?
 				</label>
 				<div className="tab-content">
-					Fill in your details in the application form and click submit. Follow
-					the instructions.
+				Fill in your details in the <Link to="/apply">application form</Link> and click submit. Follow the instructions.
 				</div>
 			</div>
 			<div className="tab">
@@ -49,10 +43,10 @@ export default () => {
 					</h6><br/>
 					<ul>
 						<li>
-							Be a Female
+						Possess a track record of exceptional personal, academic and professional performance. 
 						</li><br/>
 						<li>
-							Must possess track record of personal, professional and academic excellence </li><br />
+						Great learning and cognitive ability.</li><br />
 						<li>is a fast learner with Great learning and cognitive ability.
 						</li><br/>
 						<li>must possess the determination to work hard and excel as a software developer. 
@@ -63,31 +57,41 @@ export default () => {
 						</li><br/>
 						<li>
 							Have completed NYSC or Have an Exemption Letter.
-						</li>
+						</li><br />
+						<li>Must have a credible Guarantor</li>
 					</ul>
 				</div>
 			</div>
 			<div className="tab">
 				<input type="checkbox" id="chck5" />
 				<label className="tab-label" htmlFor="chck5">
-					What happens after I apply?
+				Are there any programs available to current university undergraduates and NYSC members?
 				</label>
 				<div className="tab-content">
-					Get a Home study Pack and start learning immediately. Afterwards, take our free  Assessment and Cognitive tests online. Based on the outcome of your aptitude tests, If you are selected,  you will be invited for an in-person interview in Lagos. You will be interviewed by the faculty, and successful candidates will be admitted into the Decagon Software Engineering Fellowship program.
+					None for now.
 				</div>
 			</div>
 			<div className="tab">
 				<input type="checkbox" id="chck6" />
 				<label className="tab-label" htmlFor="chck6">
-					How long will the Entire recruitment process last?
+					What happens after I apply?
 				</label>
 				<div className="tab-content">
-					The entire process from Application to Admission will happen in 2 weeks
+				You will receive a Home study Pack as soon as you hit the apply button. You should start learning immediately. Afterwards, take our free  Assessment and Cognitive tests online. Based on the outcome of your aptitude tests, If you are selected,  you will be invited for an in-person interview in Lagos. You will be interviewed by the faculty, and successful candidates will be admitted into the Decagon Software Engineering Fellowship program.
 				</div>
 			</div>
 			<div className="tab">
 				<input type="checkbox" id="chck7" />
 				<label className="tab-label" htmlFor="chck7">
+					How long will the Entire recruitment process last?
+				</label>
+				<div className="tab-content">
+				The entire process from Application to Admission will happen between 5-7 weeks
+				</div>
+			</div>
+			<div className="tab">
+				<input type="checkbox" id="chck8" />
+				<label className="tab-label" htmlFor="chck8">
 					Who do I interact with?
 				</label>
 				<div className="tab-content">

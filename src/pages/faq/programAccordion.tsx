@@ -10,21 +10,48 @@ export default () => {
 					What are my training location options?
 				</label>
 				<div className="tab-content">
-					Lagos
+				Sangotedo Campus in Lagos
 				</div>
 			</div>
 			<div className="tab">
 				<input type="checkbox" id="chck2" />
 				<label className="tab-label" htmlFor="chck2">
-					What will I be taught during the training period?
+				Is Decagon located in all states in NIgeria?
 				</label>
 				<div className="tab-content">
-					Our Program is an intense, full-time training on software engineering taught by industry professionals to make you indispensable in your job. Within 6 months we will teach you the skills that you need to begin your career as an entry-level software engineer.
+				Decagon is currently active only in Lagos. 
 				</div>
 			</div>
 			<div className="tab">
 				<input type="checkbox" id="chck3" />
 				<label className="tab-label" htmlFor="chck3">
+				What is the Decagon Experience? 
+				</label>
+				<div className="tab-content">
+				A holistic  learning experience that produces industry-ready software engineers, who have received capabilities to thrive in the tech ecosystem.
+				</div>
+			</div>
+			<div className="tab">
+				<input type="checkbox" id="chck4" />
+				<label className="tab-label" htmlFor="chck4">
+					What will I be taught during the training period?
+				</label>
+				<div className="tab-content">
+				Our Program is an intense, full-time training on software engineering, taught by industry professionals to make you indispensable in your job. Within 6 months, you will be equipped with the skills needed to begin your career as an entry-level software engineer.
+				</div>
+			</div>
+			<div className="tab">
+				<input type="checkbox" id="chck5" />
+				<label className="tab-label" htmlFor="chck5">
+				What programming languages are taught during the program? 
+				</label>
+				<div className="tab-content">
+				Javascript, C#, Node, Android. 
+				</div>
+			</div>
+			<div className="tab">
+				<input type="checkbox" id="chck6" />
+				<label className="tab-label" htmlFor="chck6">
 					Tuition fee
 				</label>
 				<div className="tab-content">
@@ -32,17 +59,17 @@ export default () => {
 				</div>
 			</div>
 			<div className="tab">
-				<input type="checkbox" id="chck4" />
-				<label className="tab-label" htmlFor="chck4">
+				<input type="checkbox" id="chck7" />
+				<label className="tab-label" htmlFor="chck7">
 					Optional fee
 				</label>
 				<div className="tab-content">
-					We also offer support in the form of a new laptop, accommodation, and a monthly stipend for an additional N1,000,000.
+					We also offer support in the form of a laptop, accommodation, and a monthly stipend for an additional N1,000,000.
 				</div>
 			</div>
 			<div className="tab">
-				<input type="checkbox" id="chck5" />
-				<label className="tab-label" htmlFor="chck5">
+				<input type="checkbox" id="chck8" />
+				<label className="tab-label" htmlFor="chck8">
 					Is there Financial Aid?
 				</label>
 				<div className="tab-content">
@@ -50,8 +77,8 @@ export default () => {
 				</div>
 			</div>
 			<div className="tab">
-				<input type="checkbox" id="chck6" />
-				<label className="tab-label" htmlFor="chck6">
+				<input type="checkbox" id="chck9" />
+				<label className="tab-label" htmlFor="chck9">
 					What can I do to get financial aid  (Loan) via Learn-Then-Earn payment credit funding
 				</label>
 				<div className="tab-content">
