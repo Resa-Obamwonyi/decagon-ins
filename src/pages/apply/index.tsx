@@ -93,8 +93,7 @@ export default function Application() {
         <div className="content application-form">
           <div className="apply-header">
             <h2 className="apply-text">
-              Become a <span style={{ color: "#58A75D" }}>Female</span>{" "}
-              Developer
+              Become a <span style={{ color: "#58A75D" }}>Decadev</span>{" "}
             </h2>
           </div>
 
@@ -142,6 +141,7 @@ export default function Application() {
                   value={state.gender}
                   onChange={handleChange}
                 >
+                  <option value="">Select a Gender</option>
                   <option value="female">Female</option>
                   <option value="male">Male</option>
                 </select>

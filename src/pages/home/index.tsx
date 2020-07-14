@@ -11,7 +11,7 @@ import HomeAccordion from '../faq/homeAccordion';
 
 const index = () => {
 	return (
-		<Layout home={true}>
+		<Layout>
 			<main>
 				<div className="banner">
 					<div className="content">

@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 const index = (props: any) => {
 	return (
 		<>
-			<NavBar home={props.home} />
+			<NavBar />
 			{props.children}
 			<Footer />
 		</>
