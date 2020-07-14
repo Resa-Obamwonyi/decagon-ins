@@ -10,7 +10,7 @@ export default () => {
           What is the Learn-Then-Earn payment credit
 				</label>
         <div className="tab-content">
-          A Learn-then-Earn payment credit is a financial instrument through our financial partners that allows talented but cash-strapped students to learn on credit and then repay the cost of the program at no more than 20% annual premium after completion of the educational program, for a period of 1- 3 years.
+        A Learn-then-Earn payment credit is a financial instrument through our financial partners that allows talented but cash-strapped students to learn on credit and then repay the cost of the program at no more than 20% annual premium after completion of the educational program, for a period of 1- 3 years.
 				</div>
       </div>
       <div className="tab">
@@ -19,7 +19,7 @@ export default () => {
           What are the terms of the Learn-Then-Earn (LTE) credit
 				</label>
         <div className="tab-content">
-          The LTE credit costs no more than 20% at a reducing balance. Students have up to but no more than three (3) years to repay it
+        The LTE credit costs no more than 20% at a reducing balance. Students have up to but no more than three (3) years to repay it.
 				</div>
       </div>
       <div className="tab">
@@ -42,15 +42,6 @@ export default () => {
       <div className="tab">
         <input type="checkbox" id="chck4" />
         <label className="tab-label" htmlFor="chck4">
-          Will the student be aided in getting a job once the program is completed?
-				</label>
-        <div className="tab-content">
-          Yes, however, the student must make a conscious effort towards getting a job
-				</div>
-      </div>
-      <div className="tab">
-        <input type="checkbox" id="chck5" />
-        <label className="tab-label" htmlFor="chck5">
           Which student will be eligible to apply for the learn earn-Then-Earn (LTE) credit
 				</label>
         <div className="tab-content">
