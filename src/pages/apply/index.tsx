@@ -12,7 +12,7 @@ export default function Application() {
   const defaultState = {
     firstName: "",
     lastName: "",
-    gender: "female",
+    gender: "",
     DOB: "",
     phoneNumber: "",
     emailAddress: "",
@@ -143,9 +143,7 @@ export default function Application() {
                   onChange={handleChange}
                 >
                   <option value="female">Female</option>
-                  <option value="male" disabled>
-                    Male
-                  </option>
+                  <option value="male">Male</option>
                 </select>
               </div>
               <div className="form-group">

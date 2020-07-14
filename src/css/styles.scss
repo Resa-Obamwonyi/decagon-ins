@@ -22,6 +22,7 @@ header {
   justify-content: center;
   width: 100%;
   position: absolute;
+  z-index: 4;
 }
 
 header .content .logo {
@@ -95,7 +96,7 @@ main .banner .content .horizontal {
 main .why-decagon {
   display: flex;
   justify-content: center;
-  background: transparent linear-gradient(180deg, #eaffe6 0%, #ffffff 100%) 0%
+  background: transparent linear-gradient(180deg, #f1ffef 0%, #ffffff 100%) 0%
     0% no-repeat padding-box;
   min-height: 200px;
   padding: 6rem 0 3rem;
@@ -215,7 +216,6 @@ footer {
 
 footer .content {
   flex-direction: column;
-  border-top: 1px solid $grey;
 }
 
 footer .content .footer-img {
@@ -320,6 +320,10 @@ footer .content p {
   }
   main .faq-section .content .faq-accordion {
     flex: 0 0 50%;
+  }
+  main .faq-section .content .faq-accordion .tabs,
+  main .faq-section .content .faq-accordion .tabs .tab{
+    border: 1px solid;
   }
   main .cta .content .title {
     font-size: 35px;

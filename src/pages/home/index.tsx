@@ -6,14 +6,12 @@ import guarantee from "../../images/guaranteed-success.svg";
 import recruitment from "../../images/recruitment.svg";
 import training from "../../images/training.svg";
 import residence from "../../images/full-residency.svg";
-import recruitGirl from "../../images/recruit-girls.jpg";
-import trainGirl from "../../images/train-girls.jpg";
 import Layout from "../../layout";
 import HomeAccordion from '../faq/homeAccordion';
 
 const index = () => {
 	return (
-		<Layout>
+		<Layout home={true}>
 			<main>
 				<div className="banner">
 					<div className="content">
