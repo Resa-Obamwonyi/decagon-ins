@@ -32,10 +32,9 @@ const index = () => {
 							<div className="icon">
 								<img src={tuition} alt="tuition free" />
 							</div>
-							<h2>TUITION FREE</h2>
+							<h2>FLEXIBLE PAYMENT PLAN</h2>
 							<p>
-								If you can’t afford it, we will cover all the cost and provide you
-								with a MacBook if you need one.
+							Our Learn-then-Earn payment option allows you to learn on credit and repay the cost of the program after the commencement of a job placement for a period of 1-3 years.
             </p>
 						</div>
 						<div className="stats">
@@ -58,7 +57,7 @@ const index = () => {
 							<h2>FULL RESIDENCY</h2>
 							<p>
 								For all 6months of the program, you stay in our well furnished
-								apartments and with extra amenities to keep you relaxed and entertained
+								apartments and with extra amenities 
             </p>
 						</div>
 					</div>
@@ -122,8 +121,8 @@ const index = () => {
 				</div>
 				<div className="cta">
 					<div className="content">
-						<h2 className="title">Ready to become a Decadev & get thrashed in Soccer?</h2>
-						<Link to="#" className="btn big-btn">Apply Now!</Link>
+						<h2 className="title">Ready to become a Decadev ?</h2>
+						<Link to="/apply" className="btn big-btn">Apply Now!</Link>
 					</div>
 				</div>
 			</main>
