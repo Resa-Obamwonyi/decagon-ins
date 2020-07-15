@@ -140,6 +140,7 @@ main .works .content .work-steps {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 main .works .content .work-steps .step {
@@ -182,6 +183,7 @@ main .works .content .work-steps .step .step-info .btn {
 
 main .faq-section {
   display: flex;
+  justify-content: center;
 }
 
 main .faq-section .content .faq-title {
@@ -196,6 +198,7 @@ main .faq-section .content .faq-title .title {
 
 main .cta {
   display: flex;
+  justify-content: center;
   background-image: url(../images/sq005-banner.jpg);
   padding: 2rem 0;
 }
@@ -212,6 +215,7 @@ main .cta .content .title {
 footer {
   display: flex;
   padding: 1rem;
+  justify-content: center;
 }
 
 footer .content {
@@ -284,6 +288,7 @@ footer .content p {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem 1.5rem;
+    position: relative;
   }
   main .works .content .work-steps .step:nth-child(2) .step-img {
     order: 1;
@@ -315,6 +320,10 @@ footer .content p {
   }
   main .works .content .work-steps .step.diff-step .step-img {
     flex: 0 0 100%;
+    width: 100%;
+  }
+  main .works .content .work-steps .step.diff-step .step-img img {
+    max-width: unset;
   }
   main .faq-section {
     padding: 2rem 0;
@@ -356,14 +365,37 @@ footer .content p {
     font-size: 22px;
     height: 75px;
   }
-  main .works .content .work-steps {
-    background-image: url(../images/step-link.jpg);
-    background-repeat: no-repeat;
-    background-size: 7.5%;
-    background-position: 50% 25%;
+  main .works .content .work-steps::before {
+    content: '';
+    position: absolute;
+    border-left: 0.5px solid #7b7b7b;
+    top: 11.25%;
+    left: 49.75%;
+    height: 65%;
   }
   main .works .content .work-steps .step {
     padding: 1rem 2rem 1.5rem;
+  }
+  main .works .content .work-steps .step::before {
+    content: '';
+    position: absolute;
+    border: 0.5px solid #7b7b7b;
+    background-color: white;
+    top: 32%;
+    left: 47.95%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  main .works .content .work-steps .step::after {
+    content: '';
+    position: absolute;
+    background-color: #7b7b7b;
+    top: 35%;
+    left: 49.3%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
   }
   main .works .content .work-steps .step .step-img img,
   main .works .content .work-steps .step .step-info p {
@@ -373,7 +405,13 @@ footer .content p {
     padding-left: 3rem;
   }
   main .works .content .work-steps .step.diff-step {
-    padding-top: 1.5rem;
+    padding-top: 5rem;
+  }
+  main .works .content .work-steps .step.diff-step::before {
+    top: 20%;
+  }
+  main .works .content .work-steps .step.diff-step::after {
+    top: 23%;
   }
   main .works .content .work-steps .step.diff-step .step-img img {
     max-width: unset;
@@ -410,6 +448,13 @@ footer .content p {
     background-size: 6.25%;
     background-position: 50% 22%;
   }
+  main .works .content .work-steps .step::before {
+    top: 30%;
+    left: 48.29%;
+}
+  main .works .content .work-steps .step::after {
+    top: 32.5%;
+}
   main .cta .content {
     padding: 2rem 5rem;
   }
@@ -422,4 +467,10 @@ footer .content p {
   main .cta .content {
     padding: 2rem 10rem;
   }
+  main .works .content .work-steps .step::before {
+    left: 48.4%;
+}
+  main .works .content .work-steps .step::after {
+    left: 49.4%;
+}
 }
