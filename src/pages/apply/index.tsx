@@ -109,9 +109,7 @@ export default function Application() {
                   name="firstName"
                   value={state.firstName}
                   onChange={handleChange}
-                  style={{
-                    border: errors.firstName && "1px solid #d07d7d",
-                  }}
+                  style={{ border: errors.firstName && "1px solid #d07d7d" }}
                 />
                 {errors.firstName && (
                   <p className="form-error">{errors.firstName}</p>
@@ -124,9 +122,7 @@ export default function Application() {
                   name="lastName"
                   value={state.lastName}
                   onChange={handleChange}
-                  style={{
-                    border: errors.lastName && "1px solid #d07d7d",
-                  }}
+                  style={{ border: errors.lastName && "1px solid #d07d7d" }}
                 />
                 {errors.lastName && (
                   <p className="form-error">{errors.lastName}</p>
@@ -140,11 +136,13 @@ export default function Application() {
                   name="gender"
                   value={state.gender}
                   onChange={handleChange}
+                  style={{ border: errors.gender && "1px solid #d07d7d" }}
                 >
                   <option value="">Select a Gender</option>
                   <option value="female">Female</option>
                   <option value="male">Male</option>
                 </select>
+                {errors.gender && <p className="form-error">{errors.gender}</p>}
               </div>
               <div className="form-group">
                 <label htmlFor="DOB">Date of birth</label>

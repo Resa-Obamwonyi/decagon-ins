@@ -14,6 +14,9 @@ export default function validateApplication(data: any) {
         case "lastName":
           field = "Last name is required";
           break;
+        case "gender":
+          field = "Gender is required";
+          break;
         case "DOB":
           field = "Date of birth is required";
           break;
