@@ -16,13 +16,11 @@ const index = () => {
 				<div className="banner">
 					<div className="content">
 						<h2 className="belle-title">
-							Launch your career in software development
+							Launch your career in software engineering
 							{/* Applications for the women-only cycle have  <span>closed</span> . */}
 						</h2>
 						<p>
-							Decagon is ushering in a new phase of tech-powered growth and
-							prosperity in Nigeria by training and deploying an army of
-							leader-Engineers.
+							With dedication to the advancement of knowledge in areas that contribute to technological development, Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying an army of problem solvers, drivers of innovation and pioneers in tech.
 							{/* Kindly check our main website for updates on our new recruiting cycle. */}
 						</p>
 						<span className="horizontal"></span>
@@ -60,7 +58,7 @@ const index = () => {
 							<h2>FULL RESIDENCY</h2>
 							<p>
 								For all 6months of the program, you stay in our well furnished
-								apartments and play PS5
+								apartments and with extra amenities to keep you relaxed and entertained
             </p>
 						</div>
 					</div>
@@ -76,9 +74,7 @@ const index = () => {
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
 									<p>
-										Thousands of people apply and through series of tests, we
-										select most talented learners to become Decagon Software
-										Engineers
+										We identify the most talented learners from across Nigeria and select the top 0.02% to become Decagon Software Engineers through a series of technical and non-technical assessments.
 									</p>
 								</div>
 							</div>
@@ -91,7 +87,7 @@ const index = () => {
 									<p>
 										We deliver an intensive 6 months program (full-stack
 										software development + soft skills) which includes
-										accommodation, and everything you need
+										accommodation, a laptop, feeding and a monthly stipend.
 									</p>
 								</div>
 							</div>
@@ -115,9 +111,9 @@ const index = () => {
 						<div className="faq-title">
 							<h3 className="title">Find answers</h3>
 							<p>
-								Get clarity on everything about the program and join us to
-								increase the number of women in tech
+								Get clarity on everything about the program
 							</p>
+							<a href="/faq" className="btn">more FAQ</a>
 						</div>
 						<div className="faq-accordion">
 							<HomeAccordion />
