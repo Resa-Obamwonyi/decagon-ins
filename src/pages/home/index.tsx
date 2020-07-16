@@ -20,7 +20,8 @@ const index = () => {
 							{/* Applications for the women-only cycle have  <span>closed</span> . */}
 						</h2>
 						<p>
-							With dedication to the advancement of knowledge in areas that contribute to technological development, Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying an army of problem solvers, drivers of innovation and pioneers in tech.
+							{/* With dedication to the advancement of knowledge in areas that contribute to technological development, */} 
+							Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying an army of problem solvers, drivers of innovation and pioneers in tech.
 							{/* Kindly check our main website for updates on our new recruiting cycle. */}
 						</p>
 						<span className="horizontal"></span>
@@ -34,7 +35,7 @@ const index = () => {
 							</div>
 							<h2>FLEXIBLE PAYMENT PLAN</h2>
 							<p>
-							Our Learn-then-Earn payment option allows you to learn on credit and repay the cost of the program after the commencement of a job placement for a period of 1-3 years.
+							Our Learn-then-Earn payment option allows you to learn on credit and repay the cost of the program after securing a job.
             </p>
 						</div>
 						<div className="stats">
