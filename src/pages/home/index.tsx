@@ -21,7 +21,7 @@ const index = () => {
 						</h2>
 						<p>
 							{/* With dedication to the advancement of knowledge in areas that contribute to technological development, */} 
-							Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying an army of problem solvers, drivers of innovation and pioneers in tech.
+							Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying a squad of problem solvers, drivers of innovation and pioneers in tech.
 							{/* Kindly check our main website for updates on our new recruiting cycle. */}
 						</p>
 						<span className="horizontal"></span>
