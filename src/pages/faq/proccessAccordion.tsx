@@ -45,11 +45,9 @@ export default () => {
 						<li>
 						Possess a track record of exceptional personal, academic and professional performance. 
 						</li><br/>
-						<li>
-						Great learning and cognitive ability.</li><br />
 						<li>is a fast learner with Great learning and cognitive ability.
 						</li><br/>
-						<li>must possess the determination to work hard and excel as a software developer. 
+						<li>must possess the determination to work hard and excel as a software engineer. 
 						</li><br/>
 						<li>
 							Have either a Higher National Diploma(HND), Bachelor's degree, or

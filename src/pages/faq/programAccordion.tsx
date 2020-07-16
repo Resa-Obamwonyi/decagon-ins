@@ -76,7 +76,7 @@ export default () => {
 					Yes
 				</div>
 			</div>
-			<div className="tab">
+			{/* <div className="tab">
 				<input type="checkbox" id="chck9" />
 				<label className="tab-label" htmlFor="chck9">
 					What can I do to get financial aid  (Loan) via Learn-Then-Earn payment credit funding
@@ -84,7 +84,7 @@ export default () => {
 				<div className="tab-content">
 					Applicants are to choose or specify their preferred payment plan during application.
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
