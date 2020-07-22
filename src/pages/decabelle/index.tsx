@@ -6,6 +6,8 @@ import guarantee from "../../images/guaranteed-success.svg";
 import recruitment from "../../images/recruitment.svg";
 import training from "../../images/training.svg";
 import residence from "../../images/full-residency.svg";
+import girl from '../../images/girls-girls.jpg';
+import recruitGirls from '../../images/recruit-girls.jpg';
 import Layout from "../../layout";
 import HomeAccordion from '../faq/homeAccordion';
 
@@ -23,6 +25,11 @@ const index = () => {
 							You are a Decabelle. <Link to="/apply" className="btn btn-link">Apply Now</Link>
 						</p>
 						<span className="horizontal"></span>
+					</div>
+				</div>
+				<div className="girls-illustration">
+					<div className="content">
+						<img src={girl} alt="girls-illustration" />
 					</div>
 				</div>
 				<div className="why-decagon">
@@ -67,7 +74,7 @@ const index = () => {
 						<div className="work-steps">
 							<div className="step">
 								<div className="step-img">
-									<img src={recruitment} alt="recruitment" />
+									<img src={recruitGirls} alt="recruitment" />
 								</div>
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
