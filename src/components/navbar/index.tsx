@@ -10,7 +10,7 @@ const index = (props: any) => {
           <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
         <ul className="nav">
-          <li><Link to="/faq">FAQ</Link></li>
+          <li className={props.class}><Link to="/faq">FAQ</Link></li>
           {/* <li><a className="btn" href="//decagonhq.com" target="_blank">Application closed</a></li> */}
           <li><Link className="btn" to="/apply">Apply</Link></li>
         </ul>

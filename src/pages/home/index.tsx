@@ -9,7 +9,7 @@ import residence from "../../images/full-residency.svg";
 import Layout from "../../layout";
 import HomeAccordion from '../faq/homeAccordion';
 
-const index = () => {
+const index = (props: any) => {
 	return (
 		<Layout>
 			<main>
@@ -113,7 +113,7 @@ const index = () => {
 							<p>
 								Get clarity on everything about the program
 							</p>
-							<a href="/faq" className="btn">more FAQ</a>
+							<a href="/faq" className="btn btn-link">more FAQ</a>
 						</div>
 						<div className="faq-accordion">
 							<HomeAccordion />
