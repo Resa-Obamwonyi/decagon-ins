@@ -116,6 +116,19 @@ main .banner .content .horizontal {
   position: absolute;
   bottom: -7rem;
 }
+main.decabelle .banner .content .horizontal {
+  bottom: -3rem;
+  height: 3rem;
+}
+
+main .girls-illustration {
+  display: flex;
+  justify-content: center;
+}
+
+main .girls-illustration .content img {
+  width: 100%;
+}
 
 main .why-decagon {
   display: flex;
@@ -240,6 +253,10 @@ main .cta {
   justify-content: center;
   background-image: url(../images/sq006-banner.jpg);
   padding: 2rem 0;
+}
+main.decabelle .cta {
+  background-image: url(../images/sq006-banner-decabelle.jpg);
+  background-position: 50% 75%;
 }
 
 main .cta .content {

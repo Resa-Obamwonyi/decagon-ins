@@ -16,7 +16,7 @@ const index = () => {
 				<div className="banner">
 					<div className="content">
 						<h2 className="belle-title">
-							Academic excellence should be rewarded,
+							Academic excellence should be rewarded
 						</h2>
 						<p>
 							Become a world class software engineer
