@@ -57,9 +57,28 @@ header .content .nav li a.btn {
 main .banner {
   display: flex;
   justify-content: center;
-  background-image: url(../images/sq005-banner.jpg);
+  background-image: url(../images/sq006-banner.jpg);
   background-position: 50% 0%;
   padding: 5rem 0 3rem;
+}
+main.stem .banner {
+  background-image: url(../images/stem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+main.stem .banner::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+}
+
+main.decabelle .banner {
+  background-image: none;
 }
 
 main .banner .content {
@@ -74,6 +93,11 @@ main .banner .content h2 {
   font-family: "Muli Bold";
   padding: 4rem 1.5rem 0rem;
   color: white;
+}
+
+main.decabelle .banner .content h2,
+main.decabelle .banner .content p {
+  color: black;
 }
 
 main .banner .content h2 span {
@@ -214,7 +238,7 @@ main .faq-section .content .faq-accordion .tabs .tab{
 main .cta {
   display: flex;
   justify-content: center;
-  background-image: url(../images/sq005-banner.jpg);
+  background-image: url(../images/sq006-banner.jpg);
   padding: 2rem 0;
 }
 
@@ -254,6 +278,9 @@ footer .content p {
   header .content .nav li a:not(.btn) {
     display: unset;
     color: white;
+  }
+  header .content .nav li.decabelle a {
+    color: $green;
   }
   header .content .nav li a.blackText {
     color: black;
@@ -448,13 +475,10 @@ footer .content p {
     padding: 8rem 10rem 1rem;
   }
   main .banner .content p {
-    padding: 1.5rem 20rem 5rem;
+    padding: 1.5rem 18rem 5rem;
   }
   main .why-decagon .content {
     padding: 2rem 10rem;
-  }
-  main .why-decagon .content .stats h2 {
-    font-size: 22px;
   }
   main .works .content .work-steps .step .step-img img,
   main .works .content .work-steps .step .step-info p {

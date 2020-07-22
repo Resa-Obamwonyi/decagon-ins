@@ -39,6 +39,15 @@ p {
   padding: 1.2rem 2.5rem;
 }
 
+.btn.btn-link {
+  font-size: 20px;
+  padding: 0;
+  background-color: transparent;
+  color: $green;
+  border-bottom: 1px solid $light-green;
+  border-radius: 0;
+}
+
 .title {
   font-size: 35px;
   font-family: "Muli Bold";
