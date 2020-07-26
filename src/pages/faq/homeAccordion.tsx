@@ -11,12 +11,8 @@ export default () => {
 					What is Decagon ?
 				</label>
 				<div className="tab-content">
-				Decagon is an elite software engineering and leadership training
-				 Institute that equips high potential individuals with world-class 
-				 software engineering and leadership skills, combined with practical exposure
-				  through real-life projects and corporate placements. 
-				We ensure that our devs are enabled  to launch their career 
-				in software development successfully. 
+				Decagon is an elite software engineering and leadership training Institute that equips high potential individuals with world-class software engineering and leadership skills, combined with practical exposure through real-life projects and corporate placements. We ensure that our devs are enabled  to launch their career in software development successfully. 
+
 				</div>
 			</div>
 			<div className="tab">
@@ -26,7 +22,6 @@ export default () => {
 				</label>
 				<div className="tab-content">
 				It is a 6-month intensive course that launches your career as a software engineer. At the end of the Program, you will become a competitive industry-ready entry-level  to mid level software engineer.
-
 				</div>
 			</div>
 			<div className="tab">
@@ -35,7 +30,7 @@ export default () => {
 					How do I apply?
 				</label>
 				<div className="tab-content">
-				Fill in your details in the <Link to="/apply">application form</Link> and click submit. Follow the instructions.
+				Fill in your details in the application form and click submit. Follow the instructions.
 				</div>
 			</div>
 			<div className="tab">

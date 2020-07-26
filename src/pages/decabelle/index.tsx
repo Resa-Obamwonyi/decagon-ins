@@ -18,7 +18,7 @@ const index = () => {
 				<div className="banner">
 					<div className="content">
 						<h2 className="belle-title">
-							Become a world class <span>Female</span> Software Engineer.
+							Become a <span>Female</span> world class Software Engineer.
 						</h2>
 						<p>
 							You are Smart Exceptional Ambitious and Confident
@@ -40,7 +40,8 @@ const index = () => {
 							</div>
 							<h2>FLEXIBLE PAYMENT PLAN</h2>
 							<p>
-								Our Learn-then-Earn payment option allows you to learn on credit and repay the cost of the program after securing a job.
+							Our Learn-then-Earn payment option allows you the option to learn on credit and repay the cost of your training after you secure a job.
+
             </p>
 						</div>
 						<div className="stats">
@@ -52,8 +53,8 @@ const index = () => {
 							</div>
 							<h2>GUARANTEED SUCCESS</h2>
 							<p>
-								The need for software engineers will continue to grow and so, jobs
-								will always be available.
+							The world is powered by technology. There has never been a better time to become a world class software engineer. Our program prepares you for an excellent tech career takeoff.
+
             </p>
 						</div>
 						<div className="stats">
@@ -62,8 +63,7 @@ const index = () => {
 							</div>
 							<h2>FULL RESIDENCY</h2>
 							<p>
-								For all 6months of the program, you stay in our well furnished
-								apartments and with extra amenities
+							Our in-residence program is immersive. To ensure a deep focused learning experience we will provide accommodation | Feeding | Laptop | Electricity | Internet | Health Insurance and monthly stipend for the 6 months duration. 
             </p>
 						</div>
 					</div>
@@ -79,7 +79,8 @@ const index = () => {
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
 									<p>
-										We identify the most talented learners from across Nigeria and select the top 0.02% to become Decagon Software Engineers through a series of technical and non-technical assessments.
+									We identify the most brilliant fast learners from across Nigeria and select the top 0.02% to become Decagon Software Engineers through a series of technical and non-technical assessments.
+
 									</p>
 								</div>
 							</div>
@@ -90,9 +91,8 @@ const index = () => {
 								<div className="step-info">
 									<h3 className="title">TRAINING</h3>
 									<p>
-										We deliver an intensive 6 months program (full-stack
-										software development + soft skills) which includes
-										accommodation, a laptop, feeding and a monthly stipend.
+									We deliver an intensive 6 months program (full-stack software development + soft skills) 
+
 									</p>
 								</div>
 							</div>
@@ -100,8 +100,8 @@ const index = () => {
 								<div className="step-info">
 									<h3 className="title">PLACEMENT</h3>
 									<p>
-										We match Decagon developers with our hiring organizations to
-										join their engineering teams full-time
+									We match Decagon engineers with our hiring organizations to join their engineering teams full-time
+
 									</p>
 								</div>
 								<div className="step-img">
@@ -127,7 +127,7 @@ const index = () => {
 				</div>
 				<div className="cta">
 					<div className="content">
-						<h2 className="title">Ready to become a Decadev ?</h2>
+						<h2 className="title">Ready to become a Decabelle ?</h2>
 						<Link to="/apply" className="btn big-btn">Apply Now!</Link>
 					</div>
 				</div>
