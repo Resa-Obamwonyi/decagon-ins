@@ -19,13 +19,14 @@ const index = () => {
               style={{
                 fontSize: "35px",
                 color: "ghostwhite",
-                marginBottom: "-6rem",
                 textAlign: "center",
+                paddingTop:"1rem",
+                paddingBottom:"1rem"
               }}
             >
               Academic excellence should be rewarded
             </h3>
-            <h2 className="belle-title" style={{fontSize:"41px"}}>
+            <h2 className="belle-title" style={{fontSize:"41px",paddingTop: 0}}>
               Join our army of world class software engineers You deserve a seat
               at the table.
               <Link to="/apply" className="btn btn-link">
