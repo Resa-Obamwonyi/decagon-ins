@@ -13,7 +13,7 @@ import HomeAccordion from '../faq/homeAccordion';
 
 const index = () => {
 	return (
-		<Layout class="decabelle">
+		<Layout class="decabelle" name="decabelle">
 			<main className="decabelle">
 				<div className="banner">
 					<div className="content">
