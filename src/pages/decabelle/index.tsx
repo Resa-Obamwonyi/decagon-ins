@@ -44,7 +44,7 @@ const index = () => {
 
             </p>
 						</div>
-						<div className="stats">
+						{/* <div className="stats">
 							<div className="icon">
 								<img
 									src={guarantee}
@@ -56,7 +56,7 @@ const index = () => {
 							The world is powered by technology. There has never been a better time to become a world class software engineer. Our program prepares you for an excellent tech career takeoff.
 
             </p>
-						</div>
+						</div> */}
 						<div className="stats">
 							<div className="icon">
 								<img src={residence} alt="full residency" />

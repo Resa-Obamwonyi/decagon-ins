@@ -50,7 +50,7 @@ const index = () => {
                 secure a job.
               </p>
             </div>
-            <div className="stats">
+            {/* <div className="stats">
               <div className="icon">
                 <img src={guarantee} alt="guaranteed success" />
               </div>
@@ -60,7 +60,7 @@ const index = () => {
                 better time to become a world class software engineer. Our
                 program prepares you for an excellent tech career takeoff.
               </p>
-            </div>
+            </div> */}
             <div className="stats">
               <div className="icon">
                 <img src={residence} alt="full residency" />
