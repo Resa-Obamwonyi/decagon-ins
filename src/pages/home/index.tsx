@@ -42,7 +42,7 @@ const index = (props: any) => {
 
             </p>
 						</div>
-						<div className="stats">
+						{/* <div className="stats">
 							<div className="icon">
 								<img
 									src={guarantee}
@@ -56,7 +56,7 @@ const index = (props: any) => {
 								Our program prepares you for an excellent tech career takeoff.
 
             </p>
-						</div>
+						</div> */}
 						<div className="stats">
 							<div className="icon">
 								<img src={residence} alt="full residency" />
