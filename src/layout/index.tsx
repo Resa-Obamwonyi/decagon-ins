@@ -5,7 +5,7 @@ import fbPixelConfig from '../utils/fbPixelConfig';
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
-const index = (props: any) => {
+export default (props: any) => {
 	useEffect(() => {
 		fbPixelConfig(`$props.name`)
 }, [])
@@ -18,7 +18,6 @@ const index = (props: any) => {
 	);
 };
 
-export default index;
 
 
 
