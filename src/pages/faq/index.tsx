@@ -7,7 +7,7 @@ import Tab from './tab';
 export default function Faq() {
 
 	return (
-		<Layout>
+		<Layout name="FAQ">
 			<main className="inner-main">
 				<div className="hero"></div>
 

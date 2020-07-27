@@ -86,7 +86,7 @@ export default function Application() {
     });
   };
   return (
-    <Layout>
+    <Layout name="apply">
       <main className="inner-main">
         <div className="hero"></div>
 
