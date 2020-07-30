@@ -306,18 +306,18 @@ export default function Application() {
                 >
                   <option value="">Select one</option>
                   <option value="Best Graduating">
-                  Best Graduating
+                  Best Graduating Student
                   </option>
                   <option value="Top 5 %">
                   Top 5 %
                   </option>
-                  <option value=":top 10%">
-                  :top 10%
+                  <option value="Top 10%">
+                  Top 10%
                   </option>
-                  <option value=":top  50%">
-                  :top  50%
+                  <option value="Top  50%">
+                  Top  50%
                   </option>
-                  <option value="Below 40">bottom 50%</option>
+                  <option value="Bottom 50%">Bottom 50%</option>
                 </select>
 
                 {errors.graduationPercentile && (
