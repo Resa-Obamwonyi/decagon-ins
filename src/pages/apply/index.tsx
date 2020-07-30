@@ -295,7 +295,7 @@ export default function Application() {
                 )}
               </div>
               <div className="form-group">
-                <label htmlFor="graduationPercentile">What was your percentile at graduation?</label>
+                <label htmlFor="graduationPercentile">What was your percentile on graduation?</label>
                 <select
                   name="graduationPercentile"
                   value={state.graduationPercentile}
@@ -305,19 +305,19 @@ export default function Application() {
                   }}
                 >
                   <option value="">Select one</option>
-                  <option value="70 and above">
-                  70 and above
+                  <option value="Best Graduating">
+                  Best Graduating
                   </option>
-                  <option value="60 - 69%">
-                  60 - 69%
+                  <option value="Top 5 %">
+                  Top 5 %
                   </option>
-                  <option value="50 - 59%">
-                  50 - 59%
+                  <option value=":top 10%">
+                  :top 10%
                   </option>
-                  <option value="40 - 49%">
-                  40 - 49%
+                  <option value=":top  50%">
+                  :top  50%
                   </option>
-                  <option value="Below 40">Below 40</option>
+                  <option value="Below 40">bottom 50%</option>
                 </select>
 
                 {errors.graduationPercentile && (
