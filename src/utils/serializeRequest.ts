@@ -46,6 +46,10 @@ export default function serializeRequest(data: any) {
       case "gradeAchieved":
         payload["Grade achieved"] = value;
         break;
+        
+      case "graduationPercentile":
+        payload["Graduation Percentile"] = value;
+        break;
 
       case "courseStudied":
         payload["Course of study"] = value;
