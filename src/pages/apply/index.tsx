@@ -21,6 +21,7 @@ export default function Application() {
     qualification: "",
     institution: "",
     gradeAchieved: "",
+    graduationPercentile: "",
     courseStudied: "",
     NYSCStatus: "",
     programmingExperience: "",
@@ -277,21 +278,54 @@ export default function Application() {
                 >
                   <option value="">Select one</option>
                   <option value="Distinction/First class">
-                    Distinction/First class
+                  4.50 - 5.00 - first class honours
                   </option>
                   <option value="Second class upper division">
-                    Second class upper division
+                  3.50 - 4.49 - second class honours (upper division)
                   </option>
                   <option value="Second Class lower division ">
-                    Second Class lower division
+                  2.40 - 3.49 - second class honours (lower division)
                   </option>
-                  <option value="Third Class">Third Class</option>
+                  <option value="Third Class">1.50 - 2.39 - third class honour</option>
+                  <option value="Pass">1.0 - 1.49 - pass</option>
                 </select>
 
                 {errors.gradeAchieved && (
                   <p className="form-error">{errors.gradeAchieved}</p>
                 )}
               </div>
+              <div className="form-group">
+                <label htmlFor="graduationPercentile">What was your percentile at graduation?</label>
+                <select
+                  name="graduationPercentile"
+                  value={state.graduationPercentile}
+                  onChange={handleChange}
+                  style={{
+                    border: errors.graduationPercentile && "1px solid #d07d7d",
+                  }}
+                >
+                  <option value="">Select one</option>
+                  <option value="70 and above">
+                  70 and above
+                  </option>
+                  <option value="60 - 69%">
+                  60 - 69%
+                  </option>
+                  <option value="50 - 59%">
+                  50 - 59%
+                  </option>
+                  <option value="40 - 49%">
+                  40 - 49%
+                  </option>
+                  <option value="Below 40">Below 40</option>
+                </select>
+
+                {errors.graduationPercentile && (
+                  <p className="form-error">{errors.graduationPercentile}</p>
+                )}
+              </div>
+            </div>
+            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="courseStudied">Course of study</label>
                 <input
@@ -308,8 +342,6 @@ export default function Application() {
                   <p className="form-error">{errors.courseStudied}</p>
                 )}
               </div>
-            </div>
-            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="NYSCStatus">NYSC status</label>
                 <select
@@ -329,6 +361,8 @@ export default function Application() {
                   <p className="form-error">{errors.NYSCStatus}</p>
                 )}
               </div>
+            </div>
+            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="programmingExperience">
                   Programming Experience
@@ -351,8 +385,6 @@ export default function Application() {
                   <p className="form-error">{errors.programmingExperience}</p>
                 )}
               </div>
-            </div>
-            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="paymentOption">Preferred Payment Option</label>
                 <select
@@ -372,7 +404,8 @@ export default function Application() {
                   <p className="form-error">{errors.paymentOption}</p>
                 )}
               </div>
-
+            </div>
+            <div className="form-row">
               <div className="form-group">
                 <label htmlFor="headAboutUs">Where did you hear about us</label>
                 <select
@@ -417,8 +450,8 @@ export default function Application() {
                     ))}
                   </div>
                 ) : (
-                  <p>Submit</p>
-                )}
+                    <p>Submit</p>
+                  )}
               </button>
               <p className="terms-c">
                 by clicking submit, you agree to Decagon's
