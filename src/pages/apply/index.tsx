@@ -353,8 +353,10 @@ export default function Application() {
                   }}
                 >
                   <option value="">Select an option</option>
-                  <option value="completed">completed</option>
-                  <option value="exemption">exemption</option>
+                  <option value="completed">I have completed service</option>
+                  <option value="exemption">I have got an exemption</option>
+                  <option value="awaiting service">I am awaiting service</option>
+                  <option value="serving currently">I am currently serving</option>
                 </select>
 
                 {errors.NYSCStatus && (
@@ -398,6 +400,7 @@ export default function Application() {
                   <option value="">Select an option</option>
                   <option value="Learn-Then-Earn">Learn-Then-Earn</option>
                   <option value="Self sponsorship">Self sponsorship</option>
+                  <option value="Not sure">I am not sure yet</option>
                 </select>
 
                 {errors.paymentOption && (
