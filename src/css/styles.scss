@@ -104,6 +104,11 @@ main .banner .content h2 span {
   color: $green;
 }
 
+main .banner .content h2 span.span {
+  color: white;
+  font-size: 25px;
+}
+
 main .banner .content p {
   padding: 1.5rem .5rem 3rem;
   text-align: center;

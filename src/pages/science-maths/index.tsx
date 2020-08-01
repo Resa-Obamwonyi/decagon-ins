@@ -27,10 +27,10 @@ const index = () => {
               Academic excellence should be rewarded
             </h3>
             <h2 className="belle-title" style={{fontSize:"41px",paddingTop: 0}}>
-              Join our army of world class software engineers You deserve a seat
-              at the table.
+              Join our army of world class software engineers. <br/> <span className="span">You deserve a seat
+              at the table. </span>
               <Link to="/apply" className="btn btn-link">
-                Apply Now
+                 Apply Now
               </Link>
             </h2>
             <p>Join our training program with no upfront payment</p>
