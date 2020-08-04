@@ -43,7 +43,7 @@ export const mailBody = `
                                         <p>Before you begin the home study, please
                                              <b>JOIN OUR SLACK GROUP 
                                             <span style="color: red;">
-                                                <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQhttps://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">
+                                                <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">
                                                     HERE</a> 
                                                 </span> . 
                                             </b> 
@@ -103,7 +103,7 @@ export const mailBody = `
                                         <h3> DECAGON RECRUITMENT PROCESS CHECKLIST</h3>
                                         <ul>
                                             <li>Complete application form</li>
-                                            <li> Join Slack group <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQhttps://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQhttps://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQhttps://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">HERE</a></li>
+                                            <li> Join Slack group <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">HERE</a></li>
                                             <li>Review Maths for Computer Science Study guide <a href="https://docs.google.com/document/d/1umSL-GwU7D7JPatgnIC1vaWgt8NQ45snmpRl51vpMQY/edit?usp=sharing">HERE</a></li>
                                             <li> Complete Home assessment test</li>
                                             <li> Review Technical Home Study Guide <a href="https://docs.google.com/document/d/15NrUBqFD5GWFA98IjT7dA4hoNlKCqrsYUicowb3mzuA/edit">HERE</a> </li>
