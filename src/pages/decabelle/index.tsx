@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import placement from "../../images/placement-logos.jpg";
 import tuition from "../../images/tuition-free.svg";
-import guarantee from "../../images/guaranteed-success.svg";
-import recruitment from "../../images/recruitment.svg";
 import training from "../../images/training.svg";
 import residence from "../../images/full-residency.svg";
 import girl from '../../images/girls-girls.jpg';
@@ -22,7 +20,9 @@ const index = () => {
 						</h2>
 						<p>
 							You are Smart Exceptional Ambitious and Confident
-							You are a Decabelle. <Link to="/apply" className="btn btn-link">Apply Now</Link>
+							You are a Decabelle. 
+							{/* <Link to="/apply" className="btn btn-link">Apply Now</Link> */}
+							<a href="https://decagonhq.com" className="btn btn-link" target="_blank" rel="noopener noreferrer">Application Closed</a>
 						</p>
 						<span className="horizontal"></span>
 					</div>
@@ -128,7 +128,8 @@ const index = () => {
 				<div className="cta">
 					<div className="content">
 						<h2 className="title">Ready to become a Decabelle ?</h2>
-						<Link to="/apply" className="btn big-btn">Apply Now!</Link>
+						{/* <Link to="/apply" className="btn big-btn">Apply Now!</Link> */}
+						<a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a>
 					</div>
 				</div>
 			</main>
