@@ -23,7 +23,7 @@ const index = (props: any) => {
           <Link to="/"><img src={props.class ? logoDark : logo} alt="logo" /></Link>
         </div>
         <ul className="nav">
-          <li className={props.class}><Link to="/faq">Our Program</Link></li>
+          <li className={props.class}><Link to="/program">Our Program</Link></li>
           <li className={props.class}><Link to="/faq">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/faq">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
@@ -31,7 +31,7 @@ const index = (props: any) => {
           <li><Link className="btn" to="/apply">Apply</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
         </ul>
         <nav className="menu-nav">
-          <li className={props.class}><Link to="/faq">Our Program</Link></li>
+          <li className={props.class}><Link to="/program">Our Program</Link></li>
           <li className={props.class}><Link to="/faq">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/faq">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
