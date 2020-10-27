@@ -25,7 +25,7 @@ const index = (props: any) => {
         <ul className="nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
           <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
-          <li className={props.class}><Link to="/faq">Testimonials</Link></li>
+          <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
           {/* <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li> */}
           <li><Link className="btn" to="/apply">Apply</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
@@ -33,7 +33,7 @@ const index = (props: any) => {
         <nav className="menu-nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
           <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
-          <li className={props.class}><Link to="/faq">Testimonials</Link></li>
+          <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
         </nav>
       </div>
