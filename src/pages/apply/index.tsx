@@ -7,6 +7,7 @@ import validateApplication from "../../utils/validateApplication";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useHistory } from "react-router";
 
 export default function Application() {
   const defaultState = {
@@ -45,6 +46,8 @@ export default function Application() {
     //@ts-ignore
     if (errors[name]) setErrors({ ...errors, [name]: "" });
   };
+  
+let history = useHistory();
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -81,6 +84,7 @@ export default function Application() {
 
         setState({ ...state, ...defaultState });
         notify();
+        history.push("/success")
       },
     }).catch(() => {
       setState({ ...state, ...defaultState });
