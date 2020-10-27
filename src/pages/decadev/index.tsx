@@ -27,7 +27,7 @@ const index = (props: any) => {
                 group platform for applicants to keep up with updates about the
                 process, as well as get help with the home study from other
                 applicants and the Decagon Recruiting Team.{" "}
-                <a href="/apply" className="apply-text">
+                <a href="/apply" className="apply-link">
                   APPLY HERE
                 </a>
               </p>

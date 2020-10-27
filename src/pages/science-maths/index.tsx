@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import placement from "../../images/placement-logos.jpg";
 import tuition from "../../images/tuition-free.svg";
 import recruitment from "../../images/recruitment.svg";
@@ -28,10 +28,10 @@ const index = () => {
             <h2 className="belle-title" style={{fontSize:"41px",paddingTop: 0}}>
               Join our army of world class software engineers. <br/> <span className="span">You deserve a seat
               at the table. </span>
-              {/* <Link to="/apply" className="btn btn-link">
+              <Link to="/apply" className="btn btn-link">
                  Apply Now
-              </Link> */}
-              <a href="https://decagonhq.com" className="btn btn-link" target="_blank" rel="noopener noreferrer">Application Closed</a>
+              </Link>
+              {/* <a href="https://decagonhq.com" className="btn btn-link" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
             </h2>
             <p>Join our training program with no upfront payment</p>
             <span className="horizontal"></span>
@@ -137,10 +137,10 @@ const index = () => {
         <div className="cta">
           <div className="content">
             <h2 className="title">Ready to become a Decadev ?</h2>
-            {/* <Link to="/apply" className="btn big-btn">
+            <Link to="/apply" className="btn big-btn">
               Apply Now!
-            </Link> */}
-            <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a>
+            </Link>
+            {/* <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
           </div>
         </div>
       </main>

@@ -267,7 +267,7 @@ export default function Application() {
             </div>
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="gradeAchieved">Class of Degree</label>
+                <label htmlFor="gradeAchieved">Grade Achieved</label>
                 <select
                   name="gradeAchieved"
                   value={state.gradeAchieved}
