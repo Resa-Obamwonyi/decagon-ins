@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../layout";
+import {Link} from "react-router-dom"
 import HomeAccordion from "../faq/homeAccordion";
 import "./index.scss";
 
@@ -91,15 +92,15 @@ const index = (props: any) => {
         <div className="cta">
           <div className="content">
             <h2 className="title">Ready to become a Decadev ?</h2>
-            {/* <Link to="/apply" className="btn big-btn">Apply Now!</Link> */}
-            <a
+            <Link to="/apply" className="btn big-btn">Apply Now!</Link>
+            {/* <a
               href="https://decagonhq.com"
               className="btn big-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
               Application Closed
-            </a>
+            </a> */}
           </div>
         </div>
       </main>
