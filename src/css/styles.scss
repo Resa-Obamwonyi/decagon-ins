@@ -38,11 +38,24 @@ header .content .nav {
 }
 
 header .content .nav li {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+}
+
+header .content .nav li:not(:last-child) {
+  display: none;
 }
 
 header .content .nav li:last-child {
   margin-right: 0rem;
+}
+
+header .content .nav li:last-child .menu {
+  margin-left: 1rem;
+  z-index: 9;
+  position: relative;
+  &.dark {
+    color: black;
+  }
 }
 
 header .content .nav li a:not(.btn) {
@@ -54,13 +67,49 @@ header .content .nav li a.btn {
   border: 1px solid white;
 }
 
+header .content .menu-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  background-color: white;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+    margin: 0 0.5rem;
+  }
+}
+
+header .content .menu-nav.show {
+  transform: scaleY(1);
+  z-index: 6;
+}
+
 main .banner {
   display: flex;
   justify-content: center;
-  background-image: url(../images/sq006-banner.jpg);
-  background-position: 50% 0%;
+  background-image: url(../images/sq007-banner.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
   padding: 5rem 0 3rem;
+  position: relative;
 }
+
+main .banner::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+}
+
 main.stem .banner {
   background-image: url(../images/stem.jpg);
   background-repeat: no-repeat;
@@ -328,6 +377,14 @@ footer .content p {
 }
 
 @media (min-width: 768px) {
+  header .content .nav li:not(:last-child) {
+    display: flex;
+  }
+
+  header .content .nav li:last-child .menu {
+    display: none;
+  }
+
   main .banner .content h2 {
     font-size: 55px;
     padding: 6rem 2rem 1rem;
@@ -412,6 +469,9 @@ footer .content p {
 }
 
 @media (min-width: 980px) {
+  header .content .nav li {
+    margin: 0 1rem;
+  }
   main .banner .content h2 {
     font-size: 60px;
     padding: 6rem 4rem 1rem;
