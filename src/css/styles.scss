@@ -53,14 +53,15 @@ header .content .nav li:last-child .menu {
   margin-left: 1rem;
   z-index: 9;
   position: relative;
+  color: white;
   &.dark {
     color: black;
   }
 }
 
-header .content .nav li a:not(.btn) {
-  display: none;
-}
+// header .content .nav li a:not(.btn) {
+//   display: none;
+// }
 
 header .content .nav li a.btn {
   background-color: $green;
@@ -69,13 +70,13 @@ header .content .nav li a.btn {
 
 header .content .menu-nav {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   transform: scaleY(0);
+  transition: transform 0.5s;
   background-color: white;
   padding: 1rem;
 
