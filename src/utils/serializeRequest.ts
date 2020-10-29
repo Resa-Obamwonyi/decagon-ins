@@ -4,47 +4,47 @@ export default function serializeRequest(data: any) {
   data.forEach(([key, value]: string[]) => {
     switch (key) {
       case "firstName":
-        payload["First name"] = value;
+        payload["FIRST NAME"] = value;
         break;
 
       case "lastName":
-        payload["Last name"] = value;
+        payload["LAST NAME"] = value;
         break;
 
       case "gender":
-        payload["Gender"] = value;
+        payload["GENDER"] = value;
         break;
 
       case "DOB":
-        payload["Date of birth"] = value;
+        payload["DATE OF BIRTH"] = value;
         break;
 
       case "phoneNumber":
-        payload["Phone number"] = value;
+        payload["PHONE NUMBER"] = value;
         break;
 
       case "emailAddress":
-        payload["Email address"] = value;
+        payload["EMAIL ADDRESS"] = value;
         break;
 
       case "stateOfOrigin":
-        payload["State of origin"] = value;
+        payload["STATE OF ORIGIN"] = value;
         break;
 
       case "currentLocation":
-        payload["Current location"] = value;
+        payload["LOCATION"] = value;
         break;
 
       case "qualification":
-        payload["Qualification"] = value;
+        payload["DEGREE"] = value;
         break;
 
       case "institution":
-        payload["Institution"] = value;
+        payload["INSTITUTION"] = value;
         break;
 
       case "gradeAchieved":
-        payload["Grade achieved"] = value;
+        payload["GRADE ACHIEVED"] = value;
         break;
         
       case "graduationPercentile":
@@ -52,23 +52,23 @@ export default function serializeRequest(data: any) {
         break;
 
       case "courseStudied":
-        payload["Course of study"] = value;
+        payload["COURSE"] = value;
         break;
 
       case "NYSCStatus":
-        payload["NYSC status"] = value;
+        payload["NYSC"] = value;
         break;
 
       case "programmingExperience":
-        payload["Programming experience"] = value;
+        payload["PROGRAMMING SKILL"] = value;
         break;
 
       case "paymentOption":
-        payload["Payment option"] = value;
+        payload["PAYMENT OPTION"] = value;
         break;
 
       case "heardAboutUs":
-        payload["Heard about us"] = value;
+        payload["HEARD ABOUT US"] = value;
         break;
 
       default:
@@ -92,7 +92,7 @@ export default function serializeRequest(data: any) {
 
   return {
     ...payload,
-    "Application Date": applicationDate,
-    "Application Time": applicationTime,
+    "APPLICATION DATE": applicationDate,
+    "APPLICATION TIME": applicationTime,
   };
 }

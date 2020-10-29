@@ -7,6 +7,7 @@ import validateApplication from "../../utils/validateApplication";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useHistory } from "react-router";
 
 export default function Application() {
   const defaultState = {
@@ -46,14 +47,18 @@ export default function Application() {
     if (errors[name]) setErrors({ ...errors, [name]: "" });
   };
 
+let history = useHistory();
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
-
+    
     const errorsFields = validateApplication(state);
 
     if (errorsFields) {
       return setErrors({ ...errors, ...errorsFields });
     }
+
+    console.log(state);
 
     $.ajax({
       url: process.env.REACT_APP_GOOGLE_SHEET_BASE_URI,
@@ -81,6 +86,7 @@ export default function Application() {
 
         setState({ ...state, ...defaultState });
         notify();
+        history.push("/success")
       },
     }).catch(() => {
       setState({ ...state, ...defaultState });

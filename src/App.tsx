@@ -7,6 +7,7 @@ import STEM from "./pages/science-maths"
 import Decabelle from "./pages/decabelle"
 import Program from "./pages/program"
 import Decadev from "./pages/decadev"
+import SuccessPage from "./pages/success"
 import Testimonials from "./pages/testimonials"
 import "../node_modules/jquery"
 import "./css/styles.scss"
@@ -22,6 +23,7 @@ function App() {
 			<Route exact path="/program" component={Program} />
 			<Route exact path="/decadev" component={Decadev} />
 			<Route exact path="/testimonials" component={Testimonials} />
+			<Route exact path="/success" component={SuccessPage} />
 
 		</Router>
 	);
