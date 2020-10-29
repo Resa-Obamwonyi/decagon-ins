@@ -30,8 +30,8 @@ export const mailBody = `
 								</tr>
 								<tr>
 									<div class="content" style="margin-top: 2rem;">
-                                        <p>Please <b>REVIEW THIS HOME STUDY GUIDE <span style="color: red;"><a href="https://docs.google.com/document/d/15pdQOmwO4U3OBRpW8dtEe5vFh7n9VoZErBEo4sZBd0E/edit">HERE</a></span>.</b> Use the attached guide to navigate the appropriate chapters.
-                                             It will guide you through what and when to study.   </p>
+                                        <p>Please <b>REVIEW THIS HOME STUDY GUIDE <span style="color: red;"><a href="https://docs.google.com/document/d/15pdQOmwO4U3OBRpW8dtEe5vFh7n9VoZErBEo4sZBd0E/edit">HERE</a></span>.</b> Use the attached guide to navigate the appropriate chapters. It will guide you through what and when to study. 
+                                        <b>Feel free to start studying earlier than the stated date.</b>  </p>
                                      </div>
 								</tr>
 								<tr>
@@ -84,7 +84,7 @@ export const mailBody = `
                                     <div class="content" style="margin-top: 2rem;">
                                         <h3>DECAGON RECRUITMENT PROCESS & TIMELINE</h3>
                                         
-                                            <p>Round 1: Application <b>(29/11/2020-13/11/2020)</b> </p>
+                                            <p>Round 1: Application <b>(30/11/2020-13/11/2020)</b> </p>
                                             <p>Round 2: Review Technical Home Study Guide <b>(29/10/2020-20/11/2020)</b> </p>
                                             <p>Round 3: Home assessment test <b>(21/11/2020)</b> </p>
                                             <p>Round 4: Review Maths for Computer Science Study Guide<b>(23/11/2020-04/12/2020)</b></p>
@@ -101,7 +101,7 @@ export const mailBody = `
                                             <li> Join Slack group <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">HERE</a></li>
                                             <li> Review Technical Home Study Guide <a href="https://docs.google.com/document/d/15NrUBqFD5GWFA98IjT7dA4hoNlKCqrsYUicowb3mzuA/edit">HERE</a> </li>
                                              <li> Complete Home assessment test</li>
-                                            <li>Review Maths for Computer Science Study guide <a href="https://docs.google.com/document/d/1umSL-GwU7D7JPatgnIC1vaWgt8NQ45snmpRl51vpMQY/edit?usp=sharing">HERE</a></li>
+                                            <li>Review Maths for Computer Science Study guide <a href="https://docs.google.com/document/d/15pdQOmwO4U3OBRpW8dtEe5vFh7n9VoZErBEo4sZBd0E/edit">HERE</a></li>
                                             <li>Schedule your In-Person Assessment</li>
                                             <li>Attend interview</li>
                                             <li>Launch your career at Decagon</li>

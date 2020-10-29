@@ -66,16 +66,17 @@ export default () => {
         </div>
       </div>
       <div className="tab">
-        <input type="checkbox" id="chck4" />
-        <label className="tab-label" htmlFor="chck4">
-          What happens if I fail to repay the credit?
+        <input type="checkbox" id="chck5" />
+        <label className="tab-label" htmlFor="chck5">
+        what happens if I fail to repay the credit?
         </label>
         <div className="tab-content">
-          As the credit funding is governed by a legally binding contract,
+        As the credit funding is governed by a legally binding contract,
           breaching any clause therein is considered a crime and will be treated
           accordingly.
         </div>
       </div>
+      
       <div className="tab">
         <input type="checkbox" id="chck6" />
         <label className="tab-label" htmlFor="chck6">
