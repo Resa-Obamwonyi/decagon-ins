@@ -48,7 +48,7 @@ export default () => {
         <label className="tab-label" htmlFor="chck5">
           What programming languages are taught during the program?
         </label>
-        <div className="tab-content">Javascript, C#, Node, Android.</div>
+        <div className="tab-content">Java, C#, Node, Android.</div>
       </div>
       <div className="tab">
         <input type="checkbox" id="chck6" />

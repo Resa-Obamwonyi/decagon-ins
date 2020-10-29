@@ -20,10 +20,6 @@ const index = (props: any) => {
         <div className="testimonial-wrapper">
           <div className="testimonial-container">
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2>Itunu Raimi</h2>
-                <p> iOS stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -37,12 +33,12 @@ const index = (props: any) => {
                   even if they seem difficult.
                 </p>
               </div>
+              <div className="testimonial-name">
+                <h2>Itunu Raimi</h2>
+                <p> iOS stack</p>
+              </div>
             </div>
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2> Timring Timkwali</h2>
-                <p>Android stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -58,12 +54,12 @@ const index = (props: any) => {
                   the end.
                 </p>
               </div>
+              <div className="testimonial-name">
+                <h2> Timring Timkwali</h2>
+                <p>Android stack</p>
+              </div>
             </div>
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2>Rafiat Daniju</h2>
-                <p> Python Stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -82,12 +78,12 @@ const index = (props: any) => {
                   with like minds(Developers) .
                 </p>
               </div>
+              <div className="testimonial-name">
+                <h2>Rafiat Daniju</h2>
+                <p> Python Stack</p>
+              </div>
             </div>
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2> Kabiru Haruna </h2>
-                <p>Node Stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -103,12 +99,12 @@ const index = (props: any) => {
                   languages to increase your skills.
                 </p>
               </div>
+              <div className="testimonial-name">
+                <h2> Kabiru Haruna </h2>
+                <p>Node Stack</p>
+              </div>
             </div>
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2> Michael Chidi Okobia</h2>
-                <p>C# stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -124,12 +120,12 @@ const index = (props: any) => {
                   towards it, you will achieve it.
                 </p>
               </div>
+              <div className="testimonial-name">
+                <h2> Michael Chidi Okobia</h2>
+                <p>C# stack</p>
+              </div>
             </div>
             <div className="testimonial-item">
-              <div className="testimonial-name">
-                <h2> Odira Eze</h2>
-                <p>Java Stack</p>
-              </div>
               <div className="testimonial-text">
                 <span>"</span>
                 <p>
@@ -140,6 +136,10 @@ const index = (props: any) => {
                   It's a six months of dedication and sacrifice which will
                   definitely be rewarding, you can do it.
                 </p>
+              </div>
+              <div className="testimonial-name">
+                <h2> Odira Eze</h2>
+                <p>Java Stack</p>
               </div>
             </div>
           </div>
