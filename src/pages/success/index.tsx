@@ -8,15 +8,14 @@ const index = (props: any) => {
       <div className="success-wrapper">
        
         <div className="success-container">
-          <h1>Congratulations !</h1>
+          <h1>Thank You !</h1>
           <p>
-            You have Successfully Applied to the Decagon Squad 007 Program
+          You have Successfully applied to Decagon! Kindly check your email for confirmation
           </p>
           <div className="back-button">
               <Link to="/">
               <button className="btn-back">Back to Home</button>
               </Link>
-            
         </div>
         </div>
         

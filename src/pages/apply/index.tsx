@@ -46,17 +46,19 @@ export default function Application() {
     //@ts-ignore
     if (errors[name]) setErrors({ ...errors, [name]: "" });
   };
-  
+
 let history = useHistory();
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-
+    
     const errorsFields = validateApplication(state);
 
     if (errorsFields) {
       return setErrors({ ...errors, ...errorsFields });
     }
+
+    console.log(state);
 
     $.ajax({
       url: process.env.REACT_APP_GOOGLE_SHEET_BASE_URI,
