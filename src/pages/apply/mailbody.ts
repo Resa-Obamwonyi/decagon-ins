@@ -84,8 +84,8 @@ export const mailBody = `
                                     <div class="content" style="margin-top: 2rem;">
                                         <h3>DECAGON RECRUITMENT PROCESS & TIMELINE</h3>
                                         
-                                            <p>Round 1: Application <b>(30/11/2020-13/11/2020)</b> </p>
-                                            <p>Round 2: Review Technical Home Study Guide <b>(29/10/2020-20/11/2020)</b> </p>
+                                            <p>Round 1: Application <b>(30/10/2020-13/11/2020)</b> </p>
+                                            <p>Round 2: Review Technical Home Study Guide <b>(30/10/2020-20/11/2020)</b> </p>
                                             <p>Round 3: Home assessment test <b>(21/11/2020)</b> </p>
                                             <p>Round 4: Review Maths for Computer Science Study Guide<b>(23/11/2020-04/12/2020)</b></p>
                                             <p>Round 5: In-person Assessment/Interview <b>(05/12/2020 and/or 12/12/20)</b></p>
