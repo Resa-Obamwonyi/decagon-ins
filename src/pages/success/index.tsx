@@ -1,8 +1,14 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./index.scss";
 import {Link} from "react-router-dom"
+import facebookPixelConversion from "../../utils/fbPixelConfig";
 
-const index = (props: any) => {
+const Success = (props: any) => {
+
+useEffect(()=>{
+  facebookPixelConversion("success")
+})
+
   return (
     <main>
       <div className="success-wrapper">
@@ -24,4 +30,4 @@ const index = (props: any) => {
   );
 };
 
-export default index;
+export default Success;

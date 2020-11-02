@@ -56,6 +56,9 @@ export default function validateApplication(data: any) {
         case "heardAboutUs":
           field = "Select an option";
           break;
+        case "homeAddress":
+          field = "Home Address is required";
+          break;
 
         default:
           break;
