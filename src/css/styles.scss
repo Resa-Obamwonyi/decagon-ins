@@ -146,10 +146,10 @@ main .banner .content h2 {
   color: white;
 }
 
-main.decabelle .banner .content h2,
-main.decabelle .banner .content p {
-  color: black;
-}
+// main.decabelle .banner .content h2,
+// main.decabelle .banner .content p {
+//   color: black;
+// }
 
 main .banner .content h2 span {
   color: $green;
@@ -178,7 +178,7 @@ main.decabelle .banner .content .horizontal {
 }
 
 main .girls-illustration {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
