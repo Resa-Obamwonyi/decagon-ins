@@ -71,6 +71,10 @@ export default function serializeRequest(data: any) {
         payload["HEARD ABOUT US"] = value;
         break;
 
+      case "homeAddress":
+        payload["HOME ADDRESS"] = value;
+        break;
+
       default:
         break;
     }

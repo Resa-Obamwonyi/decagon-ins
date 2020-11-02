@@ -15,6 +15,7 @@ export default function Application() {
     lastName: "",
     gender: "",
     DOB: "",
+    homeAddress: "",
     phoneNumber: "",
     emailAddress: "",
     stateOfOrigin: "",
@@ -96,7 +97,6 @@ let history = useHistory();
     <Layout name="apply">
       <main className="inner-main">
         <div className="hero"></div>
-
         <div className="content application-form">
           <div className="apply-header">
             <h2 className="apply-text">
@@ -165,6 +165,22 @@ let history = useHistory();
                 {errors.DOB && <p className="form-error">{errors.DOB}</p>}
               </div>
             </div>
+            {/* <div className="form-row"> */}
+              <div className="form-group">
+                <label htmlFor="homeAddress">Home Address</label>
+                <input
+                  type="text"
+                  name="homeAddress"
+                  placeholder="Home Address"
+                  value={state.homeAddress}
+                  onChange={handleChange}
+                  style={{ border: errors.homeAddress && "1px solid #d07d7d" }}
+                  required
+                />
+                {errors.homeAddress && <p className="form-error">{errors.homeAddress}</p>}
+              </div>
+             
+            {/* </div> */}
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="phoneNumber">Phone Number</label>
