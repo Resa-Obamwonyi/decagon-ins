@@ -20,7 +20,7 @@ const index = (props: any) => {
     <header>
       <div className="content">
         <div className="logo">
-          <Link to="/"><img src={props.class ? logoDark : logo} alt="logo" /></Link>
+          <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
         <ul className="nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
