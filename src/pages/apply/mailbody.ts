@@ -39,7 +39,7 @@ export const mailBody = `
                                         <p>Before you begin the home study, please
                                              <b>JOIN OUR SLACK GROUP 
                                             <span style="color: red;">
-                                                <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">
+                                                <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-ir9hf8j9-UxtzvGikMJo7SZzGopP~gw">
                                                     HERE</a> 
                                                 </span> . 
                                             </b> 
