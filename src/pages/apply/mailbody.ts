@@ -98,7 +98,7 @@ export const mailBody = `
                                         <h3> DECAGON RECRUITMENT PROCESS CHECKLIST</h3>
                                         <ul>
                                             <li>Complete application form</li>
-                                            <li> Join Slack group <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-gb12h25x-WgGxC~02Qnme4K3Jhc9LCQ">HERE</a></li>
+                                            <li> Join Slack group <a href="https://join.slack.com/t/decagonstuden-d5k9579/shared_invite/zt-ir9hf8j9-UxtzvGikMJo7SZzGopP~gw">HERE</a></li>
                                             <li> Review Technical Home Study Guide <a href="https://docs.google.com/document/d/15NrUBqFD5GWFA98IjT7dA4hoNlKCqrsYUicowb3mzuA/edit">HERE</a> </li>
                                              <li> Complete Home assessment test</li>
                                             <li>Review Maths for Computer Science Study guide <a href="https://docs.google.com/document/d/15pdQOmwO4U3OBRpW8dtEe5vFh7n9VoZErBEo4sZBd0E/edit">HERE</a></li>
