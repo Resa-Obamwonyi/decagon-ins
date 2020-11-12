@@ -446,6 +446,8 @@ let history = useHistory();
                   <option value="instagram">instagram</option>
                   <option value="twitter">twitter</option>
                   <option value="linkedin">linkedin</option>
+                  <option value="whatsapp">Whatsapp</option>
+                  <option value="faf">Friends/Family Referral</option>
                   <option value="other">other</option>
                 </select>
 
