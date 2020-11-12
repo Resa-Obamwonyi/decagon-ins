@@ -5,7 +5,6 @@ import tuition from "../../images/tuition-free.svg";
 import training from "../../images/training.svg";
 import residence from "../../images/full-residency.svg";
 import girl from '../../images/girls-girls.jpg';
-import decaFemale from '../../images/deca-female.jpg';
 import recruitGirls from '../../images/recruit-girls.jpg';
 import Layout from "../../layout";
 import HomeAccordion from '../faq/homeAccordion';
@@ -37,7 +36,7 @@ const index = () => {
 					<div className="content">
 						<div className="stats">
 							<div className="icon">
-								<img src={tuition} alt="tuition free" />
+								<img src={residence} alt="full residency" />
 							</div>
 							<h2>All you need to excel</h2>
 							<p>
@@ -61,7 +60,7 @@ const index = () => {
 						</div> */}
 						<div className="stats">
 							<div className="icon">
-								<img src={residence} alt="full residency" />
+								<img src={tuition} alt="tuition free" />
 							</div>
 							<h2>Pay after you earn</h2>
 							<p>
