@@ -19,10 +19,10 @@ const index = (props: any) => {
 							{/* Applications for the women-only cycle have  <span>closed</span> . */}
 						</h2>
 						<p>
-
-							Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying a squad of problem solvers, drivers of innovation and pioneers in tech.  <br />
+						Decagon has trained 100s of  people  and helped them get their first job as software engineers in top companies within 6-9 months
+							{/* Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying a squad of problem solvers, drivers of innovation and pioneers in tech.  <br /> */}
 							{/* With dedication to the advancement of knowledge in areas that contribute to technological development, */}
-							Join our training program with no upfront payment
+							{/* Join our training program with no upfront payment */}
 .
 							{/* Kindly check our main website for updates on our new recruiting cycle. */}
 						</p>
@@ -35,10 +35,9 @@ const index = (props: any) => {
 							<div className="icon">
 								<img src={tuition} alt="tuition free" />
 							</div>
-							<h2>FLEXIBLE PAYMENT PLAN</h2>
+							<h2>All you need to excel</h2>
 							<p>
-								Our Learn-then-Earn payment option allows you the option to learn on credit and repay the cost of your training after you secure a job.
-
+							we offer accommodation| Feeding| Laptop| Electricity| Internet| and monthly stipend for the 6 months duration. So you just focus and learn
             </p>
 						</div>
 						{/* <div className="stats">
@@ -60,11 +59,9 @@ const index = (props: any) => {
 							<div className="icon">
 								<img src={residence} alt="full residency" />
 							</div>
-							<h2>FULL RESIDENCY</h2>
+							<h2>Pay after you earn</h2>
 							<p>
-								Our in-residence program is immersive. To ensure a deep focused learning
-								experince we will provide accommodation| Feeding| Laptop| Electricity| Internet|
-								Health Insurance and monthly stipend for the 6 months duration.
+							We can allow you pay us after you graduate and secure a job.
             </p>
 						</div>
 					</div>
@@ -80,9 +77,7 @@ const index = (props: any) => {
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
 									<p>
-										We identify the most brilliant fast learners from across Nigeria
-										and select the top 0.02% to become Decagon Software Engineers
-										through a series of technical and non-technical assessments.
+									We screen to  identify fast learners  to become Decagon Software Engineers 
 									</p>
 								</div>
 							</div>
