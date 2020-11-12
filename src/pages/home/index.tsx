@@ -33,7 +33,7 @@ const index = (props: any) => {
 					<div className="content">
 						<div className="stats">
 							<div className="icon">
-								<img src={tuition} alt="tuition free" />
+								<img src={residence} alt="full residency" />
 							</div>
 							<h2>All you need to excel</h2>
 							<p>
@@ -57,7 +57,7 @@ const index = (props: any) => {
 						</div> */}
 						<div className="stats">
 							<div className="icon">
-								<img src={residence} alt="full residency" />
+								<img src={tuition} alt="tuition free" />
 							</div>
 							<h2>Pay after you earn</h2>
 							<p>
