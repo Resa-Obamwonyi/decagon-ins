@@ -39,10 +39,9 @@ const index = () => {
 							<div className="icon">
 								<img src={tuition} alt="tuition free" />
 							</div>
-							<h2>FLEXIBLE PAYMENT PLAN</h2>
+							<h2>All you need to excel</h2>
 							<p>
-							Our Learn-then-Earn payment option allows you the option to learn on credit and repay the cost of your training after you secure a job.
-
+							we offer accommodation| Feeding| Laptop| Electricity| Internet| and monthly stipend for the 6 months duration. So you just focus and learn
             </p>
 						</div>
 						{/* <div className="stats">
@@ -54,7 +53,9 @@ const index = () => {
 							</div>
 							<h2>GUARANTEED SUCCESS</h2>
 							<p>
-							The world is powered by technology. There has never been a better time to become a world class software engineer. Our program prepares you for an excellent tech career takeoff.
+								The world is powered by technology.
+								There has never been a better time to become a worldclass software engineer.
+								Our program prepares you for an excellent tech career takeoff.
 
             </p>
 						</div> */}
@@ -62,9 +63,9 @@ const index = () => {
 							<div className="icon">
 								<img src={residence} alt="full residency" />
 							</div>
-							<h2>FULL RESIDENCY</h2>
+							<h2>Pay after you earn</h2>
 							<p>
-							Our in-residence program is immersive. To ensure a deep focused learning experience we will provide accommodation | Feeding | Laptop | Electricity | Internet | Health Insurance and monthly stipend for the 6 months duration. 
+							We can allow you pay us after you graduate and secure a job.
             </p>
 						</div>
 					</div>
@@ -80,8 +81,7 @@ const index = () => {
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
 									<p>
-									We identify the most brilliant fast learners from across Nigeria and select the top 0.02% to become Decagon Software Engineers through a series of technical and non-technical assessments.
-
+									We screen to  identify fast learners  to become Decagon Software Engineers 
 									</p>
 								</div>
 							</div>

@@ -38,43 +38,42 @@ const index = () => {
           </div>
         </div>
         <div className="why-decagon">
-          <div className="content">
-            <div className="stats">
-              <div className="icon">
-                <img src={tuition} alt="tuition free" />
-              </div>
-              <h2>FLEXIBLE PAYMENT PLAN</h2>
-              <p>
-                Our Learn-then-Earn payment option allows you the option to
-                learn on credit and repay the cost of your training after you
-                secure a job.
-              </p>
-            </div>
-            {/* <div className="stats">
-              <div className="icon">
-                <img src={guarantee} alt="guaranteed success" />
-              </div>
-              <h2>GUARANTEED SUCCESS</h2>
-              <p>
-                The world is powered by technology. There has never been a
-                better time to become a world class software engineer. Our
-                program prepares you for an excellent tech career takeoff.
-              </p>
-            </div> */}
-            <div className="stats">
-              <div className="icon">
-                <img src={residence} alt="full residency" />
-              </div>
-              <h2>FULL RESIDENCY</h2>
-              <p>
-                Our in-residence program is immersive. To ensure a deep focused
-                learning experience we will provide accommodation | Feeding |
-                Laptop | Electricity | Internet | Health Insurance and monthly
-                stipend for the 6 months duration.
-              </p>
-            </div>
-          </div>
-        </div>
+					<div className="content">
+						<div className="stats">
+							<div className="icon">
+								<img src={tuition} alt="tuition free" />
+							</div>
+							<h2>All you need to excel</h2>
+							<p>
+							we offer accommodation| Feeding| Laptop| Electricity| Internet| and monthly stipend for the 6 months duration. So you just focus and learn
+            </p>
+						</div>
+						{/* <div className="stats">
+							<div className="icon">
+								<img
+									src={guarantee}
+									alt="guaranteed success"
+								/>
+							</div>
+							<h2>GUARANTEED SUCCESS</h2>
+							<p>
+								The world is powered by technology.
+								There has never been a better time to become a worldclass software engineer.
+								Our program prepares you for an excellent tech career takeoff.
+
+            </p>
+						</div> */}
+						<div className="stats">
+							<div className="icon">
+								<img src={residence} alt="full residency" />
+							</div>
+							<h2>Pay after you earn</h2>
+							<p>
+							We can allow you pay us after you graduate and secure a job.
+            </p>
+						</div>
+					</div>
+				</div>
         <div className="works">
           <div className="content">
             <h3 className="title">How it works</h3>
@@ -86,11 +85,8 @@ const index = () => {
                 <div className="step-info">
                   <h3 className="title">RECRUITMENT</h3>
                   <p>
-                    We identify the most brilliant fast learners from across
-                    Nigeria and select the top 0.02% to become Decagon Software
-                    Engineers through a series of technical and non-technical
-                    assessments.
-                  </p>
+									We screen to  identify fast learners  to become Decagon Software Engineers 
+									</p>
                 </div>
               </div>
               <div className="step">
