@@ -458,7 +458,7 @@ let history = useHistory();
             </div>
 
             <div className="form-group form-submit-actions">
-              <button
+              {/* <button
                 type="submit"
                 className="submit-button"
                 style={{
@@ -479,7 +479,7 @@ let history = useHistory();
                 ) : (
                     <p>Submit</p>
                   )}
-              </button>
+              </button> */}
               <p className="terms-c">
                 by clicking submit, you agree to Decagon's
                 <span>
