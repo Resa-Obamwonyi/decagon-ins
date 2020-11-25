@@ -21,7 +21,21 @@
     &.application-form {
       flex-direction: column;
       align-items: flex-start;
-
+      max-width: 1000px;
+      margin: auto;
+      .apply-header {
+        width: 100%;
+      
+        .apply-text {
+          width: 100%;
+          font-family: "Muli Bold";
+          padding: 0.5rem;
+          margin: 2rem auto;
+          text-align: center;
+          font-size: 2rem;
+          color: white;
+        }
+      }
       .inner-title {
         margin-bottom: 30px;
       }
@@ -52,6 +66,13 @@
   @media (min-width: 768px) {
     .content {
       &.application-form {
+        .apply-header {
+          width: 100%;
+        
+          .apply-text {
+            font-size: 3rem;
+          }
+        }
         .wrapper {
           padding: 3rem;
         }
