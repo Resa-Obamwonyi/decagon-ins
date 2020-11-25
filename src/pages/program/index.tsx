@@ -92,7 +92,7 @@ const index = (props: any) => {
         <div className="cta">
           <div className="content">
             <h2 className="title">Ready to become a Decadev ?</h2>
-            <Link to="/apply" className="btn big-btn">Apply Now!</Link>
+            <Link to="/" className="btn big-btn">Application Closed</Link>
             {/* <a
               href="https://decagonhq.com"
               className="btn big-btn"
