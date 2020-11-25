@@ -101,7 +101,6 @@ const index = () => {
 									<h3 className="title">PLACEMENT</h3>
 									<p>
 									We match Decagon engineers with our hiring organizations to join their engineering teams full-time
-
 									</p>
 								</div>
 								<div className="step-img">
@@ -128,7 +127,7 @@ const index = () => {
 				<div className="cta">
 					<div className="content">
 						<h2 className="title">Ready to become a Decabelle ?</h2>
-						<Link to="/apply" className="btn big-btn">Apply Now!</Link>
+						<Link to="/" className="btn big-btn">Application Closed</Link>
 						{/* <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
 					</div>
 				</div>
