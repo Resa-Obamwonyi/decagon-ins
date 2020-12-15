@@ -24,6 +24,7 @@ const index = (props: any) => {
         </div>
         <ul className="nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
+          <li className={props.class}><a href="https://decagonhq.com/?p=fb">For Business</a></li>
           <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
@@ -42,8 +43,3 @@ const index = (props: any) => {
 }
 
 export default index
-
-
-
-
-
