@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from "../../images/logo.png";
-import logoDark from "../../images/logo-dark.png";
+// import logoDark from "../../images/logo-dark.png";
 
 const index = (props: any) => {
 
