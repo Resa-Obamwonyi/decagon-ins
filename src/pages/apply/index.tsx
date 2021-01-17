@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../../layout";
 import "./index.scss";
 import serializeRequest from "../../utils/serializeRequest";
-import { mailBody } from "../../pages/apply/mailbody";
+import { mailBody } from "../../pages/apply/mailbody_edo";
 import validateApplication from "../../utils/validateApplication";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -59,7 +59,8 @@ let history = useHistory();
       return setErrors({ ...errors, ...errorsFields });
     }
 
-    console.log(state);
+
+  //  console.log(serializeRequest(Object.entries(state)),"Serialized");
 
     $.ajax({
       url: process.env.REACT_APP_GOOGLE_SHEET_BASE_URI,
@@ -72,7 +73,7 @@ let history = useHistory();
 
       complete: async function ({ status }) {
         if (status !== 200) return;
-
+        
         // @ts-ignore
         await fetch(process.env.REACT_APP_MAIL_HOST, {
           method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -458,7 +459,7 @@ let history = useHistory();
             </div>
 
             <div className="form-group form-submit-actions">
-              {/* <button
+              <button
                 type="submit"
                 className="submit-button"
                 style={{
@@ -479,7 +480,7 @@ let history = useHistory();
                 ) : (
                     <p>Submit</p>
                   )}
-              </button> */}
+              </button>
               <p className="terms-c">
                 by clicking submit, you agree to Decagon's
                 <span>
