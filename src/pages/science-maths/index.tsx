@@ -134,7 +134,7 @@ const index = () => {
           <div className="content">
             <h2 className="title">Ready to become a Decadev ?</h2>
             <Link to="/" className="btn big-btn">
-              Application Closed
+              Apply now
             </Link>
             {/* <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
           </div>

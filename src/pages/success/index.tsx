@@ -16,7 +16,7 @@ useEffect(()=>{
         <div className="success-container">
           <h1>Thank You !</h1>
           <p>
-          You have Successfully applied to Decagon! Kindly check your email for confirmation
+          Thank you for Submitting your application to Decagon. We would be in touch
           </p>
           <div className="back-button">
               <Link to="/">
