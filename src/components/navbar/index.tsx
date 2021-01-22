@@ -28,8 +28,8 @@ const index = (props: any) => {
           <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
-          {/* <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li> */}
-          <li><Link className="btn" to="/apply">Apply now</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
+          <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li>
+          {/* <li><Link className="btn" to="/apply">Apply now</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li> */}
         </ul>
         <nav className="menu-nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
