@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import placement from "../../images/placement-logos.jpg";
 import tuition from "../../images/tuition-free.svg";
 import recruitment from "../../images/recruitment.svg";
@@ -126,8 +126,8 @@ const index = (props: any) => {
 				<div className="cta">
 					<div className="content">
 						<h2 className="title">Ready to become a Decadev ?</h2>
-						<Link to="/apply" className="btn big-btn">Apply now</Link>
-						{/* <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
+						{/* <Link to="/apply" className="btn big-btn">Apply now</Link> */}
+						<a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a>
 					</div>
 				</div>
 			</main>
