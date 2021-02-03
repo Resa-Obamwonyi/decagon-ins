@@ -19,13 +19,18 @@ const index = (props: any) => {
 							{/* Applications for the women-only cycle have  <span>closed</span> . */}
 						</h2>
 						<p>
-						Decagon has trained 100s of  people  and helped them get their first job as software engineers in top companies within 6-9 months
+						Decagon has trained 100s of people and helped them get their first job as software engineers in top companies within 6-9 months
 							{/* Decagon is ushering in an era of tech-powered growth and prosperity in Nigeria by training and deploying a squad of problem solvers, drivers of innovation and pioneers in tech.  <br /> */}
 							{/* With dedication to the advancement of knowledge in areas that contribute to technological development, */}
 							{/* Join our training program with no upfront payment */}
 .
 							{/* Kindly check our main website for updates on our new recruiting cycle. */}
 						</p>
+
+						<div className="banner-mobile-buttons">
+							<Link to="/" className="join-btn">Application closed</Link>
+							<a href="https://decagonhq.com/?p=fb" className="hire-btn">Hire a Dev Team</a>
+						</div>
 						<span className="horizontal"></span>
 					</div>
 				</div>
@@ -77,7 +82,7 @@ const index = (props: any) => {
 								<div className="step-info">
 									<h3 className="title">RECRUITMENT</h3>
 									<p>
-									We screen to  identify fast learners  to become Decagon Software Engineers 
+									We screen to  identify fast learners  to become Decagon Software Engineers
 									</p>
 								</div>
 							</div>
@@ -136,7 +141,3 @@ const index = (props: any) => {
 }
 
 export default index
-
-
-
-

@@ -41,15 +41,19 @@ header .content .nav li {
   margin: 0 0.5rem;
 }
 
-header .content .nav li:not(:last-child) {
+header .content .nav-left {
+  margin-right: auto;
+}
+
+header .content .nav-left li, header .content .nav li:not(:last-child) {
   display: none;
 }
 
-header .content .nav li:last-child {
+header .content .nav-right li:last-child {
   margin-right: 0rem;
 }
 
-header .content .nav li:last-child .menu {
+header .content .nav-right li:last-child .menu {
   margin-left: 1rem;
   z-index: 9;
   position: relative;
@@ -59,14 +63,36 @@ header .content .nav li:last-child .menu {
   }
 }
 
+.banner-mobile-buttons {
+  text-align: center;
+
+  .join-btn {
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    padding: 10px 30px;
+    min-width: 220px;
+  }
+  .hire-btn {
+    color: #fff;
+    border: 1px solid $green;
+    background-color: $green;
+    display: block;
+    padding: 10px 30px;
+    min-width: 220px;
+    margin-top: 15px;
+  }
+}
+
 // header .content .nav li a:not(.btn) {
 //   display: none;
 // }
 
 header .content .nav li a.btn {
   background-color: $green;
-  border: 1px solid white;
-  font-size:8px;
+  border: 0px solid white;
+  font-size:12px;
+  padding: 10px 20px;
 }
 
 header .content .menu-nav {
@@ -379,12 +405,24 @@ footer .content p {
   }
 }
 
+header .content .nav-right li:last-child .btn {
+  display: none;
+}
+
 @media (min-width: 768px) {
-  header .content .nav li:not(:last-child) {
+  header .content .nav-left li,header .content .nav li:not(:last-child) {
     display: flex;
   }
 
-  header .content .nav li:last-child .menu {
+  header .content .nav-right li:last-child .menu {
+    display: none;
+  }
+
+  header .content .nav-right li:last-child .btn {
+    display: inline;
+  }
+
+  .banner-mobile-buttons {
     display: none;
   }
 
