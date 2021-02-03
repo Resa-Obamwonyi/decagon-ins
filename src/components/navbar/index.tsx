@@ -22,19 +22,19 @@ const index = (props: any) => {
         <div className="logo">
           <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
-        <ul className="nav">
+        <ul className="nav nav-left">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
-          <li className={props.class}><a href="https://decagonhq.com/?p=fb">For Business</a></li>
-          <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
+          {/* <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li> */}
+        </ul>
+        <ul className="nav nav-right">
+          <li className={props.class}><a href="https://decagonhq.com/?p=fb">Build a Dev Team</a></li>
           {/* <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li> */}
           <li><Link className="btn" to="/">Application Closed</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
         </ul>
         <nav className="menu-nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>
-          <li className={props.class}><a href="https://decagonhq.com/?p=fb">For Business</a></li>
-          <li className={props.class}><Link to="/decadev">Become a Decadev</Link></li>
           <li className={props.class}><Link to="/testimonials">Testimonials</Link></li>
           <li className={props.class}><Link to="/faq">FAQ</Link></li>
         </nav>
