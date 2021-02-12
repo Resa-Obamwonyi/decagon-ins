@@ -28,7 +28,8 @@ const index = (props: any) => {
 						</p>
 
 						<div className="banner-mobile-buttons">
-							<Link to="/" className="join-btn">Application closed</Link>
+							<a href="https://app-decagon.netlify.app/" target="_blank" rel="noopener noreferrer" className="hire-btn">Application Open</a>
+							{/* <Link to="/" className="join-btn">Application closed</Link> */}
 							<a href="https://decagonhq.com/?p=fb" className="hire-btn">Hire a Dev Team</a>
 						</div>
 						<span className="horizontal"></span>
@@ -131,8 +132,8 @@ const index = (props: any) => {
 				<div className="cta">
 					<div className="content">
 						<h2 className="title">Ready to become a Decadev ?</h2>
-						{/* <Link to="/apply" className="btn big-btn">Apply now</Link> */}
-						<a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a>
+						<a href="https://app-decagon.netlify.app/" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Open</a>
+						{/* <a href="https://decagonhq.com" className="btn big-btn" target="_blank" rel="noopener noreferrer">Application Closed</a> */}
 					</div>
 				</div>
 			</main>
