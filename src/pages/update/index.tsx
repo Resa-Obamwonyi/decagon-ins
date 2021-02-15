@@ -91,7 +91,7 @@ export default function ApplicationUpdate() {
          state_of_origin: data.data.state_of_origin
        })
      }).catch((error) => {
-      const err = errorHandler(error?.response?.status, "Cycle closed")
+      const err = errorHandler(error?.response?.status, "update")
       setCycleError(true)
       setErrorMessage(err)
     });

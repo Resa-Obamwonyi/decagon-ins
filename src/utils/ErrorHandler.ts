@@ -3,7 +3,7 @@ export const errorHandler = (status: number, type: string) => {
   let message;
 
   switch (type) {
-    case "Cycle closed":
+    case "update":
       message = "Cycle is closed"
       break;
 
@@ -17,8 +17,12 @@ export const errorHandler = (status: number, type: string) => {
       error = message
       break;
 
+    case 404:
+      error = "Applicant not found"
+      break;  
+
     default:
-      error = "error server"
+      error = "Server error"
       break;
   }
 
