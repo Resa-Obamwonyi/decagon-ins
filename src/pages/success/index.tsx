@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import "./index.scss";
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 import facebookPixelConversion from "../../utils/fbPixelConfig";
 
 const Success = (props: any) => {
@@ -9,6 +9,8 @@ useEffect(()=>{
   facebookPixelConversion("success")
 })
 
+  const {location} = useHistory()
+
   return (
     <main>
       <div className="success-wrapper">
@@ -16,7 +18,7 @@ useEffect(()=>{
         <div className="success-container">
           <h1>Thank You !</h1>
           <p>
-          Thank you for Submitting your application to Decagon. We would be in touch
+          {(location?.state as {message:string}).message }
           </p>
           <div className="back-button">
               <Link to="/">
