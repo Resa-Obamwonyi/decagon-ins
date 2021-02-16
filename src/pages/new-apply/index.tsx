@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import Layout from "../../layout";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -113,7 +114,8 @@ export default function Application() {
 
   };
   return (
-      <main className="apply-main">
+    <Layout name="new-apply">
+      <main className="inner-main">
         <div className="hero"></div>
         <div className="content application-form">
           <div className="apply-header">
@@ -481,6 +483,7 @@ export default function Application() {
           </form>
         </div>
       </main>
+    </Layout>  
   );
 }
 

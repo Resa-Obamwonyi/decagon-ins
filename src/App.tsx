@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Apply from "../src/pages/apply"
-import Apply from "../src/pages/new-apply"
+import Apply from "../src/pages/apply"
+// import Apply from "../src/pages/new-apply"
 import Update from "../src/pages/update"
 import NotFound from "../src/pages/PageNotFound"
 import FAQ from "../src/pages/faq"
@@ -22,7 +22,6 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/stem" component={STEM} />
 				<Route exact path="/decabelle" component={Decabelle} />
-				{/* <Route exact path="/apply" component={Apply} /> */}
 				<Route exact path="/apply" component={Apply} />
 				<Route exact path="/update" component={Update} />
 				<Route path="*" component={NotFound} />
