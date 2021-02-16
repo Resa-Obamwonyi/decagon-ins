@@ -92,7 +92,6 @@ export default function Application() {
       `applicant/register`,
       state
       );
-      console.log(data)
 
       setState({ ...state, ...defaultState });
       notify();
@@ -187,7 +186,7 @@ export default function Application() {
             </div>
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="phone_number">Phone Number - must start with (+234)</label>
+                <label htmlFor="phone_number">Phone Number - must start with (+234 or 0)</label>
                 <input
                   type="text"
                   name="phone_number"

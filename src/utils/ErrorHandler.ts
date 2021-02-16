@@ -4,7 +4,7 @@ export const errorHandler = (status: number, type: string) => {
 
   switch (type) {
     case "update":
-      message = "Cycle is closed"
+      message = "Dear Applicant, The cycle has closed and information update requests cannot be made at this time till another cycle begins."
       break;
 
     default:

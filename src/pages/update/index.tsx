@@ -162,7 +162,7 @@ export default function ApplicationUpdate() {
               <ToastContainer />
               <form onSubmit={handleSubmit}>
                 <h1 className="form-title">Application update form</h1>
-
+                <p className="update-info">* Update your Highest qualification and Nysc Status</p>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="first_name">First Name</label>
