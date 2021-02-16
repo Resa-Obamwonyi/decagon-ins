@@ -1,15 +1,24 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import "./index.scss";
-import {Link, useHistory} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import facebookPixelConversion from "../../utils/fbPixelConfig";
+import { getMessage } from "../../utils/helperFunction";
 
-const Success = (props: any) => {
+const Success = () => {
+  const [message, setMessage] = useState("")
 
-useEffect(()=>{
-  facebookPixelConversion("success")
-})
+  useEffect(()=>{
+    facebookPixelConversion("success")
+  })
 
-  const {location} = useHistory()
+  const query = new URLSearchParams(useLocation().search).get("message") || ""
+  
+  useEffect(()=>{ 
+    const msg = getMessage(query);
+    setMessage(msg)
+    
+    // eslint-disable-next-line
+  }, []) 
 
   return (
     <main>
@@ -18,7 +27,7 @@ useEffect(()=>{
         <div className="success-container">
           <h1>Thank You !</h1>
           <p>
-          {(location?.state as {message:string}).message }
+          {message}
           </p>
           <div className="back-button">
               <Link to="/">

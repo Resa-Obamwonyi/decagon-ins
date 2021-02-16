@@ -122,9 +122,9 @@ export default function ApplicationUpdate() {
 
       setState({ ...state, ...defaultState });
       notify();
-      history.push("/success",{
-        message:"You have Successfully updated your application."
-      })
+      const updateMessage = "updateMessage"
+      history.push(`/success?message=${updateMessage}`)
+      
     } catch (error) {
       setState({ ...state, ...defaultState });
       setErrors({ ...errors, ...error })

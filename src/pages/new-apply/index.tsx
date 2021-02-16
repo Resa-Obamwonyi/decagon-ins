@@ -97,14 +97,12 @@ export default function Application() {
       notify();
       let message;
       if (data.data.application_in_cycle) {
-        message = "Thank you for your interest in the Decagon Software Engineering Training Program. Your application has been submitted and is being reviewed. A mail has been sent to your email address that provides information on the recruitment process."
+        message = "message1"
       }else{
-        message = "Thank you for your interest in the Decagon Software Engineering Training Program. Your application has been submitted and we will be in touch with you when the next recruitment cycle begins. A mail has been sent to your email address to get you familiar with our recruiting cycle."
+        message = "message2"
       }
 
-      history.push("/success",{
-        message: message
-      })
+      history.push(`/success?message=${message}`)
     } catch (error) {
       setState({ ...state, ...defaultState });
       setErrors({ ...errors, ...error })
