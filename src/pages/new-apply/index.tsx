@@ -95,14 +95,9 @@ export default function Application() {
 
       setState({ ...state, ...defaultState });
       notify();
-      let message;
-      if (data.data.application_in_cycle) {
-        message = "message1"
-      }else{
-        message = "message2"
-      }
 
-      history.push(`/success?message=${message}`)
+      let application_message = data.data.application_message;
+      history.push(`/success?message=${application_message}`)
     } catch (error) {
       setState({ ...state, ...defaultState });
       setErrors({ ...errors, ...error })

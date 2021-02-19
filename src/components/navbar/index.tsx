@@ -31,7 +31,7 @@ const index = (props: any) => {
         <ul className="nav nav-right">
           <li className={props.class}><a href="https://decagonhq.com/?p=fb">Build a Dev Team</a></li>
           {/* <li><a className="btn" href="//decagonhq.com" target="_blank" rel="noopener noreferrer">Application closed</a></li> */}
-          <li><Link className="btn" to="/">Application Closed</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
+          <li><Link className="btn" to="/apply">Apply Now</Link><Link className="menu" to="/" onClick={HandleMobileMenu}>Menu</Link></li>
         </ul>
         <nav className="menu-nav">
           <li className={props.class}><Link to="/program">Our Program</Link></li>

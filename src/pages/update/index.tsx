@@ -112,17 +112,17 @@ export default function ApplicationUpdate() {
         return setErrors({ ...errors, ...errorsFields });
       }
       setLoading(true)
-       await publicFetch.post(
+      const { data } = await publicFetch.post(
         `applicant/update?applicant_id=${state.applicant_id}`,
         {
           nysc_status: state.nysc_status,
           highest_qualification: state.highest_qualification
         }
-       );
+      );
 
       setState({ ...state, ...defaultState });
       notify();
-      const updateMessage = "updateMessage"
+      const updateMessage = data.message
       history.push(`/success?message=${updateMessage}`)
       
     } catch (error) {
