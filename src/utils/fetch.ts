@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const publicFetch = axios.create({
-  baseURL: 'https://recruitment-decagon-api.herokuapp.com/api/v1',
+  baseURL: process.env.REACT_APP_PROD_BASE_URL,
 });
 
 export { publicFetch };
