@@ -3,7 +3,7 @@ import Layout from "../../layout";
 import "./index.scss";
 import serializeRequest from "../../utils/serializeRequest";
 import { mailBody } from "../../pages/apply/mailbody_edo";
-import validateApplication from "../../utils/validateApplication";
+import validateApplication from "../../utils/new-validateApplication";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
