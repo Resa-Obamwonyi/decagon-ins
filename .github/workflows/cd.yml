@@ -12,7 +12,7 @@ jobs:
 
     environment:
       name: staging
-      url: https://staging.decagon.institute
+      url: https://staging-institute.decagoninstitute.com/
 
     steps:
       - name: Checkout
