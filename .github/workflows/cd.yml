@@ -2,9 +2,6 @@ on:
   push:
     branches:
       - develop
-  pull_request:
-    branches: "*"
-  workflow_dispatch:
 
 name: Deploy Decagon Website
 
