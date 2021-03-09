@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const NavWrapStyle = styled.div`
   display: flex;
   width: 90%;
-  margin: 0px 5%;
+  margin: 15px 5%;
   align-items: center;
   .left-nav {
     display: flex;
@@ -14,11 +14,9 @@ export const NavWrapStyle = styled.div`
   .right-nav {
     display: flex;
     flex-basis: 15%;
-  }
-  ${
-    "" /* #border-gradient {
-    color: red !important;
+    border: 1px solid transparent;
+    justify-content: center;
     border-image-source: linear-gradient(to right, #34a853, #b8d344);
-  } */
+    border-image-slice: 1;
   }
 `;
