@@ -1,10 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
+import ApplyBanner from "./components/ApplyBanner";
 
 
 function App() {
   return (
-   <Header />
+    <div>
+      <Header />
+      {/* <ApplyBanner /> */}
+    </div>
   );
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import {NavWrapStyle} from './style';
 import Nav from '../Nav';
 import decagon from '../../images/decagon.svg';
-import Button from '../Button';
 
 
 const NavWrap=() => {
@@ -24,9 +23,6 @@ const NavWrap=() => {
             Apply Now
           </Nav>
         </div>
-        {/* <Button link="/apply" width="150px" className="btn border-gradient">
-          Apply Now
-        </Button> */}
       </NavWrapStyle>
     );
 }
