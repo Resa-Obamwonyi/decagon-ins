@@ -1,17 +1,18 @@
 import "./App.css";
-import Header from "./components/Header";
-import ApplyBanner from "./components/ApplyBanner";
-import Footer from "./components/Footer";
+import Testimonials from "./pages/Testimonials";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 
 function App() {
   return (
-    <div>
-      <Header />
-      <ApplyBanner />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/testimonials" component={Testimonials} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
