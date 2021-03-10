@@ -8,6 +8,6 @@ export const NavStyle = styled.li`
     text-decoration: none;
     color: #171825;
     font-size: 16px;
+    line-height: 26px;
   }
-
 `;
