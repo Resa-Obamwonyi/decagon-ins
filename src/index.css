@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mulish";
-  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Medium.ttf") format('truetype');
+  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Regular.ttf") format('truetype');
 }
 
 body {

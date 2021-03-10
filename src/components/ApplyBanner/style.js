@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ApplyBannerStyle = styled.div`
   margin-top: 100px;
+  width: 100%;
   height: 308px;
   background-image: url(${({ background }) => background});
   text-align: center;

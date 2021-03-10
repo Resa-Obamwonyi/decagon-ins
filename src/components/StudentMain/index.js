@@ -1,6 +1,5 @@
 import React from "react";
 import { StudentMainStyle } from "./style";
-import Button from "../Button";
 import headerImage from "../../images/header-group.png";
 
 function StudentMain({heading}) {
