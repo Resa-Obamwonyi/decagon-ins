@@ -10,7 +10,7 @@ export const TestimonyStyle = styled.div`
     width: 60%;
     margin: auto 20%;
   }
-  .background:after,
+  ${'' /* .background:after,
   .background:before {
     top: 86%;
     left: 50%;
@@ -33,7 +33,7 @@ export const TestimonyStyle = styled.div`
     border-top-color: #eef7ec;
     border-width: 44px;
     margin-left: -44px;
-  }
+  } */}
 
   .background h1 {
     font-family: Manrope;
