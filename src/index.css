@@ -1,10 +1,20 @@
 @font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Medium.ttf") format('truetype');
+  font-family: "Mulish-Regular";
+  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Mulish-Bold";
+  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Bold.ttf") format('truetype');
 }
 
 body {
   margin: 0;
-  font-family:"Mulish";
+  font-family:"Mulish-Regular";
 }
+
+h1, h3{
+  font-family:"Mulish-Bold";
+}
+
 
