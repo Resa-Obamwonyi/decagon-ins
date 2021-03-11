@@ -50,7 +50,6 @@ export const TestimonyStyle = styled.div`
   .background p {
     flex-basis: 97%;
     padding: 30px;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
@@ -59,26 +58,25 @@ export const TestimonyStyle = styled.div`
 
   .student-section {
     display: flex;
-    width: 20%;
-    margin: 40px 40%;
+    margin: 20px;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
 
   .student-avatar {
-    flex-basis: 25%;
     height: 56px;
     width: 56px;
+    padding-right: 15px;
   }
 
   .student-info {
-    flex-basis: 75%;
     float: right;
   }
 
   .student-info h3 {
     font-size: 16px;
-    font-weight: 600;
+    ${'' /* font-weight: bolder; */}
   }
 
   .student-info p {
