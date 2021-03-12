@@ -5,7 +5,7 @@ function Testimony({ text, avatar, name, stack }) {
   return (
     <TestimonyStyle>
       <div className="background">
-        <h1>"</h1>
+        <span>“</span>
         <p>{text}</p>
         <div className="chat"></div>
       </div>
