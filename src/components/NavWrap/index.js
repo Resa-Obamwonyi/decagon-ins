@@ -4,22 +4,27 @@ import Nav from '../Nav';
 import decagon from '../../images/decagon.svg';
 
 
-const NavWrap=() => {
+const NavWrap=({color}) => {
 
     return (
       <NavWrapStyle>
-        
         <div className="left-nav">
-          <Nav link="/">
+          <Nav link="/" color={color}>
             <img src={decagon} alt="decagon-logo" />
           </Nav>
-          <Nav link="/program">Our Program</Nav>
-          <Nav link="/testimonials">Testimonials</Nav>
-          <Nav link="/faq">FAQ</Nav>
+          <Nav link="/program" color={color}>
+            Our Program
+          </Nav>
+          <Nav link="/testimonials" color={color}>
+            Testimonials
+          </Nav>
+          <Nav link="/faq" color={color}>
+            FAQ
+          </Nav>
         </div>
 
         <div className="right-nav">
-          <Nav link="/apply" className="border-gradient">
+          <Nav link="/apply" color={color} className="border-gradient">
             Apply Now
           </Nav>
         </div>
