@@ -52,6 +52,18 @@ export const FormStyle = styled.div`
     -webkit-text-fill-color: #ffffff;
   }
 
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+
   .label {
     color: #ffffff;
     font-size: 12px;
