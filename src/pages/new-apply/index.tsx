@@ -462,7 +462,7 @@ export default function Application() {
                 by clicking submit, you agree to Decagon's
                 <span>
                   <a
-                    href="https://decagonhq.com/terms.html"
+                    href="https://decagonhq.com/terms.php"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
