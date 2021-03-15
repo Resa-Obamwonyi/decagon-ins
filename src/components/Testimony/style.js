@@ -8,9 +8,10 @@ export const TestimonyStyle = styled.div`
     background: #eef7ec;
     border: 10px solid #eef7ec;
     width: 60%;
-    margin: auto 20%;
+    margin: 10px 20%;
   }
-  .background:after,
+  ${
+    "" /* .background:after,
   .background:before {
     top: 86%;
     left: 50%;
@@ -33,10 +34,11 @@ export const TestimonyStyle = styled.div`
     border-top-color: #eef7ec;
     border-width: 44px;
     margin-left: -44px;
+  } */
   }
 
-  .background h1 {
-    font-family: Manrope;
+  .background span {
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
@@ -44,12 +46,12 @@ export const TestimonyStyle = styled.div`
     font-feature-settings: "liga" off;
     color: #34a853;
     flex-basis: 3%;
-    padding: 0px 0px 10px 50px;
+    padding: 5px 0px 10px 30px;
   }
 
   .background p {
     flex-basis: 97%;
-    padding: 30px;
+    padding: 15px 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
@@ -76,10 +78,18 @@ export const TestimonyStyle = styled.div`
 
   .student-info h3 {
     font-size: 16px;
-    ${'' /* font-weight: bolder; */}
+    ${"" /* font-weight: bolder; */}
   }
 
   .student-info p {
     font-size: 14px;
   }
+
+  @media (max-width: 790px) {
+    .background {
+      width: 80%;
+      margin: 10px 10%;
+    }
+  }
+
 `;

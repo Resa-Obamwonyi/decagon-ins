@@ -6,7 +6,7 @@ export const NavStyle = styled.li`
   padding: 20px 15px;
   a {
     text-decoration: none;
-    color: #171825;
+    color: ${({ color }) => (color ? color : "#171825")};
     font-size: 16px;
     line-height: 26px;
   }

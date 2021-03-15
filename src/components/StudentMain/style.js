@@ -4,7 +4,7 @@ export const StudentMainStyle = styled.div`
   width: 100%;
   height: 293px;
   margin-top: 125px;
-  background-image: url(${({ background }) => background});
+  background: url(${({ background }) => background}) no-repeat center center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,5 +19,19 @@ export const StudentMainStyle = styled.div`
   }
   .shadow {
     background: rgba(23, 24, 37, 0.7);
+  }
+
+  @media (max-width: 790px) {
+    h1 {
+      padding: 20px 70px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      padding: 40px 20px;
+      font-size: 40px;
+      line-height: 42px;
+    }
   }
 `;
