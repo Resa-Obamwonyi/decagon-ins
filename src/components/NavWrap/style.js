@@ -44,10 +44,10 @@ export const NavWrapStyle = styled.div`
     }
     .menu {
       color: ${({ color }) => (color ? color : "#171825")};
-      flex-basis: 15%;
+      flex-basis: 10%;
     }
     .menu-logo {
-      flex-basis: 85%;
+      flex-basis: 90%;
     }
 
     .menu-icon {
