@@ -84,4 +84,12 @@ export const TestimonyStyle = styled.div`
   .student-info p {
     font-size: 14px;
   }
+
+  @media (max-width: 790px) {
+    .background {
+      width: 80%;
+      margin: 10px 10%;
+    }
+  }
+
 `;

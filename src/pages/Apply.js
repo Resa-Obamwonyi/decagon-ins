@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function Testimonials() {
   return (
     <div>
-      <Header backgroundColor="#2D2F48" color="#ffffff" position="relative"/>
+      <Header backgroundColor="#2D2F48" color="#ffffff" position="relative" location="apply"/>
       <Form />
       <Footer />
     </div>

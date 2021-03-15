@@ -2,15 +2,24 @@ import React from 'react';
 import {NavWrapStyle} from './style';
 import Nav from '../Nav';
 import decagon from '../../images/decagon.svg';
+import dec from '../../images/dec.svg';
 
 
-const NavWrap=({color}) => {
-
+const NavWrap = ({ color, location }) => {
+  
+  const imgFix = () => {
+    if (location == "apply") {
+      return dec;
+    } else {
+      return decagon;
+    }
+  }
+  
     return (
       <NavWrapStyle>
         <div className="left-nav">
           <Nav link="/" color={color}>
-            <img src={decagon} alt="decagon-logo" />
+            <img src={imgFix()} alt="decagon-logo" />
           </Nav>
           <Nav link="/program" color={color}>
             Our Program
