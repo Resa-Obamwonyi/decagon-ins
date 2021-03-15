@@ -25,6 +25,7 @@ export const StudentMainStyle = styled.div`
     h1 {
       padding: 20px 70px;
     }
+    margin-top: 50px;
   }
 
   @media (max-width: 480px) {

@@ -81,4 +81,17 @@ export const FormStyle = styled.div`
   .btn {
     margin-top: 30px;
   }
+
+  @media (max-width: 790px) {
+    .form-area {
+      width: 80%;
+      margin: 50px 10%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-header {
+      margin: auto 20px;
+    }
+  }
 `;
