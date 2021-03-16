@@ -10,7 +10,7 @@ const HeadingCard = (props) => {
   }
   return (
     <StyledHeading color={props.color} onClick={handleClick}>
-        <h1 className="title-header">{props.heading}</h1>
+        <h2 className="title-header">{props.heading}</h2>
     </StyledHeading>
   )
 }
@@ -60,7 +60,7 @@ const Testimonials = () => {
     <StyledContainer>
       <div className="container">
         <div className="heading">
-          <h1 >Testimonials</h1>
+          <h1>Testimonials</h1>
         </div>
         
         <StyledTitle>

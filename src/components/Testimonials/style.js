@@ -76,7 +76,7 @@ export const StyledContainer = styled.div`
       text-align: center;
     }
     h1 {
-      font-size: 1.5em;
+      font-size: 2.5em;
       margin-bottom: 2rem;
     }
     
