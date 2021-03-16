@@ -23,6 +23,11 @@ jobs:
 
       - name: Build Project
         run: yarn build
+        env:
+          REACT_APP_PROD_BASE_URL: ${{ secrets.WEB_API_URL }}
+          REACT_APP_GOOGLE_SHEET_BASE_URI: ${{ secrets.WEB_GOOGLE_URL }}
+          REACT_APP_MAIL_FROM: ${{ secrets.WEB_MAIL_FROM }}
+          REACT_APP_MAIL_HOST: ${{ secrets.WEB_MAIL_HOST }}
 
       - name: Deployment
         uses: jakejarvis/s3-sync-action@master
@@ -53,6 +58,11 @@ jobs:
 
       - name: Build Project
         run: yarn build
+        env:
+          REACT_APP_PROD_BASE_URL: ${{ secrets.WEB_API_URL }}
+          REACT_APP_GOOGLE_SHEET_BASE_URI: ${{ secrets.WEB_GOOGLE_URL }}
+          REACT_APP_MAIL_FROM: ${{ secrets.WEB_MAIL_FROM }}
+          REACT_APP_MAIL_HOST: ${{ secrets.WEB_MAIL_HOST }}
 
       - name: Deployment
         uses: jakejarvis/s3-sync-action@master
@@ -63,4 +73,3 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
