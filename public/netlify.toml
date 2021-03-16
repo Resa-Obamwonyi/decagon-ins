@@ -3,4 +3,9 @@
   to = "https://decagon.institute"
   status = 301
   force = true
-  headers = {X-From = "Netlify"}
+  
+[[redirects]]
+  from = "/applications.decagonhq.com/apply"
+  to = "https://decagon.institute/apply"
+  status = 301
+  force = true
