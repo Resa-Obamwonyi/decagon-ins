@@ -1,6 +1,7 @@
 import React from "react";
 import { FormStyle } from "./style";
 import Button from "../Button";
+import { gender, state, qualification, info, grade, experience, nysc } from "./data";
 
 function Form() {
   return (
@@ -29,11 +30,11 @@ function Form() {
               <span>Your gender is</span>
             </div>
 
-            {/* <input name="gender" type="text" placeholder="Select a gender" /> */}
             <select name="gender">
               <option>Select a gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              {gender.map((gender) => (
+                <option value={gender.value}>{gender.label}</option>
+              ))}
             </select>
           </div>
           <div className="wrapper double-wrapper-right">
@@ -72,9 +73,11 @@ function Form() {
               <span>Your state of origin</span>
             </div>
 
-            {/* <input name="state" type="text" placeholder="Select state" /> */}
             <select name="state">
               <option>Select state</option>
+              {state.map((state) => (
+                <option value={state.value}>{state.label}</option>
+              ))}
             </select>
           </div>
           <div className="wrapper double-wrapper-right">
@@ -82,9 +85,11 @@ function Form() {
               <span>Your current location </span>
             </div>
 
-            {/* <input name="location" type="text" placeholder="Select location" /> */}
             <select name="location">
               <option>Select location</option>
+              {state.map((state) => (
+                <option value={state.value}>{state.label}</option>
+              ))}
             </select>
           </div>
         </div>
@@ -94,9 +99,13 @@ function Form() {
               <span>Highest Qualification </span>
             </div>
 
-            {/* <input name="qualification" type="text" placeholder="Select" /> */}
             <select name="qualification">
-              <option>Select</option>
+              <option>Select Qualification</option>
+              {qualification.map((qualification) => (
+                <option value={qualification.value}>
+                  {qualification.label}
+                </option>
+              ))}
             </select>
           </div>
           <div className="wrapper double-wrapper-right">
@@ -120,9 +129,11 @@ function Form() {
               <span>Grade achieved</span>
             </div>
 
-            {/* <input name="grade" type="text" placeholder="Select grade" /> */}
             <select name="grade">
               <option>Select grade</option>
+              {grade.map((grade) => (
+                <option value={grade.value}>{grade.label}</option>
+              ))}
             </select>
           </div>
         </div>
@@ -132,9 +143,11 @@ function Form() {
               <span>Programming experience</span>
             </div>
 
-            {/* <input name="experience" type="text" placeholder="Select option" /> */}
             <select name="experience">
               <option>Select option</option>
+              {experience.map((experience) => (
+                <option value={experience.value}>{experience.label}</option>
+              ))}
             </select>
           </div>
           <div className="wrapper double-wrapper-right">
@@ -142,9 +155,11 @@ function Form() {
               <span>NYSC status</span>
             </div>
 
-            {/* <input name="nysc" type="text" placeholder="Select status" /> */}
             <select name="nysc">
               <option>Select status</option>
+              {nysc.map((nysc) => (
+                <option value={nysc.value}>{nysc.label}</option>
+              ))}
             </select>
           </div>
         </div>
@@ -155,6 +170,9 @@ function Form() {
 
           <select name="info">
             <option>Select option</option>
+            {info.map((info) => (
+              <option value={info.value}>{info.label}</option>
+            ))}
           </select>
         </div>
 
