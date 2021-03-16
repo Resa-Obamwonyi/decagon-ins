@@ -3,9 +3,6 @@ import { StyledDiv } from './style';
 import background from '../../images/icon/banner/background.svg';
 import gradientbackground from '../../images/icon/banner/gradient-background.svg';
 
-import icon4 from '../../images/icon/decadevstrained/icon4.svg';
-
-
 
 function Banner() {
   return (
@@ -22,7 +19,7 @@ function Banner() {
           </div>
         </div>
         <div className="gradient-image">
-          <img src={gradientbackground} alt="gradient-image"/>
+          <img src={gradientbackground} alt="gradient"/>
         </div>
       </div>
     </StyledDiv>

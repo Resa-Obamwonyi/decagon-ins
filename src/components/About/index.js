@@ -27,7 +27,7 @@ function AboutCard() {
               is a launching pad for a successful career as a software engineer. At the end of the
               program, we guarantee you will become a competitive, industry-ready entry-level to mid level software engineer.
             </p>
-            <a href="#">Learn More &#8594;</a>
+            <a href="/program">Learn More &#8594;</a>
         </div>
       </div>
     </StyledDiv>
