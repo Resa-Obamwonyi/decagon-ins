@@ -28,6 +28,15 @@ export const StyledItem = styled.div`
     width: 80%;
     margin: 2em;
   }
+  .identity {
+    display: flex;
+  }
+  .identity-item {
+    margin-right: 0.5em;
+  }
+  h2 {
+    padding: ;
+  }
 
   @media (max-width: 657px) {
       .highlight-item {
@@ -60,6 +69,8 @@ export const StyledList = styled.div`
 export const StyledContainer = styled.div`
     width: 90%;
     margin: 0 auto;
+    font-weight: 900;
+    font-family: "Manrope", sans-serif;
 
     .heading {
       text-align: center;

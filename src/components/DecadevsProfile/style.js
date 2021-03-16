@@ -32,6 +32,8 @@ export const StyledContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 4em;
   background: #171825;
+  font-weight: 900;
+  font-family: "Manrope", sans-serif;
 
   .elements {
     display: flex;

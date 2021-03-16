@@ -43,6 +43,8 @@ export const StyledTitle = styled.h1`
 `;
 
 export const StyledContainer = styled.div`
+  font-family: "Manrope", sans-serif;
+  font-weight: 900;
   .container {
     width: 90%;
     margin: 0 auto;

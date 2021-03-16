@@ -23,8 +23,10 @@ function Card(props) {
             <img src={props.imgUrl} alt="card logo" />
         </div>
         <div className="description">
-          <h2>{props.name}</h2>
-          <h2>{props.Office}</h2>
+          <div className="identity">
+            <h2 className="identity-item">{props.name}</h2>
+            <h2 className="identity-item">{props.Office}</h2>
+          </div>
           <p>{props.review}</p>
         </div>
       </div>

@@ -15,6 +15,9 @@ export const StyledList = styled.div`
 export const StyledContainer = styled.div`
     width: 90%;
     margin: 0 auto;
+    font-weight: 900;
+    font-family: "Manrope", sans-serif;
+
     .elements-items {
       text-align: center;
     }

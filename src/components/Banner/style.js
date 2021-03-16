@@ -8,7 +8,7 @@ export const StyledDiv = styled.div`
   margin: auto 0;
   .OverlayContent {
     width: 100%;
-    // position: absolute;
+    margin-top: 8em;
   }
   .background-image {
     max-width: 100%;
@@ -46,11 +46,12 @@ export const StyledDiv = styled.div`
   }
   .banner-content {
     background: #171825;
-    padding: 3em 3em;
+    padding: 2em 3em;
     width: 40%;
-    margin-top: 200px;
+    // margin-top: 200px;
     margin-left: 80px;
     position: relative;
+    font-family: "Manrope", sans-serif;
   }
   .gradient-image {
     max-width: 40%;
