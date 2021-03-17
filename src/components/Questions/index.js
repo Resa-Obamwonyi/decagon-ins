@@ -8,7 +8,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { faqOne, faqTwo, faqThree } from './data';
-import { AiFillCaretRight, AiFillCaretDown } from 'react-icons/ai';
+// import { AiFillCaretRight, AiFillCaretDown } from 'react-icons/ai';
 
 // const [caret, setCaret] = useState(<AiFillCaretRight />);
 // const CaretToggle = () => {
