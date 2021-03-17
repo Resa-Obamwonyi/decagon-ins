@@ -6,6 +6,12 @@ const StyledContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 3em;
   background: #F5F9E7 67%;
+  font-weight: 900;
+  font-family: "Manrope", sans-serif;
+
+  h1 {
+    font-size: 2em;
+  }
 
   @media (max-width: 675px) {
     margin-bottom: 4em;

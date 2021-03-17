@@ -1,11 +1,10 @@
 import React from 'react';
-import icon1 from '../../images/icon/partners/icon1.svg';
-import icon2 from '../../images/icon/partners/icon2.svg';
-import icon3 from '../../images/icon/partners/icon3.svg';
-import icon4 from '../../images/icon/partners/icon4.svg';
-import icon5 from '../../images/icon/partners/icon4.svg';
-import icon6 from '../../images/icon/partners/icon4.svg';
-
+import access from '../../images/icon/brand-logo/access.jpg';
+import seamfix from '../../images/icon/brand-logo/seamfix.jpg';
+import cowrywise from '../../images/icon/brand-logo/cowrywise.jpg';
+import piggyvest from '../../images/icon/brand-logo/piggyvest.jpg';
+import mastercard from '../../images/icon/brand-logo/mastercard.jpg';
+import farmcrowdy from '../../images/icon/brand-logo/farmcrowdy.jpg';
 
 import {StyledItem, StyledList, StyledContainer } from './style'
 
@@ -24,38 +23,45 @@ const Card = () => (
   <StyledContainer>
 
     <div className="elements">
-    <div className="elements-items">
-      <div>
-        <h1>Our Partners</h1>
+      <div className="elements-items">
+        <div>
+          <h1>Our Partners</h1>
+        </div>
+        <div>
+          <p>We have been working with amazing
+            educational partners and clients</p>
+        </div>
       </div>
-      <div>
-        <p>We have been working with amazing
-          educational partners and clients</p>
-      </div>
-    </div>
-    <StyledList>
-      <div className="list">
-        <Partner
-          imgUrl={icon1}
-        />
-        <Partner
-          imgUrl={icon2}
-        />
-        <Partner
-          imgUrl={icon3}
-        />
-        <Partner
-          imgUrl={icon4}
-        />
-        <Partner
-          imgUrl={icon5}
-        />
-        <Partner
-          imgUrl={icon6}
-        />
-      </div>
-      
-    </StyledList>
+      <StyledList>
+        <div className="list">
+
+          <div className="list-item">
+            <Partner
+            imgUrl={access}
+            />
+            <Partner
+              imgUrl={seamfix}
+            />
+            <Partner
+              imgUrl={cowrywise}
+            />
+          </div>
+
+          <div className="list-item">
+            <Partner
+            imgUrl={piggyvest}
+            />
+            <Partner
+              imgUrl={mastercard}
+            />
+            <Partner
+              imgUrl={farmcrowdy}
+            />
+          </div>
+
+        </div>
+        
+      </StyledList>
   </div>
 
   </StyledContainer>

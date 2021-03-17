@@ -6,6 +6,8 @@ export const StyledDiv = styled.div`
   max-height: 100%;
   margin: 0 auto;
   margin-bottom: 3em;
+  font-weight: 900;
+  font-family: "Manrope", sans-serif;
 
   .container {
     display: flex;

@@ -7,14 +7,14 @@ const data = {
       heading: "Decadevs", 
       content: [
         {
-          name: "Odira Eze", 
+          name: "Odira Eze,", 
           office: "Python stack", 
           imgUrl: avatar1, 
           review: "I worked in the accounts department of a hotel before starting at Decagon. My experience at Decagon has been really challenging and the same time refreshing because I get to learn new problem-solving concepts and techniques everyday. It's a six months of dedication and sacrifice which will definitely be rewarding, you can do"
         },
         
         {
-          name: "Itunu Raimi", 
+          name: "Itunu Raimi,", 
           office: "iOS stack", 
           imgUrl: avatar2, 
           review: "Before I joined Decagon, I was learning frontend development on my own. I was also taking freelance wordpress jobs. My experience in Decagon has been rigorous but educational. I Have learnt iOS technical skills, agile skills and communication skills. To anyone interested in joining the program, be determined, make sure software development is really what you want to do. Be willing to try out new things even if they seem difficult."
