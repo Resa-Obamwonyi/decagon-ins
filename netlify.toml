@@ -11,7 +11,7 @@
   force = true
   
 [[redirects]]
-  from = "https://applications.decagonhq.com/apply"
+  from = "/apply"
   to = "https://decagon.institute/apply/"
   status = 301
   force = true
