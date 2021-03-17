@@ -8,13 +8,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { faqOne, faqTwo, faqThree } from './data';
-// import { AiFillCaretRight, AiFillCaretDown } from 'react-icons/ai';
 
-// const [caret, setCaret] = useState(<AiFillCaretRight />);
-// const CaretToggle = () => {
-//     caret === <AiFillCaretRight /> ? setCaret(...caret, <AiFillCaretDown />) :  setCaret(...caret, <AiFillCaretRight />)
-//     ;
-// }
 
 const faq1 = () => {
     return (
@@ -25,7 +19,6 @@ const faq1 = () => {
               <AccordionItemHeading>
                 <AccordionItemButton className="accordion-title">
                           {faqOne.question}
-                          {/* {CaretToggle} */}
                 </AccordionItemButton>
               </AccordionItemHeading>
               <hr />

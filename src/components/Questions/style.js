@@ -53,7 +53,40 @@ export const QuestionStyle = styled.div`
     color: #171825;
   }
 
-  .accordion-content{
-      margin-bottom: 25px;
+  .accordion-content {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 790px) {
+    .transition-buttons {
+      width: 80%;
+      margin: 50px 10%;
+      position: absolute;
+      top: 420px;
+    }
+  
+
+  .transition-buttons button {
+    width: 33%;
+    height: 100px;
+    font-size: 16px;
+  }
+  }
+
+  @media (max-width: 480px) {
+    .transition-buttons {
+      width: 80%;
+      margin: 20px 10%;
+      position: absolute;
+      top: 450px;
+    }
+  
+
+  .transition-buttons button {
+    width: 33%;
+    font-size: 14px;
+  }
   }
 `;
+
+
