@@ -50,4 +50,7 @@ export const StyledContainer = styled.div`
     margin: 0 auto;
     margin-bottom: 3em;
   }
+  @media (max-width: 675px) {
+    margin-top: 0;
+  }
 `

@@ -9,6 +9,10 @@ const StyledContainer = styled.div`
   font-weight: 900;
   font-family: "Manrope", sans-serif;
 
+  h1 {
+    font-size: 2em;
+  }
+
   @media (max-width: 675px) {
     margin-bottom: 4em;
     padding-bottom: 1em;

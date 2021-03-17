@@ -21,7 +21,7 @@ export const StyledDiv = styled.div`
   }
   h2 {
     color: #B8D343;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 800;
   }
   p {
@@ -48,7 +48,6 @@ export const StyledDiv = styled.div`
     background: #171825;
     padding: 2em 3em;
     width: 40%;
-    // margin-top: 200px;
     margin-left: 80px;
     position: relative;
     font-family: "Manrope", sans-serif;
@@ -63,18 +62,41 @@ export const StyledDiv = styled.div`
     margin-bottom: 2em;
   }
 
-  @media(max-width: 675px) {
+  @media only screen 
+  and (max-width : 675px) 
+  and (max-width : 790px) {
+    height: 350px;
+
     .OverlayContent {
       display: flex;
       justify-content: center;
+      align-item: center;
     }
-
+    .background-image {
+      margin-top: 10px;
+    }
     .banner-content {
-      width: 100%;
-      padding: 1em 1.2em;
+      position: absolute;
+      width: 60%;
+      height: 200px;
+      padding: 0;
       opacity: 0.8;
-      margin-top: 2.5em;
+      margin: 0;
       padding: 1.83em;
+      display: flex;
+      flex-direction: column;
+      margin-left: 2em;
+      padding-bottom: 3em;
+    }
+    p {
+      color: #FFFFFF;
+      width: 100%;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin: 0;
+      margin-bottom: 1em;
+      font-weight: 600;
+      text-align: justify;
     }
     button {
       padding: 1em 0.5em;
@@ -83,14 +105,19 @@ export const StyledDiv = styled.div`
       text-align: center;
       
     }
-    p {
-    color: #FFFFFF;
-    width: 70%;
-    font-size: 0.9em;
-    text-align: justify;
-    line-height: 2em;
-    font-weight: 600;
-    line-spacing: 5em;
+    h2 {
+      color: #B8D343;
+      font-size: 1.5em;
+      font-weight: 800;
+      margin-top: 0;
+    }
+    .gradient-image {
+      max-width: 40%;
+      position: absolute;
+      // position: relative;
+      bottom: 2000px;
+      left: 10px;
+      top: 400px;
     }
   }
 `;
