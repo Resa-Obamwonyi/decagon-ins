@@ -15,22 +15,23 @@ export const StudentMainStyle = styled.div`
     line-height: 64px;
     text-align: center;
     color: #b8d343;
-    padding: ${({ padding }) => (padding ? padding : "40px 150px")};
   }
   .shadow {
     background: rgba(23, 24, 37, 0.7);
+    width: 60%;
+    margin: auto 20%;
+    padding: 40px 50px;
   }
 
   @media (max-width: 790px) {
-    h1 {
+    margin-top: 90px;
+    .shadow {
       padding: 20px 70px;
     }
-    margin-top: 80px;
   }
 
   @media (max-width: 480px) {
     h1 {
-      padding: 40px 20px;
       font-size: 40px;
       line-height: 42px;
     }

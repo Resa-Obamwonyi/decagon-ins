@@ -2,9 +2,9 @@ import React from "react";
 import { StudentMainStyle } from "./style";
 import headerImage from "../../images/header-group.png";
 
-function StudentMain({heading, padding}) {
+function StudentMain({heading}) {
   return (
-    <StudentMainStyle background={headerImage} padding={padding}>
+    <StudentMainStyle background={headerImage} >
       <div className="shadow">
         <h1>{heading}</h1>
       </div>
