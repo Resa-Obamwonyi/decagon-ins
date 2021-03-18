@@ -38,7 +38,7 @@ export const ProgramBarStyle = styled.div`
   }
 
   .transition-content{
-      width: 80%;
-      margin: auto 10%;
+      width: 60%;
+      margin: auto 20%;
   }
 `;
