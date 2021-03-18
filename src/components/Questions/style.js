@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const QuestionStyle = styled.div`
   .transition-buttons {
     width: 60%;
+    display: flex;
     margin: 50px 20%;
     position: absolute;
     top: 450px;
@@ -15,9 +16,12 @@ export const QuestionStyle = styled.div`
       color: #ffffff;
     }
   }
-  .transition-buttons button {
-    width: 33%;
-    height: 120px;
+  .transition-buttons span {
+    display: flex;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     background: #ffffff;
     box-shadow: 0px 14px 15px rgba(0, 0, 0, 0.03);
@@ -64,13 +68,15 @@ export const QuestionStyle = styled.div`
       position: absolute;
       top: 420px;
     }
-  
 
-  .transition-buttons button {
-    width: 33%;
-    height: 100px;
-    font-size: 16px;
-  }
+    .transition-buttons span {
+      width: 33%;
+      height: 100px;
+      font-size: 16px;
+      padding: 5px 10px;
+      text-align: center;
+      line-height: 25px;
+    }
   }
 
   @media (max-width: 480px) {
@@ -78,14 +84,20 @@ export const QuestionStyle = styled.div`
       width: 80%;
       margin: 20px 10%;
       position: absolute;
-      top: 450px;
+      top: 400px;
     }
-  
 
-  .transition-buttons button {
-    width: 33%;
-    font-size: 14px;
-  }
+    .transition-buttons span {
+      width: 33%;
+      font-size: 14px;
+      height: 80px;
+      padding: 5px 10px;
+      text-align: center;
+      line-height: 18px;
+    }
+    .accordion-div {
+      margin: 90px 5%;
+    }
   }
 `;
 

@@ -8,6 +8,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { faqOne, faqTwo, faqThree } from './data';
+import { GiSpawnNode } from 'react-icons/gi';
 
 
 const faq1 = () => {
@@ -85,24 +86,24 @@ const Questions = () => {
     return (
       <QuestionStyle show={show}>
         <div className="transition-buttons">
-          <button
+          <span
             className={`${show.key === 0 ? "active" : null}`}
             onClick={() => handleClick(0)}
           >
             About the Process
-          </button>
-          <button
+          </span>
+          <span
             className={`${show.key === 1 ? "active" : null}`}
             onClick={() => handleClick(1)}
           >
             About the Program
-          </button>
-          <button
+          </span>
+          <span
             className={`${show.key === 2 ? "active" : null}`}
             onClick={() => handleClick(2)}
           >
             About the Loan
-          </button>
+          </span>
             </div>
             {show.key===0?faq1(): show.key===1?faq2(): show.key===2?faq3(): null}
       </QuestionStyle>
