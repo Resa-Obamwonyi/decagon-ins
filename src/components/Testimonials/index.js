@@ -39,18 +39,13 @@ const Testimonials = () => {
   items[0] = true
   
   const heading = Object.keys(data)[0]
-  console.log(heading)
-  console.log(data[heading])
-  
   const[content, setContent] = useState(data[heading])
   const [selectedHeading, setSelectedHeading] = useState(items)
   const changeContent = (id) => {
       const nums = Object.keys(data).length
       const items = Array(nums).fill(false, 0, nums)
-      //console.log(selectedHeading)
       items[id] = true
       setSelectedHeading(items)
-      //console.log(selectedHeading)
       const heading = Object.keys(data)[id]
       setContent(data[heading])
   }
