@@ -9,7 +9,7 @@ function FAQ() {
   return (
     <div>
       <Header />
-      <StudentMain heading={"FAQs"} padding={"40px 300px"} />
+      <StudentMain heading={"FAQs"} />
       <Questions />
       <ApplyBanner />
       <Footer />
