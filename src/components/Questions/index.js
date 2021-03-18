@@ -8,7 +8,6 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { faqOne, faqTwo, faqThree } from './data';
-import { GiSpawnNode } from 'react-icons/gi';
 
 
 const faq1 = () => {
