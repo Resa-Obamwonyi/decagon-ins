@@ -1,33 +1,38 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import Layout from "../../layout";
 import {Link} from "react-router-dom"
 import "./index.scss";
-import paradox from "../../images/paradox.jpg"
-
+// import paradox from "../../images/paradox.jpg"
+// import paradox from "../../../public/images/pararadox.jpg"
 const index = (props: any) => {
-  return (
-    <Layout name="Home">
-      <main>
-        <div className="banner">
-          <div className="content">
-            <h2 className="belle-title">Code of Conduct</h2>
-              <p className="belle-content">
-				  It's super important that everyone feels safe when engaging with the community or within our online events. We want our community to be as inclusive and welcoming as possible, and we believe that in order to achieve this goal, policies must be in place that prioritize safety and inclusion.<br/>
-				  By participating in the community, you agree to abide by the conduct specified in this document. While recognizing that nobody is perfect and we all make mistakes, please understand that you may be removed from the community if that mistake is severe enough, or if you repeat the same mistake more than once.
-              </p>
-			  {/* <p>
-			  </p> */}
-			
-            <span className="horizontal"></span>
-          </div>
-        </div>
-
-        {/* Program Section */}
-
-        <div className="program-wrapper">
-          <div className="program-container">
-            <div className="program-item">
-              <h2>Report a violation</h2>
+	return (
+	<>
+		<Helmet>
+			<title>Decagon community - Code of Conduct</title>
+		</Helmet>
+        <Layout name="Home">
+          <main>
+            <div className="banner">
+              <div className="content">
+                <h2 className="belle-title">Code of Conduct</h2>
+                  <p className="belle-content">
+	    			  It's super important that everyone feels safe when engaging with the community or within our online events. We want our community to be as inclusive and welcoming as possible, and we believe that in order to achieve this goal, policies must be in place that prioritize safety and inclusion.<br/>
+	    			  By participating in the community, you agree to abide by the conduct specified in this document. While recognizing that nobody is perfect and we all make mistakes, please understand that you may be removed from the community if that mistake is severe enough, or if you repeat the same mistake more than once.
+                  </p>
+	    		  {/* <p>
+	    		  </p> */}
+	    		
+                <span className="horizontal "></span>
+              </div>
+            </div>
+    
+            {/* Program Section */}
+    
+            <div className="program-wrapper">
+              <div className="program-container">
+                <div className="program-item">
+                  <h2>Report a violation</h2>
               <p>
                 If you've witnessed someone violating the Code of Conduct, please let us know, either by reporting the post, messaging an admin or sending an email to info@decagonhq.com.
               </p>
@@ -56,10 +61,10 @@ const index = (props: any) => {
 				  <li>Deliberate “outing” of any aspect of a person’s identity without their consent except as necessary to protect vulnerable people from intentional abuse.</li>
 				  <li>Publication of non-harassing private communication.</li>
 			  </ul>
-              <p>
+              <p className="green">
                 In this community, we prioritize marginalized people's safety over privileged people's comfort. The following are not examples of harassment:
               </p>			  
-			  <ul>
+			  <ul className="green-bullets">
 				  <li>Reverse-isms, including “reverse racism”, ”reverse sexism”, “cisphobia”.</li>
 				  <li>Reasonable communication of boundaries, such as “leave me alone”, “go away”, or “I’m not discussing this with you”.</li>
 				  <li>Criticising racist, sexist, cissexist, or otherwise oppressive behavior or assumptions.</li>				  
@@ -69,27 +74,20 @@ const index = (props: any) => {
               <h2>General Guidelines</h2>
 			  <h3 className="first">Always be Respectful</h3>
               <p>
-                Be reverent of your mentor’s time and effort.. Mentors are usually very busy individuals, who are making out time to have a meeting with you. Endeavor to show up and give your full attention. Plus, you want to get the most out of your meetings in order to meet your goal.
+                Be respectful of every member of the community’s time and effort. Each individual’s opinion is valid. It is very important that messages sent to the community are acknowledged, in order to get the most of being part of a community.
               </p>
-			  <h3>Gratitude is a powerful Catalyst for Happiness.</h3>
+			  <h3>Gratitude is a powerful Catalyst for Happiness</h3>
               <p>
-                The mentors will help you for free so they are using their own time and resources and asking for nothing in return. Don’t take it for granted and show your appreciation by thanking them. Give them specific feedback about how they’ve helped you; it not only encourages them but also helps them become better mentors.
+                The community Admins and facilitators will help you on their own time and using resources without asking for anything in return. Do not take it for granted. You can show your appreciation by thanking them. Give them specific feedback about how they have helped you; it not only encourages them but also helps them become better facilitators. 
               </p>			  
-			  <h3>Be Open To Learning.</h3>
+			  <h3>Be Open To Learning</h3>
               <p>
                 Mentors have been in positions where they’ve made mistakes and learned from them, their expertise and experience is very vital to your growth, therefore, be open-minded and take their advice and tips as they’ve passed through this phase already.
               </p>			  
-			  <h3>Respect Boundaries.</h3>
+			  <h3>Relevance of information</h3>
               <p>
-                Both mentor and mentee are expected to set a schedule that is convenient for both parties, therefore be mindful to not be too demanding of your mentor’s time besides they are mentoring you for free. If you don’t hear from them, follow-up, but don’t hound him or her. Each mentorship will be unique in the frequency of communication.
+                Remember that this is a Decagon community. The information you seek to share should be beneficial to the general Decagon community. Kindly refrain from sharing any information that is not associated or unrelated to Decagon.
               </p>			  
-            </div>
-            <div className="program-item">
-              <h2>Internship </h2>
-              <p>
-                We offer a select number of organizations a free non-committal 2
-                months internship with our developers prior to graduation.
-              </p>
             </div>
             <div className="program-item">
               <h2 className="paradox">The Paradox of Tolerance</h2>
@@ -105,7 +103,7 @@ const index = (props: any) => {
               <p>
                 This idea is expressed perfectly in this comic by philosopher Karl Popper:
               </p>
-			  <img src={paradox} alt="Paradox of Tolerance by Karl Popper" />
+			  <img src="./images/paradox.jpg" alt="Paradox of Tolerance by Karl Popper" />
             </div>
             <div className="program-item">
               <h2>Enforcement</h2>
@@ -122,7 +120,7 @@ const index = (props: any) => {
                 We reserve the right to remove any offending messages, images, contributions, etc.
               </p>
             </div>
-            <div className="program-item">
+		    <div className="program-item">
               <h2>Social Rules</h2>
               <p>
                 The Recurse Center, a community-driven educational retreat, has a list of Social Rules. These rules encourage open discussion and help avoid unintentional put-downs.
@@ -133,30 +131,28 @@ const index = (props: any) => {
               <p>
                 The rules are:
               </p>
-			  <ul>
-				  <li>
-					  No “Well-Actually”s: <br/>
-					  A “well-actually” is an unhelpful correction that derails the conversation and makes the original speaker feel bad. An example might be if a speaker says "I really like using CSS mix blend modes!", and a responder says "They're actually just called Blend Modes". It may be technically correct, but it doesn't contribute anything to the discussion.
-				</li>
-				  <li>
-					  No acting surprised: <br/>
-					  Responses like "I can't believe you don't know about `position: absolute`!" only serve to make someone feel diminished, and it's not fair.
+			  <h3 className="first">No “Well-Actually”s:</h3>
+              <p>
+                A “well-actually” is an unhelpful correction that derails the conversation and makes the original speaker feel bad. An example might be if a speaker says "I really like using CSS mix blend modes!", and a responder says "They're actually just called Blend Modes". It may be technically correct, but it doesn't contribute anything to the discussion.
+              </p>
+			  <h3>No acting surprised:</h3>
+              <p>
+                Responses like "I can't believe you don't know about `position: absolute`!" only serve to make someone feel diminished, and it's not fair.
 Everybody has gaps in their knowledge. Don't act surprised when one is revealed, even if it is genuinely surprising.
-				 </li>
-				  <li>
-					  No microaggressions: <br/>
-					  A microaggression is a subtle expression of racism, sexism, ageism, homophobia, transphobia, and other kinds of bias and prejudice. For example, "Windows is so easy to use that even my mom can use it". They're often unintentional, and go unnoticed by the aggressor.
+              </p>			  
+			  <h3>No microaggressions:</h3>
+              <p>
+                A microaggression is a subtle expression of racism, sexism, ageism, homophobia, transphobia, and other kinds of bias and prejudice. For example, "Windows is so easy to use that even my mom can use it". They're often unintentional, and go unnoticed by the aggressor.
 Try not to make any assumptions about someone based on their identity or demography.
-				</li>
-				  <li>
-					  Avoid the J-word: <br/>
-					  The word "just" is often used to minimize the effort of something complicated. For example, "To make it responsive, just use a media query".
+              </p>			  
+			  <h3>Avoid the J-word:</h3>
+              <p>
+                The word "just" is often used to minimize the effort of something complicated. For example, "To make it responsive, just use a media query".
 As we progress in our understanding about a topic, it begins to feel trivial to us, but it's important to remember that this stuff is complicated. By using "just", we imply that it should be trivial for everybody, and diminish the amount of effort and expertise required to understand.
-				</li>
-			  </ul>
-			  <span>(We've omitted the Recurse Center's rule about “Backseat Driving” because it doesn't feel as relevant in an online community.)</span>
-			  <p>We have personally violated each of these social rules, at one point or another. We don't expect everyone to be perfect. What we do expect is that you react gracefully when one is pointed out, and make a genuine effort to avoid making the same mistake in the future.</p>
-            </div>          
+              </p>
+			  <p className="green">(We've omitted the Recurse Center's rule about “Backseat Driving” because it doesn't feel as relevant in an online community.)</p>
+			  <p>We have personally violated each of these social rules, at one point or another. We don't expect everyone to be perfect. What we do expect is that you react gracefully when one is pointed out, and make a genuine effort to avoid making the same mistake in the future.</p>			  
+            </div>        
 		  </div>
         </div>
 
@@ -176,6 +172,7 @@ As we progress in our understanding about a topic, it begins to feel trivial to 
         </div>
       </main>
     </Layout>
+	</>
   );
 };
 

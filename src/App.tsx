@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy , Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Apply from "../src/pages/apply"
 import Apply from "../src/pages/new-apply"
@@ -14,12 +14,12 @@ import SuccessPage from "./pages/success"
 import Testimonials from "./pages/testimonials"
 import "../node_modules/jquery"
 import "./css/styles.scss"
-import CodeOfConduct from "./pages/code-of-conduct";
-
+const CodeOfConduct = lazy(() => import('./pages/code-of-conduct'));
 function App() {
 	return (
 		<Router>
-			<Switch>
+			<Suspense fallback={<div>Loading...</div>}>
+			  <Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/stem" component={STEM} />
 				<Route exact path="/decabelle" component={Decabelle} />
@@ -32,7 +32,8 @@ function App() {
 				<Route exact path="/testimonials" component={Testimonials} />
 				<Route exact path="/success" component={SuccessPage} />
 				<Route path="*" component={NotFound} />
-			</Switch>
+			  </Switch>
+			</Suspense>
 		</Router>
 	);
 }
