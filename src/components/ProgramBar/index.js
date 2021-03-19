@@ -1,37 +1,41 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { ProgramBarStyle } from "./style";
 import Overview from "../Overview";
-
+import Curriculum from "../Curriculum";
 
 const dis1 = () => {
-    return (
-        <div className="transition-content">
-            <Overview />
-        </div>
-    )
-}
+  return (
+    <div className="transition-content">
+      <Overview />
+    </div>
+  );
+};
 
 const dis2 = () => {
-    return <div className="transition-content">Hiii</div>;
+  return (
+    <div className="transition-content">
+      <Curriculum />
+    </div>
+  );
 };
 
 const dis3 = () => {
-    return <div className="transition-content">Hey</div>;
+  return <div className="transition-content">Hey</div>;
 };
 
 const dis4 = () => {
-    return <div className="transition-content">Hiya</div>;
-}
+  return <div className="transition-content">Hiya</div>;
+};
 
 const dis5 = () => {
-    return <div className="transition-content">Hiye</div>;
+  return <div className="transition-content">Hiye</div>;
 };
 
 function ProgramBar() {
-    const [show, setShow] = useState({ key: 0 });
-    const handleClick = (key) => {
-      setShow((prev) => ({ ...prev, key: key }));
-    };
+  const [show, setShow] = useState({ key: 0 });
+  const handleClick = (key) => {
+    setShow((prev) => ({ ...prev, key: key }));
+  };
 
   return (
     <ProgramBarStyle>
@@ -85,7 +89,3 @@ function ProgramBar() {
 }
 
 export default ProgramBar;
-
-
-
-
