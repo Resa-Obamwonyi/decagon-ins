@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ProgramBarStyle = styled.div`
+  background: #f8f8f8;
+  padding-bottom: 50px;
   .transition-bar {
     display: flex;
     align-items: center;
@@ -33,12 +35,12 @@ export const ProgramBarStyle = styled.div`
   .transition-items {
     .active {
       color: #34a853;
-      border-bottom: 2px solid #34A853;;
+      border-bottom: 2px solid #34a853;
     }
   }
 
-  .transition-content{
-      width: 60%;
-      margin: auto 20%;
+  .transition-content {
+    width: 60%;
+    margin: auto 20%;
   }
 `;
