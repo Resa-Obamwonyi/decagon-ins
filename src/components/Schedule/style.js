@@ -20,6 +20,10 @@ export const ScheduleStyle = styled.div`
     border-top: 1px solid #dcdcdc;
     border-collapse: collapse;
   }
+  td{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
 
   p {
     color: #171825;
