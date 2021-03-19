@@ -69,7 +69,7 @@ function ProgramBar() {
             className={`${show.key === 4 ? "active" : null}`}
             onClick={() => handleClick(4)}
           >
-            Educational Partner
+            Hiring Partner
           </span>
         </div>
       </div>
