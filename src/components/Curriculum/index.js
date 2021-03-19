@@ -2,6 +2,7 @@ import React from "react";
 import { CurriculumStyle } from "./style";
 import currImage from "../../images/curr-main.png";
 import StackCard from "../StackCard";
+import { divOne, divTwo } from './data';
 
 function Curriculum() {
   return (
@@ -32,7 +33,16 @@ function Curriculum() {
           <img src={currImage} alt="decadev-curriculum" />
         </div>
       </div>
-      <StackCard />
+      <div className="stackdiv">
+        {divOne.map((divOne) => (
+          <StackCard stack={divOne.stack} />
+        ))}
+      </div>
+      <div className="stackdiv">
+        {divTwo.map((divTwo) => (
+          <StackCard stack={divTwo.stack} />
+        ))}
+      </div>
       <div>
         <p>
           Every week we follow a specific agenda designed for you to pick up new

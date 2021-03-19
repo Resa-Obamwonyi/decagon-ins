@@ -35,4 +35,8 @@ export const CurriculumStyle = styled.div`
   .photo {
     flex-basis: 50%;
   }
+
+  .stackdiv{
+      display: flex;
+  }
 `;

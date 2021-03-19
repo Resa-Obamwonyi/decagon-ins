@@ -2,10 +2,10 @@ import React from "react";
 import { StackCardStyle } from "./style";
 
 
-function StackCard() {
+function StackCard({stack}) {
     return (
         <StackCardStyle>
-            <h4>Java Stack</h4>
+            <h4>{stack} Stack</h4>
             <p>View Curriculum</p>
         </StackCardStyle>
       
