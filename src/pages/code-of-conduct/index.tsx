@@ -123,7 +123,7 @@ const index = (props: any) => {
 		    <div className="program-item">
               <h2>Social Rules</h2>
               <p>
-                The Recurse Center, a community-driven educational retreat, has a list of <a href="https://www.recurse.com/social-rules" target="_blank" rel="noopener noreffer">Social Rules</a>. These rules encourage open discussion and help avoid unintentional put-downs.
+                The Recurse Center, a community-driven educational retreat, has a list of <a href="https://www.recurse.com/social-rules" target="_blank" rel="noopener noreferrer">Social Rules</a>. These rules encourage open discussion and help avoid unintentional put-downs.
               </p> <br/>
               <p>
                 In addition to this policy, which is focused on harassment, We also hope that community members will abide by a few social rules as well. We've started with the Recurse Center's list, and made a couple alterations.
