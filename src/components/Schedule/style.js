@@ -15,10 +15,11 @@ export const ScheduleStyle = styled.div`
     font-size: 16px;
     padding-left: 20px;
   }
-  table, td{
-    border-top: 1px solid white;
+  table,
+  td {
+    border-top: 1px solid #dcdcdc;
     border-collapse: collapse;
-  } 
+  }
 
   p {
     color: #171825;
