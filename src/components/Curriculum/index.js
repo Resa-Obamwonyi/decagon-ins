@@ -2,7 +2,8 @@ import React from "react";
 import { CurriculumStyle } from "./style";
 import currImage from "../../images/curr-main.png";
 import StackCard from "../StackCard";
-import { divOne, divTwo } from './data';
+import { divOne, divTwo } from "./data";
+import Schedule from "../Schedule";
 
 function Curriculum() {
   return (
@@ -35,12 +36,12 @@ function Curriculum() {
       </div>
       <div className="stackdiv">
         {divOne.map((divOne) => (
-          <StackCard stack={divOne.stack} />
+          <StackCard stack={divOne.stack} img={divOne.image} />
         ))}
       </div>
       <div className="stackdiv">
         {divTwo.map((divTwo) => (
-          <StackCard stack={divTwo.stack} />
+          <StackCard stack={divTwo.stack} img={divTwo.image} />
         ))}
       </div>
       <div>
@@ -54,6 +55,7 @@ function Curriculum() {
           A typical day/week in the life of a decadev is reflected in our weekly
           schedule below:
         </p>
+        <Schedule />
       </div>
     </CurriculumStyle>
   );
