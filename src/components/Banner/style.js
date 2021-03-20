@@ -51,6 +51,8 @@ export const StyledDiv = styled.div`
     margin-left: 80px;
     position: relative;
     font-family: "Manrope", sans-serif;
+    top: 90px;
+    z-index: 1000;
   }
   .gradient-image {
     max-width: 40%;
@@ -62,9 +64,7 @@ export const StyledDiv = styled.div`
     margin-bottom: 2em;
   }
 
-  @media only screen 
-  and (max-width : 675px) 
-  and (max-width : 790px) {
+  @media (max-width : 990px) {
     height: 350px;
 
     .OverlayContent {
@@ -77,8 +77,9 @@ export const StyledDiv = styled.div`
     }
     .banner-content {
       position: absolute;
-      width: 60%;
+      width: 65%;
       height: 200px;
+      top: 130px;
       padding: 0;
       opacity: 0.8;
       margin: 0;

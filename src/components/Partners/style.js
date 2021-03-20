@@ -15,6 +15,8 @@ export const StyledList = styled.div`
 
   .list {
     display: flex;
+    justify-content: center;
+    // align-items: center;
   }
   .list-item {
     display: flex;
@@ -38,14 +40,23 @@ export const StyledContainer = styled.div`
     }
     
     p {
-      font-size: 0.9em;
+      font-size: 1.4em;
       line-height: 2em;
       text-align: center;
       margin-bottom: 2rem;
+      font-family: Mulish;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 16px;
+
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 3em;
+      font-family: Mulish;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 64px;
     }
 
     @media(max-width: 675px) {

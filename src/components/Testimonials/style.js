@@ -7,8 +7,11 @@ export const StyledItem = styled.div`
     display: flex;
     padding: 1em;
     background: white;
-    max-width: 100%;
+    width: 592px;
+    height: 80%;
     margin: 2em;
+    justify-content: center;
+
   }
 
   p {
@@ -16,11 +19,23 @@ export const StyledItem = styled.div`
     line-height: 2em;
     text-align: justify;
   }
+
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 80%;
     margin: 0.5em;
+    object-fit: cover;
+
   }
+
   .logo {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
     width: 20%: 
   }
 
@@ -38,10 +53,11 @@ export const StyledItem = styled.div`
     padding: ;
   }
 
-  @media (max-width: 657px) {
+  @media (max-width: 990px) {
       .highlight-item {
         flex-direction: column;
         margin: 2em;
+        width: 380px;
         min-height: 250px;
         text-align: center;
       }
@@ -49,7 +65,8 @@ export const StyledItem = styled.div`
         line-height: 1.7em;
       }
       img {
-        width: 20%;
+        position: relative;
+        width: 90%;
       }
   }
 `
@@ -60,9 +77,9 @@ export const StyledList = styled.div`
     max-width: 100%;
     justify-content: center;
 
-
     @media(max-width: 657px) {
       flex-direction: column;
+      align-items: center;
     }
 `
 
