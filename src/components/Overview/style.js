@@ -5,6 +5,17 @@ export const OverviewStyle = styled.div`
     text-align: center;
     font-size: 32px;
   }
+  .full-content {
+    line-height: 24px;
+    color: #171825;
+
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
   .flex-content {
     display: flex;
     align-items: center;
@@ -36,13 +47,6 @@ export const OverviewStyle = styled.div`
     .half-content {
       flex-basis: 100%;
       padding-right: 0px;
-
-      p {
-        font-size: 14px;
-      }
-      h2 {
-        font-size: 20px;
-      }
     }
 
     .photo {

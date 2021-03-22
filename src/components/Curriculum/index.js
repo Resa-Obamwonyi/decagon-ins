@@ -54,7 +54,7 @@ function Curriculum() {
           />
         ))}
       </div>
-      <div>
+      <div className="full-content">
         <p>
           Every week we follow a specific agenda designed for you to pick up new
           skills quickly. Individual progress assessment is built into every
