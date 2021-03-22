@@ -32,6 +32,17 @@ export const CurriculumStyle = styled.div`
     }
   }
 
+  .full-content {
+    line-height: 25px;
+    color: #171825;
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+
   .photo {
     flex-basis: 50%;
   }
