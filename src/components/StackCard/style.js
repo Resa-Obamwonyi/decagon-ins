@@ -19,6 +19,9 @@ export const StackCardStyle = styled.div`
     font-size: 16px;
     line-height: 5px;
     color: #34a853;
+    :hover{
+      cursor: pointer;
+    }
   }
 
   .img {
