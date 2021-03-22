@@ -375,7 +375,6 @@ export default function Application() {
                   <option value="awaiting service">I am awaiting service</option>
                   <option value="serving currently">I am currently serving</option>
                 </select>
-
                 {errors.nysc_status && (
                   <p className="form-error">{errors.nysc_status}</p>
                 )}

@@ -7,7 +7,7 @@ const Footer = () => {
 				<div className="footer-img">
 					<img src={logo} alt="logo" />
 				</div>
-				<p>copyright &copy; 2021. All rights reserved</p>
+				<p>copyright &copy; {new Date().getFullYear()}. All rights reserved</p>
 			</div>
 		</footer>
 	);

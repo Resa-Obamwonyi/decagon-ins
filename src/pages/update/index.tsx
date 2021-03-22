@@ -52,6 +52,7 @@ export default function ApplicationUpdate() {
       setIsOther(true)
     }else if (name === 'highest_qualification') {
       setIsOther(false)
+      setState({ ...state, [name]: value});
     }
   }
 
@@ -263,6 +264,7 @@ export default function ApplicationUpdate() {
                         border: errors.highest_qualification && "1px solid #d07d7d",
                       }}
                     >
+                      <option value="">Select an option</option>
                       <option value="Phd">Phd</option>
                       <option value="Masters">Masters</option>
                       <option value="Bachelors">Bachelors</option>
@@ -270,7 +272,7 @@ export default function ApplicationUpdate() {
                       <option value="other">Other</option>
                     </select>
                     {isOther &&(
-                      <div className="mt-2">
+                      <div className="form-group">
                         <input
                           type="text"
                           name="highest_qualification"
