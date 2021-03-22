@@ -43,4 +43,30 @@ export const ProgramBarStyle = styled.div`
     width: 60%;
     margin: auto 20%;
   }
+
+  @media (max-width: 790px) {
+    .transition-content {
+      width: 90%;
+      margin: auto 5%;
+    }
+    .transition-items {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .transition-content {
+      width: 90%;
+      margin: auto 5%;
+    }
+
+    .transition-items span {
+      margin-right: 10px;
+      padding: 32px 0px;
+      font-size: 12px;
+    }
+    .transition-items {
+      width: 100%;
+    }
+  }
 `;

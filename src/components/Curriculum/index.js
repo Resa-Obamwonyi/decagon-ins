@@ -36,12 +36,22 @@ function Curriculum() {
       </div>
       <div className="stackdiv">
         {divOne.map((divOne) => (
-          <StackCard stack={divOne.stack} img={divOne.image} />
+          <StackCard
+            key={divOne.stack}
+            stack={divOne.stack}
+            img={divOne.image}
+            cardkey={divOne.key}
+          />
         ))}
       </div>
       <div className="stackdiv">
         {divTwo.map((divTwo) => (
-          <StackCard stack={divTwo.stack} img={divTwo.image} />
+          <StackCard
+            key={divTwo.stack}
+            stack={divTwo.stack}
+            img={divTwo.image}
+            cardkey={divOne.key}
+          />
         ))}
       </div>
       <div>

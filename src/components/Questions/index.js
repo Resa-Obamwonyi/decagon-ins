@@ -8,17 +8,30 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { faqOne, faqTwo, faqThree } from './data';
+import { AiFillCaretRight } from "react-icons/ai";
 
 
-const faq1 = () => {
+const Questions = () => {
+  const [active, setActive] = useState(0);
+  const faq1 = () => {
     return (
       <div className="accordion-div">
         <Accordion allowZeroExpanded className="accordion">
-          {faqOne.map((faqOne) => (
-            <AccordionItem key={faqOne.question}>
+          {faqOne.map((faqOne, index) => (
+            <AccordionItem
+              key={faqOne.question}
+              onClick={() => setActive(index)}
+            >
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-title">
-                          {faqOne.question}
+                <AccordionItemButton
+                  className="space-acc"
+                >
+                  {faqOne.question}
+                  <AiFillCaretRight
+                    className={`accordion-title ${
+                      active === index ? "accordion-active" : null
+                    }`}
+                  />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <hr />
@@ -30,17 +43,25 @@ const faq1 = () => {
         </Accordion>
       </div>
     );
-}
+  };
 
-const faq2 = () => {
+  const faq2 = () => {
     return (
       <div className="accordion-div">
         <Accordion allowZeroExpanded className="accordion">
-          {faqTwo.map((faqTwo) => (
-            <AccordionItem key={faqTwo.question}>
+          {faqTwo.map((faqTwo, index) => (
+            <AccordionItem
+              key={faqTwo.question}
+              onClick={() => setActive(index)}
+            >
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-title">
+                <AccordionItemButton className="space-acc">
                   {faqTwo.question}
+                  <AiFillCaretRight
+                    className={`accordion-title ${
+                      active === index ? "accordion-active" : null
+                    }`}
+                  />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <hr />
@@ -52,17 +73,25 @@ const faq2 = () => {
         </Accordion>
       </div>
     );
-};
+  };
 
-const faq3 = () => {
+  const faq3 = () => {
     return (
       <div className="accordion-div">
         <Accordion allowZeroExpanded className="accordion">
-          {faqThree.map((faqThree) => (
-            <AccordionItem key={faqThree.question}>
+          {faqThree.map((faqThree, index) => (
+            <AccordionItem
+              key={faqThree.question}
+              onClick={() => setActive(index)}
+            >
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-title">
+                <AccordionItemButton className="space-acc">
                   {faqThree.question}
+                  <AiFillCaretRight
+                    className={`accordion-title ${
+                      active === index ? "accordion-active" : null
+                    }`}
+                  />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <hr />
@@ -74,8 +103,7 @@ const faq3 = () => {
         </Accordion>
       </div>
     );
-};
-const Questions = () => {
+  };
 
     const [show, setShow] = useState({key:0})
     const handleClick = (key) => {

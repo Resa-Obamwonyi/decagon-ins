@@ -8,6 +8,7 @@ function TestimonyWrap() {
     <TestimonyWrapStyle>
       {testimonies.map((testimonies) => (
         <Testimony
+          key={testimonies.name}
           text={ testimonies.text}
           name={testimonies.name}
           avatar={testimonies.avatar}

@@ -58,7 +58,20 @@ export const QuestionStyle = styled.div`
   }
 
   .accordion-content {
-    margin-bottom: 25px;
+    width: 98%;
+    margin: 25px 1%;
+  }
+
+  .space-acc {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    margin: auto 1%;
+    outline: none;
+  }
+
+  .accordion-active {
+    transform: rotateZ(90deg);
   }
 
   @media (max-width: 790px) {
