@@ -4,7 +4,7 @@ import PopUp from "../PopUp";
 import { Python, Ios, Java, Csharp, Node, Andriod } from "./data";
 
 
-function StackCard({ stack, img }) {
+function StackCard({ stack, img, cardkey}) {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {

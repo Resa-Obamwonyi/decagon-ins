@@ -21,7 +21,7 @@ export const CurriculumStyle = styled.div`
   .half-content {
     flex-basis: 50%;
     padding-right: 50px;
-    line-height: 24px;
+    line-height: 25px;
     color: #171825;
 
     p {
@@ -36,7 +36,22 @@ export const CurriculumStyle = styled.div`
     flex-basis: 50%;
   }
 
-  .stackdiv{
-      display: flex;
+  .stackdiv {
+    display: flex;
+  }
+
+  @media (max-width: 560px) {
+    .flex-content {
+      display: block;
+      align-items: left;
+    }
+
+    .half-content {
+      flex-basis: 100%;
+      padding-right: 0px;
+    }
+    .stackdiv {
+      display: block;
+    }
   }
 `;

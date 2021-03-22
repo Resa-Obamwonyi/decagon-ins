@@ -26,4 +26,27 @@ export const OverviewStyle = styled.div`
   .photo {
     flex-basis: 50%;
   }
+
+  @media (max-width: 480px) {
+    .flex-content {
+      display: block;
+      width: 100%;
+      align-items: left;
+    }
+    .half-content {
+      flex-basis: 100%;
+      padding-right: 0px;
+
+      p {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    .photo {
+      flex-basis: 100%;
+    }
+  }
 `;

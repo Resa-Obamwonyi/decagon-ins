@@ -16,7 +16,7 @@ function PopUp({
 }) {
   return showModal ? (
       <PopUpStyle>
-        <p onClick={() => setShowModal(prev => !prev )}>x</p>
+        <h4 onClick={() => setShowModal(prev => !prev )}>x</h4>
       <h1>{stack} Stack Curriculum</h1>
       <table>
         <thead>

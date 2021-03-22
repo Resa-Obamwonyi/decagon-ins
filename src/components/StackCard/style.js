@@ -19,22 +19,44 @@ export const StackCardStyle = styled.div`
     font-size: 16px;
     line-height: 5px;
     color: #34a853;
-    :hover{
+    :hover {
       cursor: pointer;
     }
   }
 
   .img {
     flex-basis: 60%;
-    ${'' /* margin: 25px 25%; */}
+    ${"" /* margin: 25px 25%; */}
     max-height: 50%;
     img {
-        padding-top: 25px;
+      padding-top: 25px;
       width: 30%;
     }
   }
 
   .content {
     flex-basis: 40%;
+  }
+
+  @media (max-width: 560px) {
+    height: 200px;
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+  .img {
+    flex-basis: 30%;
+    img {
+      padding-top: 30px;
+      width: 30%;
+    }
+  }
+
+  .content {
+    flex-basis: 70%;
+    padding-top: 20px;
   }
 `;
