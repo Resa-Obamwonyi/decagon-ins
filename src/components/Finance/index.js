@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {StyledItem, StyledList, StyledContainer, StyledTitle, StyledHeading } from './style'
+import {StyledItem, StyledContainer, StyledTitle, StyledHeading } from './style'
 
 const data = [
   {
