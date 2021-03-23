@@ -18,6 +18,7 @@ function StackCard({ stack, img, cardkey }) {
         <PopUp
           showModal={showModal.status && showModal.stack === "Python"}
           setShowModal={setShowModal}
+          key={python.name}
           stack={python.name}
           curr1={python.curr1}
           curr1data={python.curr1data}
@@ -33,6 +34,7 @@ function StackCard({ stack, img, cardkey }) {
         <PopUp
           showModal={showModal.status && showModal.stack === "IOS Dev"}
           setShowModal={setShowModal}
+          key={ios.name}
           stack={ios.name}
           curr1={ios.curr1}
           curr1data={ios.curr1data}
@@ -48,6 +50,7 @@ function StackCard({ stack, img, cardkey }) {
         <PopUp
           showModal={showModal.status && showModal.stack === "Java"}
           setShowModal={setShowModal}
+          key={java.name}
           stack={java.name}
           curr1={java.curr1}
           curr1data={java.curr1data}
@@ -64,6 +67,7 @@ function StackCard({ stack, img, cardkey }) {
           <PopUp
             showModal={showModal.status && showModal.stack === ".NET"}
             setShowModal={setShowModal}
+            key={c.name}
             stack={c.name}
             curr1={c.curr1}
             curr1data={c.curr1data}
@@ -80,6 +84,7 @@ function StackCard({ stack, img, cardkey }) {
         <PopUp
           showModal={showModal.status && showModal.stack === "Node"}
           setShowModal={setShowModal}
+          key={node.name}
           stack={node.name}
           curr1={node.curr1}
           curr1data={node.curr1data}
@@ -95,6 +100,7 @@ function StackCard({ stack, img, cardkey }) {
         <PopUp
           showModal={showModal.status && showModal.stack === "Andriod Dev"}
           setShowModal={setShowModal}
+          key={and.name}
           stack={and.name}
           curr1={and.curr1}
           curr1data={and.curr1data}
