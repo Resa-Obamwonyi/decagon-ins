@@ -11,6 +11,9 @@
         font-weight: bold;
         padding: 1rem 0;
       }
+      .small{
+        margin-bottom: 1rem;
+      }
       h3 {
         text-decoration: underline;
         font-weight: bolder;
@@ -45,9 +48,6 @@
       .green ~ p {
         margin: 1rem 0 3rem 0;
       }
-    //   .margin-top {
-    //     padding-top: 2rem;
-    //   }
       .green-bullets li{
         list-style: none;
       }
