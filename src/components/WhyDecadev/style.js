@@ -8,12 +8,15 @@ export const StyledDiv = styled.div`
     align-items: center;
     padding-right: 4em;
   }
+  h2 { 
+    font-size: 24px;
+    line-height: 32px;
+  }
   .description {
     font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
     font-family: "Mulish", sans-serif;
-    font-weight: 500;
     font-style: normal;
   }
   .logo {
@@ -42,12 +45,16 @@ export const StyledTitle = styled.h1`
     font-size: 1em;
     max-width: 800px;
   }
-}
-`;
+`
 
 export const StyledContainer = styled.div`
-  font-family: "Manrope", sans-serif;
-  font-weight: 900;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #171825;
+
   .container {
     width: 90%;
     margin: 0 auto;

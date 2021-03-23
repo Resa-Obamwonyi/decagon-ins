@@ -2,17 +2,8 @@ import styled from 'styled-components';
 
 
 export const StyledItem = styled.div`
-  .highlight-item {
-    display: flex;
-    padding: 1em;
-    background: #EEF7EC;
-    width: 80%;
-    height: 80%;
-    margin: 2em;
-    justify-content: center;
-  }
+  
   p {
-    text-align: justify;
     font-family: "Mulish", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -21,29 +12,7 @@ export const StyledItem = styled.div`
     color: #171825;
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    margin: 0.5em;
-    object-fit: cover;
-
-  }
-  .description {
-    width: 80%;
-    margin: 2em;
-  }
-  
-
   @media (max-width: 990px) {
-      .highlight-item {
-        flex-direction: column;
-        margin: 2em;
-        width: 380px;
-        min-height: 250px;
-        text-align: center;
-      }
       p {
         line-height: 1.7em;
       }
@@ -53,25 +22,31 @@ export const StyledItem = styled.div`
       }
   }
 `
-// export const StyledList = styled.div`
-//     /* display: flex; */
-//     background: #F5F9E7 67%;
-//     padding: 2em;
-//     max-width: 100%;
-//     justify-content: center;
-
-//     @media(max-width: 657px) {
-//       flex-direction: column;
-//       align-items: center;
-//     }
-// `
 
 export const StyledContainer = styled.div`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #171825;
     font-family: "Mulish", sans-serif;
+    justify-content: center;
+    text-align: justify;
 
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: content;
+      margin: 2em;
+    }
     .heading {
       text-align: center;
     }
@@ -80,29 +55,34 @@ export const StyledContainer = styled.div`
       margin-bottom: 2rem;
       font-weight: bold;
     }
-    
+    @media(max-width: 657px) {
+
+    }
 `
 export const StyledTitle = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: -5em;
-
-    @media(max-width: 657px) {
-      margin-bottom: -4em;
-    }
+    margin-top: 2em;
+    z-index: 999;
+`
+export const StyledParagraphy = styled.div`
+  background: #EEF7EC;
+  margin-top: -1em;
+  z-index: 990;
+  padding: 2em;
+  
 `
 
 export const StyledHeading = styled.div`
     background: ${props => props.color? 'green': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 50%;
-    height: 20%;
-    padding: 1.2em;
+    width: 30%;
     margin: 0;
-
+    text-align: center;
+    cursor: pointer;
 
     @media(max-width: 657px) {
-      padding: 3em;
+      width: 40%;
+      padding: 1em;
     }
 `
