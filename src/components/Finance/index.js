@@ -45,7 +45,7 @@ const Finance = () => {
 
   
   const heading = Object.keys(data)[0]
-  const[content, setContent] = useState(data[heading])
+  // const[content, setContent] = useState(data[heading])
 
   const[review, setReview] = useState(data[heading].description)
 
@@ -53,11 +53,13 @@ const Finance = () => {
   const changeContent = (id) => {
 
       const nums = Object.keys(data).length
+
       const items = Array(nums).fill(false, 0, nums)
       items[id] = true
+
       setSelectedHeading(items)
       const heading = Object.keys(data)[id]
-      setContent(data[heading])
+      // setContent(data[heading])
 
       setReview(data[heading].description)
 
