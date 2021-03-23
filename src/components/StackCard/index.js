@@ -1,20 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { StackCardStyle } from "./style";
 import PopUp from "../PopUp";
 import { Python, Ios, Java, Csharp, Node, Andriod } from "./data";
 
+function StackCard({ stack, img, cardkey }) {
+  const [showModal, setShowModal] = useState({
+    status: false,
+    stack: undefined,
+  });
 
-function StackCard({ stack, img, cardkey}) {
-  const [showModal, setShowModal] = useState(false);
-
-  const openModal = () => {
-    setShowModal(prev => !prev);
-  }
+  const openModal = (stack) => {
+    setShowModal((prev) => ({ ...prev, status: !prev.status, stack }));
+  };
   return (
     <StackCardStyle>
       {Python.map((python) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == "Python"}
           setShowModal={setShowModal}
           stack={python.name}
           curr1={python.curr1}
@@ -29,7 +31,7 @@ function StackCard({ stack, img, cardkey}) {
       ))}
       {Ios.map((ios) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == "IOS Dev"}
           setShowModal={setShowModal}
           stack={ios.name}
           curr1={ios.curr1}
@@ -44,7 +46,7 @@ function StackCard({ stack, img, cardkey}) {
       ))}
       {Java.map((java) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == "Java"}
           setShowModal={setShowModal}
           stack={java.name}
           curr1={java.curr1}
@@ -59,7 +61,7 @@ function StackCard({ stack, img, cardkey}) {
       ))}
       {Csharp.map((c) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == ".NET"}
           setShowModal={setShowModal}
           stack={c.name}
           curr1={c.curr1}
@@ -74,7 +76,7 @@ function StackCard({ stack, img, cardkey}) {
       ))}
       {Node.map((node) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == "Node"}
           setShowModal={setShowModal}
           stack={node.name}
           curr1={node.curr1}
@@ -89,7 +91,7 @@ function StackCard({ stack, img, cardkey}) {
       ))}
       {Andriod.map((and) => (
         <PopUp
-          showModal={showModal}
+          showModal={showModal.status && showModal.stack == "Andriod Dev"}
           setShowModal={setShowModal}
           stack={and.name}
           curr1={and.curr1}
@@ -107,7 +109,7 @@ function StackCard({ stack, img, cardkey}) {
       </div>
       <div className="content">
         <h4>{stack} Stack</h4>
-        <p onClick={openModal}>View Curriculum</p>
+        <p onClick={() => openModal(stack)}>View Curriculum</p>
       </div>
     </StackCardStyle>
   );

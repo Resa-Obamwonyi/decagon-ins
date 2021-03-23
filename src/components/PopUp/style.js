@@ -1,7 +1,34 @@
 import styled from "styled-components";
 
 export const PopUpStyle = styled.div`
-  background: #fafcf4;
+  ${'' /* .shadow {
+    background: #171825;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+  } */}
+
+  .stack-body {
+    background: #ffffff;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    z-index: 999;
+    width: 60%;
+    margin: auto 20%;
+    padding: 20px;
+  }
+
+  .close {
+    color: #34a853;
+    margin-left: 90%;
+  }
+  table {
+    background: #fafcf4;
+  }
+
   th {
     font-size: 16px;
     color: #ffffff;
@@ -27,7 +54,8 @@ export const PopUpStyle = styled.div`
 
   p {
     color: #171825;
-    padding-left: 20px;
+    padding: 5px 20px;
+    line-height: 25px;
   }
   h3 {
     color: #171825;
