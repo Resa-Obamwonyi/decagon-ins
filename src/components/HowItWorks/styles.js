@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   padding: 0;
   background: #F5F9E7 67%;
   font-weight: 900;
-  font-family: "Manrope", sans-serif;
+  font-family: "Mulish", sans-serif;
 
   h1 {
     font-size: 2em;
@@ -38,8 +38,10 @@ const StyledItem = styled.div`
 
   .description {
     padding: 0 0 0 0.5em;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
+    font-style: normal;
+    font-weight: 500;
     text-align: justify;
     width: 70%;
   }
@@ -53,18 +55,18 @@ const StyledDiv = styled.div`
   padding: 0 1em 2.5em 1em;
   max-width: 100%;
 
-  
+  img {
+    max-width: 80%;
+    object-fit: cover;
+  }
   .text {
-    max-width: 70%;
+    width: 60%;
   }
   .full-image {
     display: flex;
     justify-self: start;
 
-    // justify-content: center;
-    // align-items: center;
-    max-width: 30%;
-    // margin-top: 2em;
+    width: 40%;
   }
 
   @media (max-width: 675px) {
@@ -75,14 +77,15 @@ const StyledDiv = styled.div`
     padding-top:0;
 
     .text {
-    max-width: 100%;
+    max-width: 90%;
     }
 
     .full-image {
       display: flex;
       justify-self: start;
       max-width: 100%;
-      margin-top: 2em;
+      margin: 0;
+
     }
   }
 `

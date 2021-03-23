@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { ProgramBarStyle } from "./style";
 import Overview from "../Overview";
 import Curriculum from "../Curriculum";
+import AdmissionsProcess from "../AdmissionsProcess";
+import HiringPartner from "../HiringPartner";
+import Finance from "../Finance";
+
 
 const dis1 = () => {
   return (
@@ -20,15 +24,27 @@ const dis2 = () => {
 };
 
 const dis3 = () => {
-  return <div className="transition-content">Hey</div>;
+  return (
+    <div className="transition-content">
+      <AdmissionsProcess />
+    </div>
+  );
 };
 
 const dis4 = () => {
-  return <div className="transition-content">Hiya</div>;
+  return (
+    <div className="transition-content">
+      <Finance />
+    </div>
+  );
 };
 
 const dis5 = () => {
-  return <div className="transition-content">Hiye</div>;
+  return (
+    <div className="transition-content">
+      <HiringPartner />
+    </div>
+  );
 };
 
 function ProgramBar() {

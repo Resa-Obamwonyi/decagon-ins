@@ -1,5 +1,7 @@
 import avatar1 from '../../images/icon/testimonials/avatar1.svg';
 import avatar2 from '../../images/icon/testimonials/avatar2.svg';
+import avatar3 from '../../images/icon/testimonials/avatar3.svg';
+import avatar4 from '../../images/icon/testimonials/avatar4.svg';
 
 
 const data = {
@@ -27,13 +29,13 @@ const data = {
         {
           name: "Segun Adetimehin", 
           office: "Terragon Group", 
-          imgUrl: avatar1, 
+          imgUrl: avatar3, 
           review: "Working with Kazeem, has been a great addition to our efficiency as an organization. He has also added a lot of value to the business and achieved this at a very short time frame. Engineers from Decagon are very hardworking and figure out this fast."
         },
         {
           name: "Isaac Bryne", 
           office: "Veter, Houston Texas", 
-          imgUrl: avatar2, 
+          imgUrl: avatar4, 
           review: "It's been a pleasure to work with Tega Oke from Decagon. As a member of the team, Tega is what we like to call plug and play, he came in with a lot of experience and we were able to get him onboarded quickly, which says a lot. Tega is able to figure things out quickly."
         }
       ]

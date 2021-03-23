@@ -6,10 +6,16 @@ export const StyledDiv = styled.div`
   height: 590px;
   margin-bottom: 400em;
   margin: auto 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   .OverlayContent {
     width: 100%;
     margin-top: 8em;
   }
+  /* .mobile-image {
+    display: none;
+  } */
   .background-image {
     max-width: 100%;
     position: absolute;
@@ -52,11 +58,10 @@ export const StyledDiv = styled.div`
     position: relative;
     font-family: "Manrope", sans-serif;
     top: 90px;
-    z-index: 1000;
+    z-index: 900;
   }
   .gradient-image {
     max-width: 40%;
-    // position: absolute;
     position: relative;
     bottom: 2000px;
     left: 20px;
@@ -65,13 +70,19 @@ export const StyledDiv = styled.div`
   }
 
   @media (max-width : 990px) {
-    height: 350px;
+    /* height: 350px; */
 
     .OverlayContent {
       display: flex;
       justify-content: center;
-      align-item: center;
+      align-items: center;
+      /* display: none; */
     }
+    /* .mobile-image {
+      background-image: url("/images/background.png");
+      z-index: 1000;
+    } */
+
     .background-image {
       margin-top: 10px;
     }
@@ -80,7 +91,6 @@ export const StyledDiv = styled.div`
       width: 65%;
       height: 200px;
       top: 130px;
-      padding: 0;
       opacity: 0.8;
       margin: 0;
       padding: 1.83em;
@@ -89,6 +99,7 @@ export const StyledDiv = styled.div`
       margin-left: 2em;
       padding-bottom: 3em;
     }
+
     p {
       color: #FFFFFF;
       width: 100%;

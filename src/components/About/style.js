@@ -7,8 +7,13 @@ export const StyledDiv = styled.div`
   margin: 0 auto;
   margin-bottom: 3em;
   font-weight: 900;
-  font-family: "Manrope", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
 
+
+  strong {
+    font-style: bold;
+  }
   .container {
     display: flex;
   }
@@ -27,11 +32,11 @@ export const StyledDiv = styled.div`
   }
 
   .about-decagon > h2 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .about-decagon > p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
   }

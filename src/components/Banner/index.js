@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledDiv } from './style';
-import background from '../../images/icon/banner/background.svg';
+import background from '../../images/icon/banner/background.png';
 import gradientbackground from '../../images/icon/banner/gradient-background.svg';
 
 
@@ -18,6 +18,9 @@ function Banner() {
             <button>Apply Now</button>
           </div>
         </div>
+        {/* <div className="mobile-image">
+    
+        </div> */}
         <div className="gradient-image">
           <img src={gradientbackground} alt="gradient"/>
         </div>

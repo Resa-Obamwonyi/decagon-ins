@@ -15,9 +15,12 @@ export const StyledItem = styled.div`
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   img {
@@ -95,6 +98,7 @@ export const StyledContainer = styled.div`
     h1 {
       font-size: 2.5em;
       margin-bottom: 2rem;
+      font-weight: bold;
     }
     
 `
