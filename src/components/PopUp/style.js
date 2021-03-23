@@ -24,6 +24,9 @@ export const PopUpStyle = styled.div`
   .close {
     color: #34a853;
     margin-left: 90%;
+    :hover{
+        cursor: pointer;
+    }
   }
   table {
     background: #fafcf4;
