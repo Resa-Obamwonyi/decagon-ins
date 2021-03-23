@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { QuestionStyle } from './style';
+import React, { useState } from "react";
+import { QuestionStyle } from "./style";
 import {
   Accordion,
   AccordionItem,
@@ -7,12 +7,12 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import { faqOne, faqTwo, faqThree } from './data';
+import { faqOne, faqTwo, faqThree } from "./data";
 import { AiFillCaretRight } from "react-icons/ai";
 
 
 const Questions = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState({ index: -1, status: false });
   const faq1 = () => {
     return (
       <div className="accordion-div">
@@ -20,16 +20,22 @@ const Questions = () => {
           {faqOne.map((faqOne, index) => (
             <AccordionItem
               key={faqOne.question}
-              onClick={() => setActive(index)}
+              onClick={() =>
+                setActive((prev) => ({
+                  ...prev,
+                  index: index,
+                  status: !active.status,
+                }))
+              }
             >
               <AccordionItemHeading>
-                <AccordionItemButton
-                  className="space-acc"
-                >
+                <AccordionItemButton className="space-acc">
                   {faqOne.question}
                   <AiFillCaretRight
                     className={`accordion-title ${
-                      active === index ? "accordion-active" : null
+                      active.index === index && active.status
+                        ? "accordion-active"
+                        : null
                     }`}
                   />
                 </AccordionItemButton>
@@ -52,14 +58,22 @@ const Questions = () => {
           {faqTwo.map((faqTwo, index) => (
             <AccordionItem
               key={faqTwo.question}
-              onClick={() => setActive(index)}
+              onClick={() =>
+                setActive((prev) => ({
+                  ...prev,
+                  index: index,
+                  status: !active.status,
+                }))
+              }
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="space-acc">
                   {faqTwo.question}
                   <AiFillCaretRight
                     className={`accordion-title ${
-                      active === index ? "accordion-active" : null
+                      active.index === index && active.status
+                        ? "accordion-active"
+                        : null
                     }`}
                   />
                 </AccordionItemButton>
@@ -82,14 +96,22 @@ const Questions = () => {
           {faqThree.map((faqThree, index) => (
             <AccordionItem
               key={faqThree.question}
-              onClick={() => setActive(index)}
+              onClick={() =>
+                setActive((prev) => ({
+                  ...prev,
+                  index: index,
+                  status: !active.status,
+                }))
+              }
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="space-acc">
                   {faqThree.question}
                   <AiFillCaretRight
                     className={`accordion-title ${
-                      active === index ? "accordion-active" : null
+                      active.index === index && active.status
+                        ? "accordion-active"
+                        : null
                     }`}
                   />
                 </AccordionItemButton>
@@ -105,37 +127,42 @@ const Questions = () => {
     );
   };
 
-    const [show, setShow] = useState({key:0})
-    const handleClick = (key) => {
-        setShow((prev)=>({...prev,key:key}))
-    }
+  const [show, setShow] = useState({ key: 0 });
+  const handleClick = (key) => {
+    setShow((prev) => ({ ...prev, key: key }));
+  };
 
-    return (
-      <QuestionStyle show={show}>
-        <div className="transition-buttons">
-          <span
-            className={`${show.key === 0 ? "active" : null}`}
-            onClick={() => handleClick(0)}
-          >
-            About the Process
-          </span>
-          <span
-            className={`${show.key === 1 ? "active" : null}`}
-            onClick={() => handleClick(1)}
-          >
-            About the Program
-          </span>
-          <span
-            className={`${show.key === 2 ? "active" : null}`}
-            onClick={() => handleClick(2)}
-          >
-            About the Loan
-          </span>
-            </div>
-            {show.key===0?faq1(): show.key===1?faq2(): show.key===2?faq3(): null}
-      </QuestionStyle>
-    );
-}
+  return (
+    <QuestionStyle show={show}>
+      <div className="transition-buttons">
+        <span
+          className={`${show.key === 0 ? "active" : null}`}
+          onClick={() => handleClick(0)}
+        >
+          About the Process
+        </span>
+        <span
+          className={`${show.key === 1 ? "active" : null}`}
+          onClick={() => handleClick(1)}
+        >
+          About the Program
+        </span>
+        <span
+          className={`${show.key === 2 ? "active" : null}`}
+          onClick={() => handleClick(2)}
+        >
+          About the Loan
+        </span>
+      </div>
+      {show.key === 0
+        ? faq1()
+        : show.key === 1
+        ? faq2()
+        : show.key === 2
+        ? faq3()
+        : null}
+    </QuestionStyle>
+  );
+};
 
-
-export default Questions
+export default Questions;

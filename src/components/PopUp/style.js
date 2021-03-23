@@ -12,16 +12,6 @@ export const Background = styled.div`
 `;
 
 export const PopUpStyle = styled.div`
-  ${
-    "" /* .shadow {
-    background: #171825;
-    opacity: 0.7;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
-  } */
-  }
   position: absolute;
   width: 100%;
   background: rgba(23, 24, 37,0.7);
