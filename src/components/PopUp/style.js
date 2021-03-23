@@ -1,20 +1,9 @@
 import styled from "styled-components";
 
-
-export const Background = styled.div`
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const PopUpStyle = styled.div`
   position: absolute;
   width: 100%;
-  background: rgba(23, 24, 37,0.7);
+  background: rgba(23, 24, 37, 0.7);
   top: 0;
   left: 0;
   bottom: 0;
@@ -47,6 +36,7 @@ export const PopUpStyle = styled.div`
     background: #34a853;
     text-align: left;
     padding: 20px;
+    width: 100%;
   }
   .time {
     background: #34a853;
@@ -78,5 +68,31 @@ export const PopUpStyle = styled.div`
   }
   .time-row {
     width: 20%;
+  }
+  @media (max-width: 790px) {
+    .stack-body {
+      width: 90%;
+      margin: auto 5%;
+      padding: 20px;
+    }
+    .activity-row {
+      width: 45%;
+    }
+    .time-row {
+      width: 5%;
+    }
+  }
+  @media (max-width: 480px) {
+    .stack-body {
+      width: 95%;
+      margin: auto 2.5%;
+      padding: 20px;
+    }
+    .activity-row {
+      width: 45%;
+    }
+    .time-row {
+      width: 5%;
+    }
   }
 `;
