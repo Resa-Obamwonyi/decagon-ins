@@ -1,10 +1,7 @@
 import React from 'react';
-import access from '../../images/icon/brand-logo/access.jpg';
-import seamfix from '../../images/icon/brand-logo/seamfix.jpg';
-import cowrywise from '../../images/icon/brand-logo/cowrywise.jpg';
-import piggyvest from '../../images/icon/brand-logo/piggyvest.jpg';
-import mastercard from '../../images/icon/brand-logo/mastercard.jpg';
-import farmcrowdy from '../../images/icon/brand-logo/farmcrowdy.jpg';
+import atlassian from '../../images/icon/partners/atlassian.svg';
+import microsoft from '../../images/icon/partners/microsoft.svg';
+import github from '../../images/icon/partners/github.svg';
 
 import {StyledItem, StyledList, StyledContainer } from './style'
 
@@ -25,39 +22,25 @@ const Card = () => (
     <div className="elements">
       <div className="elements-items">
         <div>
-          <h1>Our Partners</h1>
+          <h1>Our Educational Partners</h1>
         </div>
         <div>
-          <p>We have been working with amazing
-            educational partners and clients</p>
+          <p>At Decagon Institute, we take pride in ensuring we provide the best local
+            and global educational partners for our students.</p>
         </div>
       </div>
       <StyledList>
         <div className="list">
 
-          <div className="list-item">
             <Partner
-            imgUrl={access}
+            imgUrl={atlassian}
             />
             <Partner
-              imgUrl={seamfix}
+              imgUrl={microsoft}
             />
             <Partner
-              imgUrl={cowrywise}
+              imgUrl={github}
             />
-          </div>
-
-          <div className="list-item">
-            <Partner
-            imgUrl={piggyvest}
-            />
-            <Partner
-              imgUrl={mastercard}
-            />
-            <Partner
-              imgUrl={farmcrowdy}
-            />
-          </div>
 
         </div>
         

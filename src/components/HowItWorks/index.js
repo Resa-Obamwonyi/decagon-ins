@@ -8,7 +8,7 @@ import { StyledDiv, StyledContainer, StyledItem } from './styles'
 function Highlight(props) {
   const handleClick = (event) => {
     props.change(props.icon, props.id)
-  }
+}
   
   return (
     <StyledItem onClick={handleClick} color={props.color}>
@@ -47,7 +47,7 @@ return(
     <div>
     <h1 className="heading">How it Works</h1>
   <StyledDiv>
-    <div>
+    <div className="text">
       {data.map((item, index) => (
         <Highlight
           id={index} 

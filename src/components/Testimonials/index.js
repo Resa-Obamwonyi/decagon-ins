@@ -42,7 +42,9 @@ const Testimonials = () => {
   
   const heading = Object.keys(data)[0]
   const[content, setContent] = useState(data[heading])
+
   const [selectedHeading, setSelectedHeading] = useState(items)
+  
   const changeContent = (id) => {
       const nums = Object.keys(data).length
       const items = Array(nums).fill(false, 0, nums)

@@ -9,9 +9,12 @@ export const StyledDiv = styled.div`
     padding-right: 4em;
   }
   .description {
-    font-size: 1.0em;
+    font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
   .logo {
     margin-right: 2em;
