@@ -60,19 +60,21 @@ function StackCard({ stack, img, cardkey }) {
         />
       ))}
       {Csharp.map((c) => (
-        <PopUp
-          showModal={showModal.status && showModal.stack == ".NET"}
-          setShowModal={setShowModal}
-          stack={c.name}
-          curr1={c.curr1}
-          curr1data={c.curr1data}
-          curr2={c.curr2}
-          curr2data={c.curr2data}
-          curr3={c.curr3}
-          curr3data={c.curr3data}
-          curr4={c.curr4}
-          curr4data={c.curr4data}
-        />
+        <div>
+          <PopUp
+            showModal={showModal.status && showModal.stack == ".NET"}
+            setShowModal={setShowModal}
+            stack={c.name}
+            curr1={c.curr1}
+            curr1data={c.curr1data}
+            curr2={c.curr2}
+            curr2data={c.curr2data}
+            curr3={c.curr3}
+            curr3data={c.curr3data}
+            curr4={c.curr4}
+            curr4data={c.curr4data}
+          />
+        </div>
       ))}
       {Node.map((node) => (
         <PopUp

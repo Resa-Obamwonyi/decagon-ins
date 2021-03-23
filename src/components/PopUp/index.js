@@ -15,7 +15,6 @@ function PopUp({
   curr4data,
 }) {
   return showModal ? (
-    // <div style={{"background":"#171825", "opacity": "0.7", "position": "absolute", "top": "0px", "left": "0px"}}>
       <PopUpStyle>
         <div className="stack-body">
           <h4 className="close" onClick={() => setShowModal((prev) => !prev)}>
@@ -71,7 +70,6 @@ function PopUp({
           </table>
         </div>
       </PopUpStyle>
-    // </div>
   ) : null;
 }
 
