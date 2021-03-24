@@ -42,7 +42,7 @@ const index = (props: any) => {
                 <p>
                   If you've witnessed someone violating the Code of Conduct,
                   please let us know, either by reporting the post, messaging an
-                  admin or sending an email to info@decagonhq.com.
+                  admin or sending an email to community@decagonhq.com.
                 </p>
               </div>
               <div className="program-item">
