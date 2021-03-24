@@ -58,6 +58,9 @@ export const PopUpStyle = styled.div`
     color: #171825;
     padding: 5px 20px;
     line-height: 20px;
+    :hover {
+      cursor: default;
+    }
   }
   h3 {
     color: #171825;
