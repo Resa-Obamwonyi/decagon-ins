@@ -26,7 +26,7 @@ const Card = () => (
     <div className="elements">
       <div className="elements-items">
         <div>
-          <h1>Our Hiring Partner</h1>
+          <h1>Our Hiring Partners</h1>
         </div>
         <div>
           <p>At Decagon Institute, we believe the decision you make to invest in your future is worth it!

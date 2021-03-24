@@ -9,14 +9,15 @@ export const StyledDiv = styled.div`
     padding-right: 4em;
   }
   h2 { 
+    font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+
   }
   .description {
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 16px;
+    line-height: 26px;
     text-align: justify;
-    font-family: "Mulish", sans-serif;
     font-style: normal;
   }
   .logo {
@@ -48,12 +49,24 @@ export const StyledTitle = styled.h1`
 `
 
 export const StyledContainer = styled.div`
-  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #171825;
+
+  .heading {
+    font-size: 3rem;
+    line-height: 64px;
+    font-weight: 800;
+/* or 133% */
+
+font-feature-settings: 'liga' off;
+
+/* Black */
+
+color: #171825;
+  }
 
   .container {
     width: 90%;

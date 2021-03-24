@@ -10,34 +10,39 @@ export const StyledDiv = styled.div`
   font-family: "Mulish", sans-serif;
   font-weight: normal;
 
-
   strong {
     font-style: bold;
   }
   .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .about-pic {
-    max-width: 30%;
+    width: 448px;
+    height: 420px;
+    /* margin-right: 6rem; */
   }
 
   .about-pic > img {
     width: 100%;
+    height: 100%;
   }
 
   .about-decagon {
     width: 65%;
-    padding-left: 3em;
   }
 
   .about-decagon > h2 {
-    font-size: 3em;
+    font-size: 48px;
+    line-height: 16px;
   }
 
   .about-decagon > p {
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 24px;
     text-align: justify;
   }
 

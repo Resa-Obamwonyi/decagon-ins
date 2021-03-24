@@ -1,8 +1,7 @@
-import styled from 'styled-components';
+  import styled from 'styled-components';
 
 
 export const StyledItem = styled.div`
-
   .highlight-item {
     display: flex;
     padding: 1em;
@@ -10,19 +9,13 @@ export const StyledItem = styled.div`
     width: 592px;
     height: 80%;
     margin: 2em;
-    justify-content: center;
-
+    justify-items: center;
   }
-
   p {
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 18px;
+    line-height: 32px;
     text-align: justify;
-    font-family: "Mulish", sans-serif;
-    font-weight: 500;
-    font-style: normal;
   }
-
   img {
     position: absolute;
     top: 0;
@@ -30,32 +23,27 @@ export const StyledItem = styled.div`
     width: 80%;
     margin: 0.5em;
     object-fit: cover;
-
   }
-
   .logo {
     position: relative;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
-    width: 20%: 
+    width: 20%;
   }
-
   .description {
     width: 80%;
     margin: 2em;
   }
   .identity {
     display: flex;
+    font-size: 16px;
+    line-height: 24px;
   }
   .identity-item {
     margin-right: 0.5em;
   }
-  h2 {
-    padding: ;
-  }
-
   @media (max-width: 990px) {
       .highlight-item {
         flex-direction: column;
@@ -64,12 +52,15 @@ export const StyledItem = styled.div`
         min-height: 250px;
         text-align: center;
       }
-      p {
-        line-height: 1.7em;
-      }
       img {
         position: relative;
         width: 90%;
+      }
+      .identity {
+        flex-direction: column;
+      }
+      .logo {
+        
       }
   }
 `
@@ -79,24 +70,23 @@ export const StyledList = styled.div`
     padding: 2em;
     max-width: 100%;
     justify-content: center;
-
-    @media(max-width: 657px) {
+    @media(max-width: 990px) {
       flex-direction: column;
       align-items: center;
+      justify-items: center;
+      /* margin-top: 2.5em; */
     }
 `
 
 export const StyledContainer = styled.div`
     width: 90%;
     margin: 0 auto;
-    font-weight: 900;
-    font-family: "Manrope", sans-serif;
-
     .heading {
       text-align: center;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 48px;
+      line-height: 59px;
       margin-bottom: 2rem;
       font-weight: bold;
     }
@@ -104,22 +94,27 @@ export const StyledContainer = styled.div`
 `
 export const StyledTitle = styled.div`
     display: flex;
-    font-size: 0.7em;
     justify-content:center;
     margin-bottom: -3em;
-
+    text-align: center;
+    align-items: center;
+    justify-content:center;
     @media(max-width: 657px) {
       margin-bottom: -4em;
+      /* width: 40%; */
     }
 `
 
 export const StyledHeading = styled.div`
     background: ${props => props.color? 'green': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 15%;
-    padding: 1.5em;
+    width: 25%;
+    height: 128px;
     text-align: center;
     justify-content:center;
+    font-size: 18px;
+    line-height: 48px;
+    cursor: pointer;
 
     @media(max-width: 657px) {
       padding: 3em;

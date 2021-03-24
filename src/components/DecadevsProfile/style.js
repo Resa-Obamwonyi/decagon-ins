@@ -55,6 +55,8 @@ export const StyledContainer = styled.div`
   p {
     margin-left: 2em;
     color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
   }
   @media(max-width: 675px) {
     h1 {
