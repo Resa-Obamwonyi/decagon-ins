@@ -50,17 +50,15 @@ return(
     <div className="text">
       {data.map((item, index) => (
         <Highlight
-          id={index} 
+          id={index}
           heading={item.heading}
           description={item.description}
           icon={item.icon}
           change={changeImage}
           color={selectedArray[index]}
-
         />
       ))}
     </div>
-
     <div className="full-image">
       <img src={display} alt="card logo" />
     </div>

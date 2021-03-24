@@ -4,11 +4,10 @@ import styled from 'styled-components';
 export const StyledItem = styled.div`
   
   p {
-    font-family: "Mulish", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 2em;
+    line-height: 24px;
     color: #171825;
   }
 
@@ -26,12 +25,9 @@ export const StyledItem = styled.div`
 export const StyledContainer = styled.div`
     width: 100%;
     margin: 0 auto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #171825;
-    font-family: "Mulish", sans-serif;
     justify-content: center;
     text-align: justify;
 
@@ -46,6 +42,8 @@ export const StyledContainer = styled.div`
       flex-direction: column;
       justify-content: content;
       margin: 2em;
+      font-size: 16px;
+      line-height: 24px;
     }
     .heading {
       text-align: center;
@@ -64,12 +62,16 @@ export const StyledTitle = styled.div`
     justify-content: center;
     margin-top: 2em;
     z-index: 999;
+    font-size: 16px;
+    line-height: 48px;
 `
 export const StyledParagraphy = styled.div`
   background: #EEF7EC;
   margin-top: -1em;
   z-index: 990;
   padding: 2em;
+  font-size: 16px;
+  line-height: 24px;
   
 `
 
@@ -80,6 +82,8 @@ export const StyledHeading = styled.div`
     margin: 0;
     text-align: center;
     cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
 
     @media(max-width: 657px) {
       width: 40%;

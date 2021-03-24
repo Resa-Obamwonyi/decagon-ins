@@ -27,16 +27,16 @@ export const StyledDiv = styled.div`
   }
   h2 {
     color: #B8D343;
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
   }
   p {
     color: #FFFFFF;
     width: 90%;
-    font-size: 1.15em;
-    line-height: 1.8em;
     margin: 2em 0;
     font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
   }
   button {
     background: linear-gradient(96.67deg, #34A853 0%, #B8D344 100%);
@@ -44,7 +44,8 @@ export const StyledDiv = styled.div`
     padding: 1.5em 0;
     width: 30%;
     outline: none;
-    font-size: 1.0em;
+    font-size: 16px;
+    line-height: 20px;
     display: flex;
     justify-content: center;
     font-weight: 600;
@@ -56,7 +57,6 @@ export const StyledDiv = styled.div`
     width: 40%;
     margin-left: 80px;
     position: relative;
-    font-family: "Manrope", sans-serif;
     top: 90px;
     z-index: 900;
   }

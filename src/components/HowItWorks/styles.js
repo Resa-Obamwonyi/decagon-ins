@@ -7,11 +7,11 @@ const StyledContainer = styled.div`
   margin-bottom: 3em;
   padding: 0;
   background: #F5F9E7 67%;
-  font-weight: 900;
-  font-family: "Mulish", sans-serif;
+  /* font-weight: 900; */
 
   h1 {
-    font-size: 2em;
+    font-size: 48px;
+    line-height: 64px;
   }
 
   @media only screen 
@@ -22,8 +22,9 @@ const StyledContainer = styled.div`
   }
 
   .heading {
-    padding: 2em;
-    padding-bottom: 1em;
+    /* padding: 2em; */
+    padding-top: 1em;
+    /* padding-bottom: 1em; */
     text-align: center;
   }
 `
@@ -35,37 +36,42 @@ const StyledItem = styled.div`
   margin: 1.5em;
   max-width: 80%;
 
+  h2 {
+    font-size: 24px;
+line-height: 32px;
+  }
 
   .description {
-    padding: 0 0 0 0.5em;
-    font-size: 1.2em;
-    line-height: 2em;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
     text-align: justify;
     width: 70%;
   }
 `
 
 const StyledDiv = styled.div`
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1em 2.5em 1em;
+  /* padding: 0 1em 2.5em 1em; */
   max-width: 100%;
 
   img {
-    max-width: 80%;
-    object-fit: cover;
+    max-width: 100%;
+    /* max-width: 80%;
+    object-fit: cover; */
+    /* display: flex; */
+    /* justify-self: center;
+    align-self: center; */
+    
   }
   .text {
     width: 60%;
   }
   .full-image {
     display: flex;
-    justify-self: start;
-
+    justify-content: center;
+    align-items: center;
     width: 40%;
   }
 
@@ -73,11 +79,11 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 2em;
-    // padding: 3em;
+    margin: 0;
     padding-top:0;
 
     .text {
-    max-width: 90%;
+    /* max-width: 90%; */
     }
 
     .full-image {

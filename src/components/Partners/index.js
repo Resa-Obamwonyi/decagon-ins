@@ -1,7 +1,7 @@
 import React from 'react';
-import atlassian from '../../images/icon/partners/atlassian.svg';
-import microsoft from '../../images/icon/partners/microsoft.svg';
-import github from '../../images/icon/partners/github.svg';
+import atlassian from '../../images/icon/partners/atlassian.png';
+import microsoft from '../../images/icon/partners/microsoft.png';
+import github from '../../images/icon/partners/github.png';
 
 import {StyledItem, StyledList, StyledContainer } from './style'
 
