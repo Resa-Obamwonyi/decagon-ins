@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 import {StyledItem, StyledContainer, StyledTitle, StyledParagraphy, StyledHeading } from './style'
 
 const data = [
@@ -84,7 +85,6 @@ const Finance = () => {
   items[0] = true
   
   const heading = Object.keys(data)[0]
-
   const [review, setReview] = useState(data[heading].description)
   const [additional, setAdditional] = useState(data[heading].additional)
   
@@ -99,7 +99,6 @@ const Finance = () => {
 
       setSelectedHeading(items)
       const heading = Object.keys(data)[id]
-
       setReview(data[heading].description)
       setAdditional(data[heading].additional)
   }

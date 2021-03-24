@@ -4,7 +4,7 @@ import {ButtonStyle} from './style';
 const Button=({link, children, width})=> {
 
     return (
-      <ButtonStyle width={width}>
+      <ButtonStyle width={width} type="submit">
         <a href={link}>{children}</a>
       </ButtonStyle>
     );

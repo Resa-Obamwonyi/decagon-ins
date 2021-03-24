@@ -7,7 +7,7 @@ export const QuestionStyle = styled.div`
     margin: 50px 20%;
     position: absolute;
     top: 450px;
-    z-index: 999;
+    z-index: 998;
     font-family: "Mulish-Bold";
   }
   .transition-buttons {
