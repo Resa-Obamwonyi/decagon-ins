@@ -36,7 +36,7 @@ const NavWrap = ({ color, location }) => {
             Testimonials
           </Nav>
           <Nav link="/faq" color={color}>
-            FAQ
+            FAQs
           </Nav>
         </div>
 
@@ -66,7 +66,7 @@ const NavWrap = ({ color, location }) => {
             Testimonials
           </Nav>
           <Nav link="/faq" color={color}>
-            FAQ
+            FAQs
           </Nav>
           <Nav link="/apply" color={color}>
             Apply

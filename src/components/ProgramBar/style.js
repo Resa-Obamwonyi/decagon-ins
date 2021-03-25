@@ -44,6 +44,12 @@ export const ProgramBarStyle = styled.div`
     margin: auto 20%;
   }
 
+  .sticky {
+    position: fixed;
+    top: 120px;
+    z-index: 999;
+  }
+
   @media (max-width: 790px) {
     .transition-content {
       width: 90%;
@@ -51,6 +57,9 @@ export const ProgramBarStyle = styled.div`
     }
     .transition-items {
       width: 80%;
+    }
+    .sticky {
+      top: 90px;
     }
   }
 
