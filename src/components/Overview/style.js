@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const OverviewStyle = styled.div`
+
   h1 {
     text-align: center;
     font-size: 32px;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ProgramBarStyle } from "./style";
 import Overview from "../Overview";
 import Curriculum from "../Curriculum";
@@ -52,10 +52,23 @@ function ProgramBar() {
   const handleClick = (key) => {
     setShow((prev) => ({ ...prev, key: key }));
   };
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 220) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
 
   return (
     <ProgramBarStyle>
-      <div className="transition-bar">
+      <div className={scrolled ? "transition-bar sticky" : "transition-bar"}>
         <div className="transition-items">
           <span
             className={`${show.key === 0 ? "active" : null}`}
@@ -85,7 +98,7 @@ function ProgramBar() {
             className={`${show.key === 4 ? "active" : null}`}
             onClick={() => handleClick(4)}
           >
-            Hiring Partner
+            Hiring Partners
           </span>
         </div>
       </div>
