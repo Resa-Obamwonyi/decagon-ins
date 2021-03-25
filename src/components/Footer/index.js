@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-nav">
           <Nav link="/program">Our Program</Nav>
           <Nav link="/testimonials">Testimonials</Nav>
-          <Nav link="/faq">FAQ</Nav>
+          <Nav link="/faq">FAQs</Nav>
         </div>
       </div>
       <hr />
