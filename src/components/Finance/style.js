@@ -53,35 +53,24 @@ export const StyledItem = styled.div`
       }
   }
 `
-// export const StyledList = styled.div`
-//     /* display: flex; */
-//     background: #F5F9E7 67%;
-//     padding: 2em;
-//     max-width: 100%;
-//     justify-content: center;
-
-//     @media(max-width: 657px) {
-//       flex-direction: column;
-//       align-items: center;
-//     }
-// `
 
 export const StyledContainer = styled.div`
-    width: 90%;
-    margin: 0 auto;
-    font-weight: 700;
-    font-family: "Mulish", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
 
-    .heading {
-      text-align: center;
-    }
+  .heading {
+    text-align: center;
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 2rem;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+      color: #171825;
     }
-    
-`
+  }
+`;
 export const StyledTitle = styled.div`
     display: flex;
     justify-content: center;
