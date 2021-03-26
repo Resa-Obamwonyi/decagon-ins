@@ -30,12 +30,12 @@ const scrollTo = (ele) => {
 
 function ProgramBar() {
   const [visibleSection, setVisibleSection] = useState();
+  const headerRef = useRef(null);
   const overviewRef = useRef(null);
   const curriculumRef = useRef(null);
   const admissionRef = useRef(null);
   const financeRef = useRef(null);
   const hiringRef = useRef(null);
-  const headerRef = useRef(null);
 
   const sectionRefs = [
     { section: "Overview", ref: overviewRef },
