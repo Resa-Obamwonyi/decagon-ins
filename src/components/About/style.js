@@ -21,13 +21,11 @@ export const StyledDiv = styled.div`
 
   .about-pic {
     width: 448px;
-    height: 420px;
     margin-right: 6rem;
   }
 
   .about-pic > img {
     width: 100%;
-    height: 100%;
   }
 
   .about-decagon {

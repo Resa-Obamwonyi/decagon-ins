@@ -41,6 +41,7 @@ export const StyledContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: content;
+      align-items: center;
       margin: 2em;
       font-size: 16px;
       line-height: 24px;
@@ -69,21 +70,22 @@ export const StyledTitle = styled.div`
     z-index: 100;
 `
 export const StyledParagraphy = styled.div`
-  background: #EEF7EC;
+  width: 95%;
+  background: #F7F8F0;
   padding: 2em;
-  padding-top: 2em;
+  padding-top: 3em;
   font-size: 16px;
   line-height: 32px;
   z-index: 99;
-  
 `
 
 export const StyledHeading = styled.div`
     background: ${props => props.color? 'green': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 25%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 28%;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    padding: 2rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -95,13 +97,19 @@ export const StyledHeading = styled.div`
     }
 
     @media(max-width: 657px) {
-      width: 20%;
+      width: 100%;
       padding: 1em;
       font-size: 16px;
       line-height: 24px;
       h2{
       font-size: 16px;
-      line-height: 20px;
+      line-height: 14px;
     }
     }
+  /* @media(max-width: 790px) {
+      /* height: 110px; */
+      /* width: 100%;
+      font-size: 14px;
+      line-height: 16px; */
+    } */
 `
