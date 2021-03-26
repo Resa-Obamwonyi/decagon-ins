@@ -3,10 +3,10 @@
 
 export const StyledItem = styled.div`
     display: flex;
-    padding: 1em 2em;
+    padding: 3em;
     background: white;
-    width: 592px;
-    margin: 2em;
+    width: 800px;
+    margin: 2em 1em;
     justify-items: center;
     height: inherit;
   p {
@@ -15,18 +15,13 @@ export const StyledItem = styled.div`
     text-align: justify;
   }
   img {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 80%;
-    /* margin: 0.5em; */
-    /* object-fit: cover; */
   }
   .logo {
     width: 20%;
   }
   .description {
-    width: 80%;
+    width: 90%;
     /* margin: 2em; */
   }
   .identity {
@@ -65,6 +60,7 @@ export const StyledList = styled.div`
     display: flex;
     background: #F5F9E7 67%;
     padding: 2em;
+    padding-top: 4em;
     max-width: 100%;
     justify-content: center;
     @media(max-width: 990px) {
@@ -111,9 +107,11 @@ export const StyledTitle = styled.div`
     margin-bottom: -3em;
     text-align: center;
     align-items: center;
-    @media(max-width: 657px) {
+    @media(max-width: 790px) {
       margin-bottom: -4em;
-      /* width: 40%; */
+    }
+    @media(max-width: 490px) {
+      margin-bottom: -4em;
     }
 `
 
@@ -123,35 +121,36 @@ export const StyledHeading = styled.div`
     /* width: 25%; */
     padding-left: 2rem;
     padding-right: 2rem;
-    /* height: 128px; */
+    height: 128px;
     display: flex;
     align-items: center;
     cursor: pointer;
 
-    h2 {
+    h3 {
     font-size: 24px;
-  }
-
+    font-family:"Mulish-Regular";
+    }
     @media (max-width: 990px) {
-    h2 {
+    h3 {
       font-size: 20px;
     }
   }
   @media(max-width: 790px) {
-      /* padding: 3em; */
+      height: 110px;
       width: 100%;
       font-size: 14px;
       line-height: 40px;
     }
 
   @media (max-width: 516px) {
-    h2 {
+    h3 {
       font-size: 18px;
     }
   }
 
   @media (max-width: 480px) {
-    h2 {
+    height: 90px;
+    h3 {
       font-size: 16px;
     }
   }

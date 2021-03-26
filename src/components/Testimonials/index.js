@@ -10,7 +10,7 @@ const HeadingCard = (props) => {
   }
   return (
     <StyledHeading color={props.color} onClick={handleClick}>
-        <h2 className="title-header">{props.heading}</h2>
+        <h3 className="title-header">{props.heading}</h3>
     </StyledHeading>
   )
 }
