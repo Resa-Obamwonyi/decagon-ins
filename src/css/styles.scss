@@ -246,6 +246,30 @@ main .why-decagon .content .stats p {
   text-align: center;
 }
 
+.stats .sterling-container {
+  width: 80%;
+}
+
+.img-container{
+  // background-color: rgba($color: #58A75D, $alpha: 0.1);
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+}
+.sterling{
+  width: 100%;
+}
+.sterling-container{
+  // background-color: rgba($color: #58A75D, $alpha: 0.1);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30%;
+  padding: 2rem 0;
+  color: #58A75D;
+}
 main .works {
   display: flex;
   justify-content: center;
@@ -538,7 +562,7 @@ header .content .nav-right li:last-child .btn {
     border-left: 0.5px solid #7b7b7b;
     top: 11.25%;
     left: 49.75%;
-    height: 65%;
+    height: 54%;
   }
   main .works .content .work-steps .step {
     padding: 1rem 2rem 1.5rem;
@@ -575,10 +599,10 @@ header .content .nav-right li:last-child .btn {
     padding-top: 5rem;
   }
   main .works .content .work-steps .step.diff-step::before {
-    top: 20%;
+    top: 6%;
   }
   main .works .content .work-steps .step.diff-step::after {
-    top: 23%;
+    top: 8%;
   }
   main .works .content .work-steps .step.diff-step .step-img img {
     max-width: unset;
