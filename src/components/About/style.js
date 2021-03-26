@@ -10,16 +10,18 @@ export const StyledDiv = styled.div`
   font-family: "Mulish", sans-serif;
   font-weight: normal;
 
-
   strong {
     font-style: bold;
   }
   .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .about-pic {
-    max-width: 30%;
+    width: 448px;
+    margin-right: 6rem;
   }
 
   .about-pic > img {
@@ -28,16 +30,17 @@ export const StyledDiv = styled.div`
 
   .about-decagon {
     width: 65%;
-    padding-left: 3em;
   }
 
   .about-decagon > h2 {
-    font-size: 3em;
+    font-size: 48px;
+    line-height: 40px;
   }
 
   .about-decagon > p {
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 24px;
     text-align: justify;
   }
 
@@ -47,7 +50,13 @@ export const StyledDiv = styled.div`
     font-weight: 500;
   }
 
-  @media (max-width: 675px) {
+  @media (max-width: 1000px) {
+    .about-decagon > h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 800px) {
     .container {
       flex-direction: column;
       align-items: center;
@@ -61,6 +70,10 @@ export const StyledDiv = styled.div`
     .about-pic {
       min-width: 80%;
     }
+    h2 {
+      font-size: 10px;
+      line-height: 16px;
+  }
   }
 `;
 

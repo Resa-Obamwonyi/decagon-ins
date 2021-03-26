@@ -1,62 +1,42 @@
-import styled from 'styled-components';
+  import styled from 'styled-components';
 
 
 export const StyledItem = styled.div`
-
-  .highlight-item {
     display: flex;
-    padding: 1em;
+    padding: 3em;
     background: white;
-    width: 592px;
-    height: 80%;
-    margin: 2em;
-    justify-content: center;
-
-  }
-
+    width: 800px;
+    margin: 2em 1em;
+    justify-items: center;
+    height: inherit;
   p {
-    font-size: 1.2em;
-    line-height: 2em;
+    font-size: 16px;
+    line-height: 32px;
     text-align: justify;
-    font-family: "Mulish", sans-serif;
-    font-weight: 500;
-    font-style: normal;
   }
-
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 80%;
-    margin: 0.5em;
-    object-fit: cover;
-
   }
-
   .logo {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 20%: 
+    width: 20%;
   }
-
   .description {
-    width: 80%;
-    margin: 2em;
+    width: 90%;
+    /* margin: 2em; */
   }
   .identity {
-    display: flex;
+    font-size: 16px;
+    /* line-height: 24px; */
   }
   .identity-item {
     margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
   }
-  h2 {
-    padding: ;
-  }
-
   @media (max-width: 990px) {
+    margin-top: 4rem;
+    width: 90%;
       .highlight-item {
         flex-direction: column;
         margin: 2em;
@@ -64,12 +44,15 @@ export const StyledItem = styled.div`
         min-height: 250px;
         text-align: center;
       }
-      p {
-        line-height: 1.7em;
-      }
       img {
         position: relative;
         width: 90%;
+      }
+      .identity {
+        flex-direction: column;
+      }
+      .logo {
+        
       }
   }
 `
@@ -77,38 +60,57 @@ export const StyledList = styled.div`
     display: flex;
     background: #F5F9E7 67%;
     padding: 2em;
+    padding-top: 4em;
     max-width: 100%;
     justify-content: center;
-
-    @media(max-width: 657px) {
+    @media(max-width: 990px) {
       flex-direction: column;
       align-items: center;
+      justify-items: center;
+      /* margin-top: 2.5em; */
     }
 `
 
 export const StyledContainer = styled.div`
     width: 90%;
     margin: 0 auto;
-    font-weight: 900;
-    font-family: "Manrope", sans-serif;
-
     .heading {
       text-align: center;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 44px;
       margin-bottom: 2rem;
       font-weight: bold;
     }
-    
+
+    @media (max-width: 990px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 516px) {
+    h1 {
+    font-size: 35px;
+  }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+    font-size: 28px;
+  }
+  }
 `
 export const StyledTitle = styled.div`
     display: flex;
-    font-size: 0.7em;
-    justify-content:center;
+    justify-content: center;
     margin-bottom: -3em;
-
-    @media(max-width: 657px) {
+    text-align: center;
+    align-items: center;
+    @media(max-width: 790px) {
+      margin-bottom: -4em;
+    }
+    @media(max-width: 490px) {
       margin-bottom: -4em;
     }
 `
@@ -116,12 +118,41 @@ export const StyledTitle = styled.div`
 export const StyledHeading = styled.div`
     background: ${props => props.color? 'green': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 15%;
-    padding: 1.5em;
-    text-align: center;
-    justify-content:center;
+    /* width: 25%; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
-    @media(max-width: 657px) {
-      padding: 3em;
+    h3 {
+    font-size: 24px;
+    font-family:"Mulish-Regular";
     }
+    @media (max-width: 990px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media(max-width: 790px) {
+      height: 110px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 40px;
+    }
+
+  @media (max-width: 516px) {
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 90px;
+    h3 {
+      font-size: 16px;
+    }
+  }
+
 `

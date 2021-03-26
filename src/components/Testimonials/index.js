@@ -10,7 +10,7 @@ const HeadingCard = (props) => {
   }
   return (
     <StyledHeading color={props.color} onClick={handleClick}>
-        <h2 className="title-header">{props.heading}</h2>
+        <h3 className="title-header">{props.heading}</h3>
     </StyledHeading>
   )
 }
@@ -18,18 +18,15 @@ const HeadingCard = (props) => {
 function Card(props) {
   return (
     <StyledItem>
-      <div className="highlight-item">
         <div className="logo">
             <img src={props.imgUrl} alt="card logo" />
         </div>
         <div className="description">
           <div className="identity">
-            <h2 className="identity-item">{props.name}</h2>
-            <h2 className="identity-item">{props.Office}</h2>
+            <div className="identity-item">{props.name} {props.Office}</div>
           </div>
           <p>{props.review}</p>
         </div>
-      </div>
     </StyledItem>
   )
 }

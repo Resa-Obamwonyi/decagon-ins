@@ -5,9 +5,6 @@ export const StyledItem = styled.div`
     .logo {
       width: 170px;
       height: 96px;
-      /* display: inline;
-      margin-left: auto;
-      margin-right: auto; */
     }
     img {
       max-width: 100%;
@@ -18,7 +15,12 @@ export const StyledContainer = styled.div`
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
   line-height: 2em;
+  h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
 
   p {
     margin-top: 2em;
@@ -26,32 +28,21 @@ export const StyledContainer = styled.div`
   @media(max-width: 657px) {
     p {
       text-align: justify;
+      font-size: 16px;
+      line-height: 32px;
     }
   }
 `
 
 export const StyledList = styled.div`
-  .list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    text-align: center;
-    padding: 2em;
-    max-width: 100%;
-    justify-content: center;
-    
-  }
-  .list-items {
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column-reverse; */
-    justify-items: center;
-    align-items: center;
-  }
-    
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap:wrap;
+  justify-content: center;
 
   @media(max-width: 657px) {
     flex-direction: column;
-      align-items: center;
+    align-items: center; 
     }
 `
