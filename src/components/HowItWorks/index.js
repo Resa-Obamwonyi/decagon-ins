@@ -44,7 +44,6 @@ const Card = () => {
   
 return(
   <StyledContainer>
-    <div>
     <h1 className="heading">How it Works</h1>
   <StyledDiv>
     <div className="text">
@@ -63,7 +62,6 @@ return(
       <img src={display} alt="card logo" />
     </div>
   </StyledDiv>
-  </div>
   </StyledContainer>
 
 )

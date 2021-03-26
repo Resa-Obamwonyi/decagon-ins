@@ -1,33 +1,33 @@
 import React from 'react';
 import { StyledDiv } from './style';
-import background from '../../images/icon/banner/background.png';
-import gradientbackground from '../../images/icon/banner/gradient-background.svg';
+import Button from "../Button";
+import background from '../../images/icon/banner/background.png'
 
 
 function Banner() {
   return (
     <StyledDiv>
-      <div>
-        <div className="OverlayContent">
-          <div className="background-image">
-            <img src={background} alt="background"/>
-          </div>
-          <div className="banner-content">
-            <h2>Launch your career in software engineering.</h2>
-            <p>Decagon is an immersive software engineering experience that produces industry-ready software engineers within 6 months.</p>
-            <button>Apply Now</button>
+      <div class="background-container" style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat"
+      }}>
+          <div class="left">
+            <h1>Launch your career in software engineering.</h1>
+            <p>
+              Decagon is an immersive software engineering experience that
+              produces industry-ready software engineers within 6 months.
+            </p>
+            <Button link={"/apply"}>
+              Apply Now
+            </Button>
           </div>
         </div>
-        {/* <div className="mobile-image">
-    
-        </div> */}
-        <div className="gradient-image">
-          <img src={gradientbackground} alt="gradient"/>
-        </div>
-      </div>
     </StyledDiv>
-
   )
 }
+
+<Button link={"/apply"}>
+  Apply Now
+</Button>
 
 export default Banner;

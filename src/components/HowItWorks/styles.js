@@ -17,15 +17,38 @@ const StyledContainer = styled.div`
   @media only screen 
   and (max-width : 675px) 
   and (max-width : 790px) {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 4em;
     padding-bottom: 1em;
+    align-items: center;
+    justify-content: center;
   }
 
   .heading {
-    /* padding: 2em; */
     padding-top: 1em;
-    /* padding-bottom: 1em; */
     text-align: center;
+  }
+  h1 {
+    font-size: 44px;
+  }
+
+    @media (max-width: 990px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 516px) {
+    h1 {
+    font-size: 35px;
+  }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+    font-size: 28px;
+  }
   }
 `
 
@@ -35,17 +58,26 @@ const StyledItem = styled.div`
   padding: 0.5em 0 0.5em 1em;
   margin: 1.5em;
   max-width: 80%;
+  cursor: pointer;
 
   h2 {
     font-size: 24px;
-line-height: 32px;
+    line-height: 32px;
   }
 
-  .description {
+  p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 32px;
     text-align: justify;
     width: 70%;
+  }
+  @media only screen 
+  and (max-width : 675px) 
+  and (max-width : 790px) {
+
+  .description {
+    width: 95%;
+  }
   }
 `
 
@@ -53,6 +85,7 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   /* padding: 0 1em 2.5em 1em; */
   max-width: 100%;
 
@@ -78,12 +111,15 @@ const StyledDiv = styled.div`
   @media (max-width: 675px) {
     flex-direction: column;
     align-items: center;
+    
+    /* display: flex; */
+    /* justify-content: center; */
     margin-bottom: 2em;
-    margin: 0;
+    margin: 0 auto;
     padding-top:0;
 
     .text {
-    /* max-width: 90%; */
+      width: 100%;
     }
 
     .full-image {

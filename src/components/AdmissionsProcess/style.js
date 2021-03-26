@@ -14,19 +14,18 @@ export const StyledDiv = styled.div`
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    letter-spacing: 0em;
     text-align: center;
   }
   p {
     font-weight: normal;
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 32px;
     margin-bottom: 1.5em;
   }
   li {
     font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
     padding: 0.8em 0.8em;
   }
 

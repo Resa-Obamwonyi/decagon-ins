@@ -14,15 +14,16 @@ export const StyledDiv = styled.div`
     line-height: 32px;
 
   }
-  .description {
+  p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 32px;
     text-align: justify;
     font-style: normal;
   }
   .logo {
     margin-right: 2em;
   }
+  
 `;
 
 export const StyledList = styled.div`
@@ -42,11 +43,29 @@ export const StyledList = styled.div`
 `;
 
 export const StyledTitle = styled.h1`
-  .heading {
-    font-size: 1em;
-    max-width: 800px;
+  h1 {
+    font-size: 44px;
+    line-height: 44px;
   }
-`
+
+    @media (max-width: 990px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 516px) {
+    h1 {
+    font-size: 35px;
+  }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+    font-size: 28px;
+  }
+  }
+`;
 
 export const StyledContainer = styled.div`
   font-style: normal;
@@ -55,25 +74,19 @@ export const StyledContainer = styled.div`
   line-height: 24px;
   color: #171825;
 
-  .heading {
-    font-size: 3rem;
-    line-height: 64px;
-    font-weight: 800;
-/* or 133% */
-
-font-feature-settings: 'liga' off;
-
-/* Black */
-
-color: #171825;
-  }
-
   .container {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 3em;
+    margin-top: 3em;
+
   }
   @media (max-width: 675px) {
     margin-top: 0;
+
+    .container {
+      width: 100%;
+      padding-left: 1em;
+    }
   }
 `

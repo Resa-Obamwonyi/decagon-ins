@@ -22,7 +22,7 @@ export const StyledDiv = styled.div`
   .about-pic {
     width: 448px;
     height: 420px;
-    /* margin-right: 6rem; */
+    margin-right: 6rem;
   }
 
   .about-pic > img {
@@ -36,12 +36,12 @@ export const StyledDiv = styled.div`
 
   .about-decagon > h2 {
     font-size: 48px;
-    line-height: 16px;
+    line-height: 40px;
   }
 
   .about-decagon > p {
     font-size: 16px;
-    line-height: 34px;
+    line-height: 32px;
     margin-top: 24px;
     text-align: justify;
   }
@@ -52,7 +52,13 @@ export const StyledDiv = styled.div`
     font-weight: 500;
   }
 
-  @media (max-width: 675px) {
+  @media (max-width: 1000px) {
+    .about-decagon > h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 800px) {
     .container {
       flex-direction: column;
       align-items: center;
@@ -66,6 +72,10 @@ export const StyledDiv = styled.div`
     .about-pic {
       min-width: 80%;
     }
+    h2 {
+      font-size: 10px;
+      line-height: 16px;
+  }
   }
 `;
 
