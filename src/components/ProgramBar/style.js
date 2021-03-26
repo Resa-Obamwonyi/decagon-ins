@@ -41,10 +41,11 @@ export const ProgramBarStyle = styled.div`
 
   .transition-content {
     width: 60%;
-    margin: auto 20%;
+    margin: auto 20% ;
   }
 
   .sticky {
+
     position: fixed;
     top: 120px;
     z-index: 999;

@@ -50,11 +50,11 @@ export const StyledContainer = styled.div`
       text-align: center;
     }
     h1 {
+      font-weight: 700;
       font-size: 32px;
       line-height: 44px;
-      margin-bottom: 2rem;
       text-align: center;
-
+      color: #171825;
     }
     @media(max-width: 657px) {
 
