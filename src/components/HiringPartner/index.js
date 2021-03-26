@@ -23,7 +23,6 @@ function Partner(props) {
 const Card = () => (
   <StyledContainer>
 
-    <div className="elements">
       <div className="elements-items">
         <div>
           <h1>Our Hiring Partners</h1>
@@ -32,13 +31,11 @@ const Card = () => (
           <p>At Decagon Institute, we believe the decision you make to invest in your future is worth it!
             One of the ways we ensure this, is by providing our decadevs with the opportunity to intern and 
             potentially transition to a full-time career as a software engineer/developer with any of our 
-            reputable hiring partners
+            reputable hiring partners.
           </p>
         </div>
       </div>
       <StyledList>
-        <div className="list">
-          <div className="list-items">
               <Partner
             imgUrl={access}
             />
@@ -51,9 +48,6 @@ const Card = () => (
             <Partner
               imgUrl={piggyvest}
             />
-          </div>
-            
-          <div className="list-items">
 
             <Partner
               imgUrl={mastercard}
@@ -61,12 +55,7 @@ const Card = () => (
             <Partner
               imgUrl={farmcrowdy}
             />
-          </div>
-        </div>
-        
       </StyledList>
-  </div>
-
   </StyledContainer>
 )
 

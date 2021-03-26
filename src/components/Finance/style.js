@@ -49,9 +49,11 @@ export const StyledContainer = styled.div`
       text-align: center;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 32px;
+      line-height: 44px;
       margin-bottom: 2rem;
-      font-weight: bold;
+      text-align: center;
+
     }
     @media(max-width: 657px) {
 
@@ -61,32 +63,45 @@ export const StyledTitle = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 2em;
-    z-index: 999;
     font-size: 16px;
     line-height: 48px;
+    margin-bottom: -2em;
+    z-index: 100;
 `
 export const StyledParagraphy = styled.div`
   background: #EEF7EC;
-  margin-top: -1em;
-  z-index: 990;
   padding: 2em;
+  padding-top: 2em;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 32px;
+  z-index: 99;
   
 `
 
 export const StyledHeading = styled.div`
     background: ${props => props.color? 'green': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 30%;
-    margin: 0;
-    text-align: center;
+    width: 25%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
+
+    h2{
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     @media(max-width: 657px) {
-      width: 40%;
+      width: 20%;
       padding: 1em;
+      font-size: 16px;
+      line-height: 24px;
+      h2{
+      font-size: 16px;
+      line-height: 20px;
+    }
     }
 `

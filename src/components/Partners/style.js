@@ -55,9 +55,27 @@ export const StyledContainer = styled.div`
     }
 
     h1 {
-      font-size: 48px;
-      line-height: 64px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+    @media (max-width: 990px) {
+    h1 {
+      font-size: 30px;
     }
+  }
+
+  @media (max-width: 516px) {
+    h1 {
+    font-size: 35px;
+  }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+    font-size: 28px;
+  }
+  }
 
     @media(max-width: 675px) {
       h1 {

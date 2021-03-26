@@ -24,7 +24,7 @@ const Card = () => (
   <StyledContainer>
     <div className="container">
       <StyledTitle>
-        <h1 className="heading">Why Decadev is the #1<br/> choice for you</h1>
+        <h1 className="heading">Why Decagon is the #1<br/> choice for you</h1>
       </StyledTitle>
       <StyledList>
         <div className="list">
