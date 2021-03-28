@@ -74,11 +74,14 @@ const index = (props: any) => {
               <p>
                 We can allow you pay us after you graduate and secure a job.
               </p>
-              {/* <img
-                className="sterling"
-                src={process.env.PUBLIC_URL + "/images/sterling-logo-balanced"}
-                alt="Powered by Sterling"
-              /> */}
+              <div className="sterling-container">
+                <p>powered by</p>
+                <img
+                  src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
+                  alt="Sterling bank's logo"
+                  className="sterling-logo"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -120,19 +123,11 @@ const index = (props: any) => {
                 </div>
                 <div className="step-img">
                   <img src={placement} alt="placement" />
-                </div>
-                <div className="sterling-container">
-                  <p>Powered by</p>
-                  <div className="img-container">
-                    <img
-                      className="sterling"
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/images/sterling-logo-balanced.png"
-                      }
-                      alt="Powered by Sterling"
-                    />
-                  </div>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
+                    alt="Sterling bank's logo"
+                    className="sterling-logo"
+                  />
                 </div>
               </div>
             </div>
