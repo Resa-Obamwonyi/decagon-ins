@@ -125,7 +125,7 @@ const index = (props: any) => {
                   <img src={placement} alt="placement" />
                   <img
                     src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
-                    alt="Sterling bank's logo"
+                    alt="Powered by Sterling"
                     className="sterling-logo"
                   />
                 </div>
