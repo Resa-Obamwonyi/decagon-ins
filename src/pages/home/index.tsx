@@ -78,7 +78,7 @@ const index = (props: any) => {
                 <p>powered by</p>
                 <img
                   src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
-                  alt="Sterling bank's logo"
+                  alt="Powered by Sterling Bank"
                   className="sterling-logo"
                 />
               </div>
@@ -125,7 +125,7 @@ const index = (props: any) => {
                   <img src={placement} alt="placement" />
                   <img
                     src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
-                    alt="Powered by Sterling"
+                    alt="Sterling bank's logo"
                     className="sterling-logo"
                   />
                 </div>
