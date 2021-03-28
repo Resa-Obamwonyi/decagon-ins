@@ -13,7 +13,7 @@
 body {
   font-size: 14px;
   letter-spacing: 0.5px;
-  font-family: "Muli", "Muli Bold","Abril Bold";
+  font-family: "Muli", "Muli Bold", "Abril Bold";
   scroll-behavior: smooth;
 }
 
@@ -45,7 +45,8 @@ header .content .nav-left {
   margin-right: auto;
 }
 
-header .content .nav-left li, header .content .nav li:not(:last-child) {
+header .content .nav-left li,
+header .content .nav li:not(:last-child) {
   display: none;
 }
 
@@ -91,7 +92,7 @@ header .content .nav-right li:last-child .menu {
 header .content .nav li a.btn {
   background-color: $green;
   border: 0px solid white;
-  font-size:12px;
+  font-size: 12px;
   padding: 10px 20px;
 }
 
@@ -247,30 +248,17 @@ main .why-decagon .content .stats p {
 }
 
 .stats .sterling-container {
-  width: 80%;
-}
-
-.sterling-container p{
-  text-align: center;
-}
-
-.img-container{
-  width: 80%;
+  margin-top: 1rem;
   display: flex;
-  align-items: flex-end;
-}
-.sterling{
-  width: 100%;
-}
-.sterling-container{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  width: 70%;
-  color: #58A75D;
 }
+
+.stats .sterling-container p {
+  font-size: 12px;
+  margin-right: 0.5rem;
+}
+
 main .works {
   display: flex;
   justify-content: center;
@@ -297,6 +285,9 @@ main .works .content .work-steps .step {
 
 main .works .content .work-steps .step .step-img {
   padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .works .content .work-steps .step .step-img img {
@@ -304,6 +295,9 @@ main .works .content .work-steps .step .step-img img {
   max-width: 280px;
 }
 
+main .works .content .work-steps .step .step-img .sterling-logo {
+  width: 16%;
+}
 main .works .content .work-steps .step .step-info {
   display: flex;
   flex-direction: column;
@@ -435,7 +429,8 @@ header .content .nav-right li:last-child .btn {
 }
 
 @media (min-width: 768px) {
-  header .content .nav-left li,header .content .nav li:not(:last-child) {
+  header .content .nav-left li,
+  header .content .nav li:not(:last-child) {
     display: flex;
   }
 
@@ -473,14 +468,6 @@ header .content .nav-right li:last-child .btn {
   main .why-decagon .content .stats h2 {
     font-size: 14px;
   }
-.sterling-container{
-  width: 50%;
-}
-
-.img-container{
-  width: 50%;
-}
-
   main .works .content .title {
     padding-bottom: 2rem;
   }
@@ -571,7 +558,7 @@ header .content .nav-right li:last-child .btn {
     border-left: 0.5px solid #7b7b7b;
     top: 11.25%;
     left: 49.75%;
-    height: 54%;
+    height: 60%;
   }
   main .works .content .work-steps .step {
     padding: 1rem 2rem 1.5rem;
@@ -608,10 +595,10 @@ header .content .nav-right li:last-child .btn {
     padding-top: 5rem;
   }
   main .works .content .work-steps .step.diff-step::before {
-    top: 6%;
+    top: 20%;
   }
   main .works .content .work-steps .step.diff-step::after {
-    top: 8%;
+    top: 23%;
   }
   main .works .content .work-steps .step.diff-step .step-img img {
     max-width: unset;
@@ -626,11 +613,17 @@ header .content .nav-right li:last-child .btn {
     font-size: 40px;
   }
 }
+
 @media (min-width: 1024px) {
-  .img-container {
-    width: 30%;
+  main .works .content .work-steps .step.diff-step::before {
+    top: 14%;
+    left: 1
+  }
+  main .works .content .work-steps .step.diff-step::after {
+    top: 17%;
+  }
 }
-}
+
 @media (min-width: 1280px) {
   main .banner .content h2 {
     padding: 8rem 10rem 1rem;
@@ -640,7 +633,7 @@ header .content .nav-right li:last-child .btn {
   }
   main .banner .content .belle-content {
     padding: 1.5rem 8rem 5rem;
-  }  
+  }
   main .why-decagon .content {
     padding: 2rem 10rem;
   }
@@ -676,5 +669,27 @@ header .content .nav-right li:last-child .btn {
   }
   main .works .content .work-steps .step::after {
     left: 49.4%;
+  }
+  main .works .content .work-steps .step.diff-step::before {
+    top: 10%;
+  }
+  main .works .content .work-steps .step.diff-step::after {
+    top: 12.5%;
+  }
+}
+
+@media (min-width: 2560px) {
+  main .works .content .work-steps::before {
+    height: 56%;
+  }
+  main .works .content .work-steps .step::before {
+    left: 48.7%;
+  }
+  main .works .content .work-steps .step.diff-step::before {
+    top: 8%;
+    left: 48.7%;
+  }
+  main .works .content .work-steps .step.diff-step::after {
+    top: 10.4%;
   }
 }
