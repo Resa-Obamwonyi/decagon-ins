@@ -1,3 +1,4 @@
+
 import React from 'react';
 import about from '../../images/icon/about.png';
 import { StyledDiv } from './style';
