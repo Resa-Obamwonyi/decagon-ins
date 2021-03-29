@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import placement from "../../images/placement-logos.jpg";
 import tuition from "../../images/tuition-free.svg";
 import recruitment from "../../images/recruitment.svg";
 import training from "../../images/training.svg";
@@ -76,11 +75,13 @@ const index = (props: any) => {
               </p>
               <div className="sterling-container">
                 <p>powered by</p>
-                <img
-                  src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
-                  alt="Powered by Sterling Bank"
-                  className="sterling-logo"
-                />
+                <div className="img-container">
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
+                    alt="Powered by Sterling Bank"
+                    className="sterling-logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -122,12 +123,36 @@ const index = (props: any) => {
                   </p>
                 </div>
                 <div className="step-img">
-                  <img src={placement} alt="placement" />
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
-                    alt="Sterling bank's logo"
-                    className="sterling-logo"
-                  />
+                  <div className="img-container">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
+                      alt="Sterling bank's logo"
+                      className="sterling-logo"
+                    />
+                  </div>
+                  <div className="img-container">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/seamfix_logo.png"}
+                      alt="Seamfix's logo"
+                      className="seamfix-logo"
+                    />
+                  </div>
+                  <div className="img-container">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/access_logo.png"}
+                      alt="Access bank's logo"
+                      className="access-logo"
+                    />
+                  </div>
+                  <div className="img-container">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL + "/images/mastercard_logo.png"
+                      }
+                      alt="Master card's logo"
+                      className="mastercard-logo"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
