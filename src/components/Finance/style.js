@@ -87,11 +87,8 @@ export const StyledHeading = styled.div`
     background: ${props => props.color? ' #34A853': 'white'};
     color: ${props => props.color? 'white': 'black'};
     width: 40%;
-    /* width: 288px; */
     padding:2em;
     height: 60px;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
     padding: 2rem;
     display: flex;
     justify-content:center;
