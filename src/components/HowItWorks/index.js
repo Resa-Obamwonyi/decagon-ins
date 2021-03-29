@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 import icon1 from '../../images/icon/how-it-works/icon1.svg'
 import icon2 from '../../images/icon/how-it-works/icon2.svg'
-import icon3 from '../../images/icon/how-it-works/icon3.svg'
+import icon3 from '../../images/icon/how-it-works/icon3.png'
 import { StyledDiv, StyledContainer, StyledItem } from './styles'
 
 

@@ -66,30 +66,39 @@ export const StyledTitle = styled.div`
     margin-top: 2em;
     font-size: 16px;
     line-height: 48px;
-    margin-bottom: -2em;
+    margin-bottom: -4em;
     z-index: 100;
+
+    @media(max-width: 657px) {
+      margin-bottom: -3em;
+    }
 `
 export const StyledParagraphy = styled.div`
   width: 95%;
   background: #F7F8F0;
-  padding: 2em;
-  padding-top: 3em;
+  padding: 3em;
+  padding-top: 5em;
   font-size: 16px;
   line-height: 32px;
   z-index: 99;
 `
 
 export const StyledHeading = styled.div`
-    background: ${props => props.color? 'green': 'white'};
+    background: ${props => props.color? ' #34A853': 'white'};
     color: ${props => props.color? 'white': 'black'};
     width: 28%;
+    /* width: 288px; */
+    padding:2em;
+    height: 80px;
     /* padding-left: 2rem;
     padding-right: 2rem; */
     padding: 2rem;
     display: flex;
     justify-content:center;
     align-items: center;
+    text-align: center;
     cursor: pointer;
+    box-shadow: 0px 14px 15px rgba(0, 0, 0, 0.03);
 
     h2{
       font-size: 16px;
@@ -97,7 +106,8 @@ export const StyledHeading = styled.div`
     }
 
     @media(max-width: 657px) {
-      width: 100%;
+      /* width: 100%; */
+      height: 60px;
       padding: 1em;
       font-size: 16px;
       line-height: 24px;
@@ -106,10 +116,7 @@ export const StyledHeading = styled.div`
       line-height: 14px;
     }
     }
-  /* @media(max-width: 790px) {
-      /* height: 110px; */
-      /* width: 100%;
-      font-size: 14px;
-      line-height: 16px; */
-    } */
+  @media(max-width: 790px) {
+      height: 70px;
+    }
 `

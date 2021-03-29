@@ -40,7 +40,7 @@ const Card = () => (
     </StyledList>
     <div className="elements-items">
       <div>
-        <h1>260+</h1>
+        <h1>350+</h1>
       </div>
       <div>
         <p>Decadevs trained</p>
