@@ -32,12 +32,31 @@ export const FooterStyle = styled.footer`
   }
 
   .social-link {
-    ${"" /* opacity: 0.1; */}
     background: rgba(23, 24, 37, 0.1);
     color: #171825;
     padding: 10px;
     border-radius: 50px;
     font-size: 16px;
     margin-left: 10px;
+  }
+
+  @media (max-width: 790px) {
+    .copyright {
+      flex-basis: 70%;
+    }
+
+    .socials {
+      flex-basis: 30%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .copyright {
+      flex-basis: 50%;
+    }
+
+    .socials {
+      flex-basis: 50%;
+    }
   }
 `;

@@ -2,11 +2,11 @@ import React from "react";
 import { HeaderStyle } from "./style";
 import NavWrap from "../NavWrap";
 
-function Header() {
+function Header({backgroundColor, color, position, location}) {
     return (
-    <HeaderStyle>
-        <NavWrap />
-    </HeaderStyle>
+      <HeaderStyle backgroundColor={backgroundColor} position={position}>
+        <NavWrap color={color} location={location}/>
+      </HeaderStyle>
     );
 }
 
