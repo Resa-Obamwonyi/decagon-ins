@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import placement from "../../images/placement-logos.jpg";
 import tuition from "../../images/tuition-free.svg";
 import recruitment from "../../images/recruitment.svg";
 import training from "../../images/training.svg";
@@ -124,7 +123,6 @@ const index = (props: any) => {
                   </p>
                 </div>
                 <div className="step-img">
-                  {/* <img src={placement} alt="placement" /> */}
                   <div className="img-container">
                     <img
                       src={process.env.PUBLIC_URL + "/images/sterling_logo.png"}
