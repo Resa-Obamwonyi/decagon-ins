@@ -104,7 +104,7 @@ export const StyledContainer = styled.div`
 export const StyledTitle = styled.div`
     display: flex;
     justify-content: center;
-    margin-bottom: -3em;
+    margin-bottom: -4em;
     text-align: center;
     align-items: center;
     @media(max-width: 790px) {
@@ -116,18 +116,24 @@ export const StyledTitle = styled.div`
 `
 
 export const StyledHeading = styled.div`
-    background: ${props => props.color? 'green': 'white'};
+    background: ${props => props.color? '#34A853': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    /* width: 25%; */
+    width: 20%;
+    /* width: 800px; */
+    height: 128px;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 128px;
     display: flex;
     align-items: center;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
     cursor: pointer;
+    box-shadow: 0px 14px 15px rgba(0, 0, 0, 0.03);
 
     h3 {
     font-size: 24px;
+    line-height: 48px;
     font-family:"Mulish-Regular";
     }
     @media (max-width: 990px) {

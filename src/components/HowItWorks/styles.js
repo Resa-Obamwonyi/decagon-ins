@@ -57,7 +57,7 @@ const StyledItem = styled.div`
   background: ${props => props.color ? 'white':''};
   padding: 0.5em 0 0.5em 1em;
   margin: 1.5em;
-  max-width: 80%;
+  width: 75%;
   cursor: pointer;
 
   h2 {
