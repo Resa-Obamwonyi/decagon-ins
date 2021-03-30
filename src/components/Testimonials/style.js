@@ -139,18 +139,22 @@ export const StyledHeading = styled.div`
     @media (max-width: 990px) {
     h3 {
       font-size: 20px;
+      line-height: 40px;
+
     }
   }
   @media(max-width: 790px) {
       height: 110px;
       width: 100%;
       font-size: 14px;
-      line-height: 40px;
+      line-height: 38px;
     }
 
   @media (max-width: 516px) {
     h3 {
       font-size: 18px;
+      line-height: 35px;
+
     }
   }
 
@@ -158,6 +162,7 @@ export const StyledHeading = styled.div`
     height: 90px;
     h3 {
       font-size: 16px;
+      line-height: 30px;
     }
   }
 

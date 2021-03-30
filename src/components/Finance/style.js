@@ -86,12 +86,9 @@ export const StyledParagraphy = styled.div`
 export const StyledHeading = styled.div`
     background: ${props => props.color? ' #34A853': 'white'};
     color: ${props => props.color? 'white': 'black'};
-    width: 28%;
-    /* width: 288px; */
+    width: 40%;
     padding:2em;
-    height: 80px;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
+    height: 60px;
     padding: 2rem;
     display: flex;
     justify-content:center;
