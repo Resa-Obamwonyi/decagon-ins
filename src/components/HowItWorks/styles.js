@@ -78,6 +78,9 @@ const StyledItem = styled.div`
   .description {
     width: 95%;
   }
+  p {
+    line-height: 30px;
+  }
   }
 `
 
