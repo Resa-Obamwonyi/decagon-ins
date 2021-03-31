@@ -48,7 +48,7 @@ function ProgramBar() {
   useEffect(() => {
     const handleScroll = () => {
       const { height: headerHeight } = getDimensions(headerRef.current);
-      const scrollPosition = window.scrollY + headerHeight;
+      const scrollPosition = window.scrollY + headerHeight+ 100;
 
       const selected = sectionRefs.find(({ section, ref }) => {
         const ele = ref.current;

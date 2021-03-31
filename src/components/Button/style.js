@@ -6,6 +6,10 @@ export const ButtonStyle = styled.button`
   width: ${({ width }) => (width ? width : "180px")};
   height: 52px;
   border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+
   a {
     text-decoration: none;
     color: #ffffff;

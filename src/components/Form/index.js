@@ -91,69 +91,9 @@ function FormDiv() {
               <ErrorMessage
                 name="name"
                 component="p"
-                style={{ color: "red" }}
+                style={{ color: "red", fontSize: "12px" }}
               />
-              <ErrorMessage
-                name="gender"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage name="dob" component="p" style={{ color: "red" }} />
-              <ErrorMessage
-                name="phone_number"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="email"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="state_of_origin"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="current_location"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="degree"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="institution"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="course_of_study"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="highest_qualification"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="programming_experience"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="nysc_status"
-                component="p"
-                style={{ color: "red" }}
-              />
-              <ErrorMessage
-                name="hear_about_us"
-                component="p"
-                style={{ color: "red" }}
-              />
+
               <ToastContainer autoClose={10000} limit={1} />
               <div className="wrapper">
                 <div className="label">
@@ -170,7 +110,16 @@ function FormDiv() {
                   className={errors.name && touched.name && "error"}
                 />
               </div>
-
+              <ErrorMessage
+                name="gender"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
+              <ErrorMessage
+                name="dob"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -208,6 +157,11 @@ function FormDiv() {
                   />
                 </div>
               </div>
+              <ErrorMessage
+                name="phone_number"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="wrapper">
                 <div className="label">
                   <span>Phone number</span>
@@ -225,6 +179,11 @@ function FormDiv() {
                   }
                 />
               </div>
+              <ErrorMessage
+                name="email"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="wrapper">
                 <div className="label">
                   <span>Email address</span>
@@ -240,6 +199,16 @@ function FormDiv() {
                   className={errors.email && touched.email && "error"}
                 />
               </div>
+              <ErrorMessage
+                name="state_of_origin"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
+              <ErrorMessage
+                name="current_location"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -290,6 +259,16 @@ function FormDiv() {
                   </select>
                 </div>
               </div>
+              <ErrorMessage
+                name="highest_qualification"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
+              <ErrorMessage
+                name="institution"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -336,6 +315,16 @@ function FormDiv() {
                   />
                 </div>
               </div>
+              <ErrorMessage
+                name="course_of_study"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
+              <ErrorMessage
+                name="degree"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -377,6 +366,16 @@ function FormDiv() {
                   </select>
                 </div>
               </div>
+              <ErrorMessage
+                name="programming_experience"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
+              <ErrorMessage
+                name="nysc_status"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -402,6 +401,7 @@ function FormDiv() {
                     ))}
                   </select>
                 </div>
+
                 <div className="wrapper double-wrapper-right">
                   <div className="label">
                     <span>NYSC status</span>
@@ -425,6 +425,11 @@ function FormDiv() {
                   </select>
                 </div>
               </div>
+              <ErrorMessage
+                name="hear_about_us"
+                component="p"
+                style={{ color: "red", fontSize: "12px" }}
+              />
               <div className="wrapper">
                 <div className="label">
                   <span>Where did you hear about us? </span>

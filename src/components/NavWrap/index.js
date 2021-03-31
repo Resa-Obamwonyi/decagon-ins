@@ -40,11 +40,11 @@ const NavWrap = ({ color, location }) => {
           </Nav>
         </div>
 
-        <div className="right-nav">
-          <Nav link="/apply" color={color} className="border-gradient">
-            Apply Now
-          </Nav>
-        </div>
+        <a href="/apply" className="right-nav">
+            <Nav link="/apply" color={color} className="border-gradient">
+              Apply Now
+            </Nav>
+        </a>
 
         <div className="ham-menu">
           <div className="menu-logo">

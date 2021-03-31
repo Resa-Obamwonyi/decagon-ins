@@ -12,7 +12,7 @@ function Curriculum() {
       <div className="main-div">
         <p>
           Gain fluency with the core software engineering techniques needed to
-          tap into a fast-growing field. Our curriculum is curates following
+          tap into a fast-growing field. Our curriculum is curated by following
           best practices and innovative teaching approaches for our decadevs to
           meet evolving employer demands
         </p>
