@@ -1,9 +1,9 @@
-import Odira from "../../images/odira.png";
-import Rafi from "../../images/rafi.png";
-import Itunu from "../../images/itunu.png";
-import Kabiru from "../../images/kabiru.png";
-import Tim from "../../images/timiring.png";
-import Michael from "../../images/michael.png";
+import Odira from "../../images/odira1.png";
+import Rafi from "../../images/rafi1.png";
+import Itunu from "../../images/itunu1.png";
+import Kabiru from "../../images/kabiru1.png";
+import Tim from "../../images/timiring1.png";
+import Michael from "../../images/chidi1.png";
 
 export const testimonies = [
   {

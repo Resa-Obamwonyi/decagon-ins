@@ -68,6 +68,11 @@ export const TestimonyStyle = styled.div`
     height: 56px;
     width: 56px;
     padding-right: 15px;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
   }
 
   .student-info {

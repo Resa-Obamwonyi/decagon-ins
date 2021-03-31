@@ -17,7 +17,7 @@ export const faqOne = [
   {
     question: "Who can apply?",
     answer:
-      "To be considered, Applicants Must Possess a track record of exceptional personal, academic and professional performance. is a fast learner with Great learning and cognitive ability. must possess the determination to work hard and excel as a software engineer. either a Higher National Diploma(HND), Bachelor's degree, or Masters. Have completed NYSC or Have an Exemption Letter. Must have a credible Guarantor",
+      "To be considered, Applicants Must Possess a track record of exceptional personal, academic and professional performance. Must be a fast learner with Great learning and cognitive ability. Applicant must possess the determination to work hard and excel as a software engineer. Should either possess a Higher National Diploma(HND), Bachelor's degree, or Masters and Must have completed NYSC or Have an Exemption Letter. Applicant must have a credible Guarantor",
   },
   {
     question:

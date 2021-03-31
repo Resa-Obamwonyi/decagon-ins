@@ -18,6 +18,7 @@ export const NavWrapStyle = styled.div`
   .right-nav {
     display: flex;
     flex-basis: 15%;
+    text-decoration: none;
     border: 1px solid transparent;
     justify-content: center;
     border-image-source: linear-gradient(to right, #34a853, #b8d344);
