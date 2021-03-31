@@ -15,10 +15,16 @@ export const StyledItem = styled.div`
     text-align: justify;
   }
   img {
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
   }
   .logo {
-    width: 20%;
+    /* width: 20%; */
+    height: 56px;
+    width: 56px;
+    padding-right: 15px;
   }
   .description {
     width: 90%;

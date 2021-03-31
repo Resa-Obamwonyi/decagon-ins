@@ -3,14 +3,21 @@ import styled from 'styled-components';
 
 export const StyledItem = styled.div`
   img {
-    width: 80px;
-    margin-left: -1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid white;
+    /* margin-left: -1em; */
   }
   .logo {
-
+    height: 56px;
+    width: 56px;
+    padding-right: 15px;
+    margin-right: -2em;
   }
   @media(max-width: 675px) {
     img {
+      height: 50px;
       width: 50px;
     }
   }
@@ -60,7 +67,8 @@ export const StyledContainer = styled.div`
   }
   @media(max-width: 675px) {
     h1 {
-      margin-left: 0.4em;
+      /* margin-left: 0.4em; */
+      margin-left: 1em;
     }
     p {
       margin-left: 0.4em;

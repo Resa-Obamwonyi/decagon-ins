@@ -1,8 +1,9 @@
 import React from 'react';
-import icon1 from '../../images/icon/decadevstrained/icon1.svg';
-import icon2 from '../../images/icon/decadevstrained/icon2.svg';
-import icon3 from '../../images/icon/decadevstrained/icon3.svg';
-import icon4 from '../../images/icon/decadevstrained/icon4.svg';
+
+import icon1 from "../../images/rafi1.png";
+import icon2 from "../../images/odira1.png";
+import icon3 from "../../images/itunu1.png";
+import icon4 from "../../images/kabiru1.png";
 
 import {StyledItem, StyledList, StyledContainer } from './style'
 
@@ -24,16 +25,16 @@ const Card = () => (
     <StyledList>
       <div className="list">
         <DecadevsProfile
-          imgUrl={icon1}
-        />
-        <DecadevsProfile
-          imgUrl={icon2}
+          imgUrl={icon4}
         />
         <DecadevsProfile
           imgUrl={icon3}
         />
         <DecadevsProfile
-          imgUrl={icon4}
+          imgUrl={icon2}
+        />
+        <DecadevsProfile
+          imgUrl={icon1}
         />
       </div>
       
