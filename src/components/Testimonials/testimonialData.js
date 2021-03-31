@@ -1,5 +1,9 @@
-import avatar1 from '../../images/icon/testimonials/avatar1.svg';
-import avatar2 from '../../images/icon/testimonials/avatar2.svg';
+// import avatar1 from '../../images/icon/testimonials/avatar1.svg';
+// import avatar2 from '../../images/icon/testimonials/avatar2.svg';
+
+import avatar1 from "../../images/odira1.png";
+import avatar2 from "../../images/itunu1.png";
+
 import avatar3 from '../../images/icon/testimonials/avatar3.svg';
 import avatar4 from '../../images/icon/testimonials/avatar4.svg';
 
@@ -10,9 +14,9 @@ const data = {
       content: [
         {
           name: "Odira Eze,", 
-          office: "Python stack", 
+          office: "Java stack", 
           imgUrl: avatar1, 
-          review: "I worked in the accounts department of a hotel before starting at Decagon. My experience at Decagon has been really challenging and the same time refreshing because I get to learn new problem-solving concepts and techniques everyday. It's a six months of dedication and sacrifice which will definitely be rewarding, you can do"
+          review: "I worked in the accounts department of a hotel before starting at Decagon. My experience at Decagon has been really challenging and the same time refreshing because I get to learn new problem-solving concepts and techniques everyday. It's a six months of dedication and sacrifice which will definitely be rewarding, you can do it."
         },
         
         {
@@ -27,7 +31,7 @@ const data = {
       heading: "Hiring Partner", 
       content: [
         {
-          name: "Segun Adetimehin", 
+          name: "Segun Adetimehin,", 
           office: "Terragon Group", 
           imgUrl: avatar3, 
           review: "Working with Kazeem, has been a great addition to our efficiency as an organization. He has also added a lot of value to the business and achieved this at a very short time frame. Engineers from Decagon are very hardworking and figure out this fast."
