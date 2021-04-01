@@ -1,12 +1,16 @@
 import * as Yup from "yup";
 
+const phoneRegExp = /(^[0]\d{10}$)|(^[\+]?[234]\d{12}$)/;
+
 export const validationSchema = Yup.object().shape({
   name: Yup.string()
     .required("Name is required.")
     .min(5, "Full Name is too short, must be at least 5 Characters long."),
   gender: Yup.string().required("Gender is required."),
   dob: Yup.string().required("Date of Birth is required."),
-  phone_number: Yup.string().required("Phone Number is required."),
+  phone_number: Yup.string().required("Phone Number is required.")
+    .matches(phoneRegExp, 'Phone number is not valid')
+    .min(11, "Phone number is invalid"),
   email: Yup.string().email().required("Email is required."),
   state_of_origin: Yup.string().required("State of Origin is required."),
   current_location: Yup.string().required("Location is required."),

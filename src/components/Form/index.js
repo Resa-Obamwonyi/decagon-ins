@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormStyle } from "./style";
 import Button from "../Button";
 import { Formik, Form, ErrorMessage} from 'formik';
@@ -11,6 +11,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 function FormDiv() {
+  const [active, setActive] = useState(false)
+  const handleButtonActive = (state) => {
+    setActive(state)
+  }
+
   return (
     <FormStyle>
       <div className="form-header">
@@ -43,6 +48,7 @@ function FormDiv() {
         }}
         validationSchema={validationSchema}
         onSubmit={(values, { setSubmitting }) => {
+          handleButtonActive(true);
           axios
             .post(
               "https://dhq-recruitment-staging.herokuapp.com/api/v1/applicant/register",
@@ -69,9 +75,11 @@ function FormDiv() {
             )
             .then(
               (response) => {
+                handleButtonActive(false)
                 toast.success(response.data.data.application_message);
               },
               (error) => {
+                handleButtonActive(false)
                 toast.error(error);
               }
             );
@@ -454,7 +462,7 @@ function FormDiv() {
               </div>
 
               <div className="btn">
-                <Button width="100%">Submit</Button>
+                <Button width="100%" disabled={active}>{active?"loading...": "Submit"}</Button>
               </div>
             </Form>
           );
