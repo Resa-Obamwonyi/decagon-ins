@@ -35,23 +35,14 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-173637168-1");
+      gtag('config', 'UA-173637168-1');
     </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NMPGFWV');</script>
-    <!-- End Google Tag Manager -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -62,40 +53,49 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script> -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window,document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-       fbq('init', '1869021429786411'); 
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1869021429786411');
       fbq('track', 'PageView');
     </script>
     <noscript>
-       <img height="1" width="1" 
-      src="https://www.facebook.com/tr?id=1869021429786411&ev=PageView
-      &noscript=1"/>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=1869021429786411&ev=PageView
+      &noscript=1"
+      />
     </noscript>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
     <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9289848.js"></script>
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="https://js.hs-scripts.com/9289848.js"
+    ></script>
     <!-- End of HubSpot Embed Code -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMPGFWV"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
