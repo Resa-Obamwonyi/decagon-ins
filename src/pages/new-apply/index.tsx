@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import Layout from "../../layout";
 import { ToastContainer, toast } from "react-toastify";
@@ -40,7 +40,23 @@ export default function Application() {
   const [loading, setLoading] = useState(false);
   const [isOther, setIsOther] = useState({other: false, 'other-us': false});
   const [isDecadev, setIsDecadev] = useState(false);
+  const [notActiveMsg, setNotActiveMsg] = useState('');
+  const [cycleError, setCycleError] = useState('');
 
+  useEffect(() => {
+    publicFetch.get(`/cycle/is_active`)
+    .then(res =>{
+      const isActive = res?.data.data.is_active;
+      const message = res?.data.data.message;
+      if (!isActive) {
+        setNotActiveMsg(message)
+      }
+    })
+    .catch(error =>{
+      setCycleError(error?.response?.data.error)
+    })
+  }, [])
+  
   const handleSelect = (event: any) => {
     const { name, value } = event.target;
     if (value === 'other') {
@@ -118,8 +134,9 @@ export default function Application() {
 
           <ToastContainer />
           <form onSubmit={handleSubmit}>
+            <span className="no-cycle-text">{notActiveMsg}</span>
+            <span className="no-cycle-text">{cycleError}</span>
             <h1 className="form-title">Application form</h1>
-
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="first_name">First Name</label>
