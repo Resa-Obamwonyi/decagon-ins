@@ -46,6 +46,13 @@
         border-radius: 5px;
         background-color: white;
         width: 100%;
+        .no-cycle-text{
+          color: red;
+          text-align: center;
+          margin: 10px 0px;
+          font-size: medium;
+          font-weight: bolder;
+        }
         .terms-c {
           font-size: 14px;
           text-align: center;
