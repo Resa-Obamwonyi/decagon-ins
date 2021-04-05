@@ -41,6 +41,7 @@ export default function Application() {
   const [isOther, setIsOther] = useState({other: false, 'other-us': false});
   const [isDecadev, setIsDecadev] = useState(false);
   const [notActiveMsg, setNotActiveMsg] = useState('');
+  const [cycleError, setCycleError] = useState('');
 
   useEffect(() => {
     publicFetch.get(`/cycle/is_active`)
@@ -52,7 +53,7 @@ export default function Application() {
       }
     })
     .catch(error =>{
-      console.error(error?.response?.data.error)
+      setCycleError(error?.response?.data.error)
     })
   }, [])
   
@@ -134,6 +135,7 @@ export default function Application() {
           <ToastContainer />
           <form onSubmit={handleSubmit}>
             <span className="no-cycle-text">{notActiveMsg}</span>
+            <span className="no-cycle-text">{cycleError}</span>
             <h1 className="form-title">Application form</h1>
             <div className="form-row">
               <div className="form-group">
