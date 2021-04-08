@@ -12,7 +12,6 @@ function Banner() {
         backgroundRepeat: "no-repeat"
       }}>
         <div class="left">
-          {/* <div class="content"> */}
             <h1>Launch your career in software engineering.</h1>
             <p>
               Decagon is an immersive software engineering experience that
@@ -21,7 +20,6 @@ function Banner() {
             <Button link={"/apply"}>
               Apply Now
             </Button>
-          {/* </div> */}
           </div>
         </div>
     </StyledDiv>
