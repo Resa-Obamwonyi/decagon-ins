@@ -8,6 +8,9 @@ export const ApplyBannerStyle = styled.div`
   height: 308px;
   background: url(${({ background }) => background}) no-repeat center center;
   text-align: center;
+  button {
+    cursor: pointer;
+  }
   h1 {
     font-weight: 800;
     font-size: 48px;

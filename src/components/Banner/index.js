@@ -11,7 +11,7 @@ function Banner() {
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat"
       }}>
-          <div class="left">
+        <div class="left">
             <h1>Launch your career in software engineering.</h1>
             <p>
               Decagon is an immersive software engineering experience that

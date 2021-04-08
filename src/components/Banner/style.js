@@ -17,7 +17,6 @@ export const StyledDiv = styled.div`
   display: flex;
   align-items: center;
 }
-
 .left {
   width: 40%;
   height: 60%;
@@ -30,19 +29,16 @@ export const StyledDiv = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 }
-
 .left h1 {
   font-size: 48px;
   line-height: 64px;
   color: #b8d343;
 }
-
 .left p {
   font-size: 16px;
   line-height: 29px;
   color: #ffffff;
 }
-
 .left button {
   outline: none;
   border: none;
@@ -53,7 +49,6 @@ export const StyledDiv = styled.div`
   color: #ffffff;
   cursor: pointer;
 }
-
 @media (max-width: 1090px) {
   .background-container {
     width: 100%;
@@ -72,7 +67,6 @@ export const StyledDiv = styled.div`
     line-height: 44px;
   }
 }
-
 @media (max-width: 516px) {
   .left {
     width: 80%;
@@ -82,7 +76,6 @@ export const StyledDiv = styled.div`
     line-height: 40px;
   }
 }
-
 @media (max-width: 480px) {
   .left {
     background: rgba(0, 0, 0, 0.7);
