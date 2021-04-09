@@ -47,6 +47,8 @@ function FormDiv() {
           state_of_origin: "",
         }}
         validationSchema={validationSchema}
+        validateOnChange={false}
+        validateOnBlur={false}
         onSubmit={(values, { setSubmitting }) => {
           handleButtonActive(true);
           axios
@@ -75,11 +77,11 @@ function FormDiv() {
             )
             .then(
               (response) => {
-                handleButtonActive(false)
+                handleButtonActive(false);
                 toast.success(response.data.data.application_message);
               },
               (error) => {
-                handleButtonActive(false)
+                handleButtonActive(false);
                 toast.error(error);
               }
             );
@@ -462,7 +464,9 @@ function FormDiv() {
               </div>
 
               <div className="btn">
-                <Button width="100%" disabled={active}>{active?"loading...": "Submit"}</Button>
+                <Button width="100%" disabled={active}>
+                  {active ? "loading..." : "Submit"}
+                </Button>
               </div>
             </Form>
           );

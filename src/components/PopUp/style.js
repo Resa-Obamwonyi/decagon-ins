@@ -15,7 +15,7 @@ export const PopUpStyle = styled.div`
     background: #ffffff;
     left: 0px;
     width: 50%;
-    margin: 100% 25% auto;
+    margin: auto 25% auto;
     padding: 20px;
   }
 
@@ -75,7 +75,7 @@ export const PopUpStyle = styled.div`
   @media (max-width: 790px) {
     .stack-body {
       width: 90%;
-      margin: 200% 5% auto;
+      margin: auto 5% auto;
       padding: 20px;
     }
     .activity-row {
@@ -88,7 +88,7 @@ export const PopUpStyle = styled.div`
   @media (max-width: 480px) {
     .stack-body {
       width: 95%;
-      margin: 700% 2.5% auto;
+      margin: auto 2.5% auto;
       padding: 20px;
     }
     .activity-row {

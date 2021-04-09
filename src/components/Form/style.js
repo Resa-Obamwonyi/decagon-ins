@@ -34,12 +34,19 @@ export const FormStyle = styled.div`
     color: rgba(255, 255, 255, 0.4);
     background: none;
     border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    option {
+      background: #2d2f48;
+    }
   }
   input:focus,
   select:focus {
     border: none;
     outline: none;
   }
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
@@ -49,7 +56,7 @@ export const FormStyle = styled.div`
   select:-webkit-autofill:focus,
   select:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-fill-color: #000000;
   }
 
   input[type="date"]::-webkit-calendar-picker-indicator {
