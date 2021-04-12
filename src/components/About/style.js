@@ -5,6 +5,7 @@ export const StyledDiv = styled.div`
   width: 90%;
   max-height: 100%;
   margin: 0 auto;
+  margin-top: 80px;
   margin-bottom: 3em;
   font-weight: 900;
   font-family: "Mulish", sans-serif;

@@ -8,7 +8,7 @@ export const StyledDiv = styled.div`
   justify-content: flex-end;
   height: 80vh;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 7em;
 .background-container {
   background-size: cover;
   z-index: 100;
@@ -18,8 +18,10 @@ export const StyledDiv = styled.div`
   align-items: center;
 }
 .left {
+  margin-top:140px;
+  margin-bottom:140px;
   width: 40%;
-  height: 60%;
+  /* height: 60%; */
   background: #171825;
   z-index: 1000;
   padding: 2rem;
@@ -30,13 +32,17 @@ export const StyledDiv = styled.div`
   justify-content: space-between;
 }
 .left h1 {
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 2em;
+  line-height: 140%;
+  /* font-size: 48px;
+line-height: 64px; */
   color: #b8d343;
 }
 .left p {
-  font-size: 16px;
-  line-height: 29px;
+  font-size: 0.9em;
+  line-height: 150%;
+  /* font-size: 16px;
+  line-height: 29px; */
   color: #ffffff;
 }
 .left button {
@@ -83,7 +89,7 @@ export const StyledDiv = styled.div`
     height: 100%;
   }
   .left h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 30px;
   }
 }

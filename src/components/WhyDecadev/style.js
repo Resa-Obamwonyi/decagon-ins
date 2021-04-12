@@ -71,6 +71,7 @@ export const StyledContainer = styled.div`
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  margin-top: 80px;
   line-height: 24px;
   color: #171825;
 

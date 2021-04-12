@@ -16,7 +16,7 @@ function AboutCard() {
             <h2>About the Institute</h2>
             <p>
               Decagon institute is an <strong> elite software engineering </strong> and
-              <strong> leadership training facility </strong> that equips high
+              <strong> leadership training school </strong> that equips high
               potential individuals with <strong> world-class software engineering </strong> and leadership
               skills, combined with practical exposure through real-life
               projects and corporate placements. We ensure that our devs are
