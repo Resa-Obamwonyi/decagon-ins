@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OverviewStyle = styled.div`
-
+${'' /* margin: auto 2.5%; */}
   h1 {
     text-align: center;
     font-size: 32px;
@@ -22,10 +22,11 @@ export const OverviewStyle = styled.div`
     align-items: center;
   }
   .half-content {
-    flex-basis: 50%;
+    ${'' /* flex-basis: 100%; */}
     padding-right: 50px;
     line-height: 24px;
     color: #171825;
+    text-align:justify;
 
     p {
       font-size: 16px;
@@ -36,7 +37,7 @@ export const OverviewStyle = styled.div`
   }
 
   .photo {
-    flex-basis: 50%;
+    ${'' /* flex-basis: 50%; */}
   }
 
   @media (max-width: 480px) {

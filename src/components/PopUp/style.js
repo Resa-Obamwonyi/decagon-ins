@@ -52,6 +52,7 @@ export const PopUpStyle = styled.div`
   td {
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: left;
   }
 
   p {
@@ -98,9 +99,8 @@ export const PopUpStyle = styled.div`
       width: 5%;
     }
 
-    .time{
+    .time {
       font-size: 13px;
     }
-   
   }
 `;

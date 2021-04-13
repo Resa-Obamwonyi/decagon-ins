@@ -30,28 +30,28 @@ function PopUp({
           </thead>
           <tbody>
             <tr>
-              <td className="time">WEEK 0</td>
+              <td className="time"> 0</td>
               <td>
                 <h3>Orientation - Welcome to Decagon Institute!</h3>
                 <p>Orientation - Welcome to Decagon Institute!</p>
               </td>
             </tr>
             <tr>
-              <td className="time">WEEK 1 - 4 </td>
+              <td className="time"> 1 - 4 </td>
               <td>
                 <h3>{curr1}</h3>
                 <p>{curr1data}</p>
               </td>
             </tr>
             <tr>
-              <td className="time">WEEK 5 - 8 </td>
+              <td className="time"> 5 - 8 </td>
               <td>
                 <h3>{curr2}</h3>
                 <p>{curr2data}</p>
               </td>
             </tr>
             <tr>
-              <td className="time">WEEK 9 - 12</td>
+              <td className="time"> 9 - 12</td>
               <td>
                 <td>
                   <h3>{curr3}</h3>
@@ -60,7 +60,7 @@ function PopUp({
               </td>
             </tr>
             <tr>
-              <td className="time">WEEK 13 - 16</td>
+              <td className="time"> 13 - 16</td>
               <td>
                 <h3>{curr4}</h3>
                 <p>{curr4data}</p>
