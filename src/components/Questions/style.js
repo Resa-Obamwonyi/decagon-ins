@@ -69,6 +69,7 @@ export const QuestionStyle = styled.div`
     margin: auto 1%;
     outline: none;
     font-weight: bold;
+    font-family: "Mulish-Bold";
   }
 
   .accordion-active {

@@ -17,7 +17,6 @@ export const StackCardStyle = styled.div`
 
   p {
     font-size: 16px;
-    line-height: 5px;
     color: #34a853;
     :hover {
       cursor: pointer;
@@ -29,13 +28,14 @@ export const StackCardStyle = styled.div`
     ${"" /* margin: 25px 25%; */}
     max-height: 50%;
     img {
-      padding-top: 25px;
+      padding-top: 1em;
       width: 30%;
     }
   }
 
   .content {
     flex-basis: 40%;
+
   }
 
   @media (max-width: 560px) {

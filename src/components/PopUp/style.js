@@ -42,7 +42,7 @@ export const PopUpStyle = styled.div`
     background: #34a853;
     color: #ffffff;
     font-size: 16px;
-    text-align:center;
+    text-align: center;
   }
   table,
   td {
@@ -97,5 +97,10 @@ export const PopUpStyle = styled.div`
     .time-row {
       width: 5%;
     }
+
+    .time{
+      font-size: 13px;
+    }
+   
   }
 `;
