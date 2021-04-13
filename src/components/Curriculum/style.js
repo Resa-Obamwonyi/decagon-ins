@@ -19,7 +19,7 @@ export const CurriculumStyle = styled.div`
     align-items: center;
   }
   .half-content {
-    flex-basis: 50%;
+    flex-basis: 100%;
     padding-right: 50px;
     line-height: 25px;
     color: #171825;

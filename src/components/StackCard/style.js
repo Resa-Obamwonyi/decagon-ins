@@ -29,7 +29,9 @@ export const StackCardStyle = styled.div`
     max-height: 50%;
     img {
       padding-top: 1em;
-      width: 30%;
+      width: 5em;
+      height: 5em;
+
     }
   }
 
