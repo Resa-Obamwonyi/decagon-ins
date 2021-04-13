@@ -68,6 +68,7 @@ export const QuestionStyle = styled.div`
     justify-content: space-between;
     margin: auto 1%;
     outline: none;
+    font-weight: bold;
   }
 
   .accordion-active {
