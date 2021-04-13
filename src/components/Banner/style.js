@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 
 export const StyledDiv = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 80vh;
   margin-top: 100px;
   margin-bottom: 7em;
+
 .background-container {
   background-size: cover;
   z-index: 100;
@@ -17,6 +18,7 @@ export const StyledDiv = styled.div`
   display: flex;
   align-items: center;
 }
+
 .left {
   margin-top:140px;
   margin-bottom:140px;
@@ -62,6 +64,7 @@ export const StyledDiv = styled.div`
     height: 80%;
     padding-bottom: 2em;
     align-items: center;
+    opacity: 0.9;
   }
   .left h1 {
     font-size: 35px;
