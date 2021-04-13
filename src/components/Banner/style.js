@@ -86,7 +86,8 @@ export const StyledDiv = styled.div`
   .left {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 100%;
+    margin-top:0;
+    margin-bottom:0;
   }
   .left h1 {
     font-size: 30px;
