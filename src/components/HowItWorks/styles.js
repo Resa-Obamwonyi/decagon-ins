@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const StyledContainer = styled.div`
   width: 90%;
   margin: 0 auto;
+  margin-top: 80px;
   margin-bottom: 3em;
   padding: 0;
   background: #F5F9E7 67%;

@@ -1,34 +1,36 @@
 @font-face {
   font-family: "Mulish-Regular";
-  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Regular.ttf") format('truetype');
+  src: local("Mulish"),
+    url("../src/assets/Mulish/static/Mulish-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Mulish-Bold";
-  src: local("Mulish"), url("../src/assets/Mulish/static/Mulish-Bold.ttf") format('truetype');
+  src: local("Mulish"),
+    url("../src/assets/Mulish/static/Mulish-Bold.ttf") format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 html {
-    overflow-x: hidden;
-    width: 100%;
-    overscroll-behavior: none;
+  overflow-x: hidden;
+  width: 100%;
+  overscroll-behavior: none;
 }
 
 body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-  font-family:"Mulish-Regular";
-  position:relative
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  font-family: "Mulish-Regular";
+  position: relative;
 }
 
-h1, h2, h3, h4{
-  font-family:"Mulish-Bold";
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Mulish-Bold";
 }
-p{
-    font-family:"Mulish-Regular";
-
+p {
+  font-family: "Mulish-Regular";
 }
-
-

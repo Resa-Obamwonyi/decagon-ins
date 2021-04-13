@@ -6,7 +6,7 @@ import background from '../../images/icon/banner/background.png'
 
 function Banner() {
   return (
-    <StyledDiv>
+    <StyledDiv className="">
       <div class="background-container" style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat"
