@@ -28,6 +28,7 @@ export const PopUpStyle = styled.div`
   }
   table {
     background: #fafcf4;
+    width: 100%;
   }
 
   th {
