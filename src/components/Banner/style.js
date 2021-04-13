@@ -73,7 +73,9 @@ export const StyledDiv = styled.div`
 }
 @media (max-width: 516px) {
   .left {
-    width: 80%;
+    width: 100%;
+    margin-top:0;
+    margin-bottom:0;
   }
   .left h1 {
     font-size: 30px;
