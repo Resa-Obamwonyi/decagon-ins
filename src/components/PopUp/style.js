@@ -42,7 +42,7 @@ export const PopUpStyle = styled.div`
     background: #34a853;
     color: #ffffff;
     font-size: 16px;
-    padding-left: 20px;
+    text-align:center;
   }
   table,
   td {

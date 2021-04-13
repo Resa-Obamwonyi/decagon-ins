@@ -24,7 +24,7 @@ function Overview() {
             developers learn both full-stack software development and additional
             soft skills in an immersive environment. Through an agile delivery
             methodology, mentor matching and leadership modules, our elite
-            engineers/developers/decadevs are equipped with techniques and a
+            engineers are equipped with techniques and a
             leadership mindset that enables them to work competitively in any
             team globally.
           </p>

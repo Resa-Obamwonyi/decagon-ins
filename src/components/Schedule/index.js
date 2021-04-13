@@ -49,7 +49,7 @@ function Schedule() {
             <td>
               <h3>Project/Task Deliverables</h3>
               <p>
-                you build will create an amazing portfolio that showcases your
+                You will be able to create an amazing portfolio that showcases your
                 skills and experience.
               </p>
             </td>

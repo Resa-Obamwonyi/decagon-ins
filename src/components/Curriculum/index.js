@@ -14,7 +14,7 @@ function Curriculum() {
           Gain fluency with the core software engineering techniques needed to
           tap into a fast-growing field. Our curriculum is curated by following
           best practices and innovative teaching approaches for our decadevs to
-          meet evolving employer demands
+          meet evolving employer demands.
         </p>
       </div>
       <div className="flex-content">
@@ -27,7 +27,7 @@ function Curriculum() {
           <p>
             We have 6 stacks that our decadevs learn and become proficient in
             using upon graduation from the program. These include: Java, Node,
-            .NET, Python, Android and iOS
+            .NET, Python, Android and iOS.
           </p>
         </div>
         <div className="photo">

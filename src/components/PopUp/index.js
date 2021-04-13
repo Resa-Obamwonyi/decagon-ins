@@ -15,61 +15,61 @@ function PopUp({
   curr4data,
 }) {
   return showModal ? (
-      <PopUpStyle>
-        <div className="stack-body">
-          <h4 className="close" onClick={() => setShowModal((prev) => !prev)}>
-            close
-          </h4>
-          <h1>{stack} Stack Curriculum</h1>
-          <table>
-            <thead>
-              <tr>
-                <th className="time-row">WEEKS</th>
-                <th className="activity-row">COURSES</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="time">0 - 1 WEEK </td>
+    <PopUpStyle>
+      <div className="stack-body">
+        <h4 className="close" onClick={() => setShowModal((prev) => !prev)}>
+          close
+        </h4>
+        <h1>{stack} Stack Curriculum</h1>
+        <table>
+          <thead>
+            <tr>
+              <th className="time-row">WEEK</th>
+              <th className="activity-row">TOPICS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="time">WEEK 0</td>
+              <td>
+                <h3>Orientation - Welcome to Decagon Institute!</h3>
+                <p>Orientation - Welcome to Decagon Institute!</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="time">WEEK 1 - 4 </td>
+              <td>
+                <h3>{curr1}</h3>
+                <p>{curr1data}</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="time">WEEK 5 - 8 </td>
+              <td>
+                <h3>{curr2}</h3>
+                <p>{curr2data}</p>
+              </td>
+            </tr>
+            <tr>
+              <td className="time">WEEK 9 - 12</td>
+              <td>
                 <td>
-                  <h3>Orientation - Welcome to Decagon Institute!</h3>
-                  <p>Orientation - Welcome to Decagon Institute!</p>
+                  <h3>{curr3}</h3>
+                  <p>{curr3data}</p>
                 </td>
-              </tr>
-              <tr>
-                <td className="time">1 - 4 WEEK </td>
-                <td>
-                  <h3>{curr1}</h3>
-                  <p>{curr1data}</p>
-                </td>
-              </tr>
-              <tr>
-                <td className="time">5 - 8 WEEKS</td>
-                <td>
-                  <h3>{curr2}</h3>
-                  <p>{curr2data}</p>
-                </td>
-              </tr>
-              <tr>
-                <td className="time">9 - 12 WEEKS</td>
-                <td>
-                  <td>
-                    <h3>{curr3}</h3>
-                    <p>{curr3data}</p>
-                  </td>
-                </td>
-              </tr>
-              <tr>
-                <td className="time">13 - 16 WEEKS</td>
-                <td>
-                  <h3>{curr4}</h3>
-                  <p>{curr4data}</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </PopUpStyle>
+              </td>
+            </tr>
+            <tr>
+              <td className="time">WEEK 13 - 16</td>
+              <td>
+                <h3>{curr4}</h3>
+                <p>{curr4data}</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </PopUpStyle>
   ) : null;
 }
 
