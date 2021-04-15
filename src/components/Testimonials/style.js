@@ -2,13 +2,13 @@
 
 
 export const StyledItem = styled.div`
-    display: flex;
-    padding: 3em;
-    background: white;
-    width: 800px;
-    margin: 2em 1em;
-    justify-items: center;
-    height: inherit;
+  display: flex;
+  padding: 3em;
+  background: white;
+  width: 800px;
+  margin: 2em 1em;
+  justify-items: center;
+  height: inherit;
   p {
     font-size: 16px;
     line-height: 32px;
@@ -22,8 +22,8 @@ export const StyledItem = styled.div`
   }
   .logo {
     /* width: 20%; */
-    height: 56px;
-    width: 56px;
+    width: 88px;
+    height: 74px;
     padding-right: 15px;
   }
   .description {
@@ -43,25 +43,24 @@ export const StyledItem = styled.div`
   @media (max-width: 990px) {
     margin-top: 4rem;
     width: 90%;
-      .highlight-item {
-        flex-direction: column;
-        margin: 2em;
-        width: 380px;
-        min-height: 250px;
-        text-align: center;
-      }
-      img {
-        position: relative;
-        width: 90%;
-      }
-      .identity {
-        flex-direction: column;
-      }
-      .logo {
-        
-      }
+    .highlight-item {
+      flex-direction: column;
+      margin: 2em;
+      width: 380px;
+      min-height: 250px;
+      text-align: center;
+    }
+    img {
+      position: relative;
+      width: 90%;
+    }
+    .identity {
+      flex-direction: column;
+    }
+    .logo {
+    }
   }
-`
+`;
 export const StyledList = styled.div`
     display: flex;
     background: #F5F9E7 67%;

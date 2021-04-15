@@ -18,17 +18,19 @@ const HeadingCard = (props) => {
 function Card(props) {
   return (
     <StyledItem>
-        <div className="logo">
-            <img src={props.imgUrl} alt="card logo" />
-        </div>
-        <div className="description">
-          <div className="identity">
-            <div className="identity-item">{props.name} {props.Office}</div>
+      <div className="logo">
+        <img src={props.imgUrl} alt="card logo" />
+      </div>
+      <div className="description">
+        <div className="identity">
+          <div className="identity-item">
+            <h4>{props.name} <br/> {props.Office}</h4>
           </div>
-          <p>{props.review}</p>
         </div>
+        <p>{props.review}</p>
+      </div>
     </StyledItem>
-  )
+  );
 }
 
 const Testimonials = () => {
