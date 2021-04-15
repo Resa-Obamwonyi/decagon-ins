@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import sterling  from "../../images/sterling.png";
+import sterling  from "../../images/ster.svg";
 
 
 import {StyledItem, StyledContainer, StyledTitle, StyledParagraphy, StyledHeading } from './style'
