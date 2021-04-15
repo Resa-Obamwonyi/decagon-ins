@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import sterling  from "../../images/sterling.png";
 
 
 import {StyledItem, StyledContainer, StyledTitle, StyledParagraphy, StyledHeading } from './style'
@@ -38,27 +39,24 @@ const HeadingCard = (props) => {
     <StyledHeading color={props.color} onClick={handleClick}>
         <h2 className="title-header">{props.heading}</h2>
       <div className="description">{props.description}</div>
+      
     </StyledHeading>
   )
 }
 
 const SubContent = (props) => {
   return (
-      <div>
-        <h2 className="sub-header">{props.heading}</h2>
+    <div>
+      <h2 className="sub-header">{props.heading}</h2>
       <div className="sub-description">
         <ul>
-          {
-            typeof (props.description) === "object" &&
-            props.description.map((item, index) => (<li>{item}</li>))
-          }
+          {typeof props.description === "object" &&
+            props.description.map((item, index) => <li>{item}</li>)}
         </ul>
-        
-        {typeof (props.description) === "string" &&
-          props.description}
-    </div>
+        {typeof props.description === "string" && props.description}
       </div>
-  )
+    </div>
+  );
 }
 
 function Card(props) {
@@ -102,32 +100,33 @@ const Finance = () => {
       setReview(data[heading].description)
       setAdditional(data[heading].additional)
   }
-  return(
+  return (
     <StyledContainer>
       <div className="container">
         <div className="heading">
           <h1>Flexible Financing Options</h1>
         </div>
-      <div className="content">
-        <StyledTitle>
-          {Object.keys(data).map((item, index) => (
+        <div className="content">
+          <StyledTitle>
+            {Object.keys(data).map((item, index) => (
               <HeadingCard
-                id={index} 
+                id={index}
                 heading={data[item].heading}
                 change={changeContent}
-              color={selectedHeading[index]}
+                color={selectedHeading[index]}
               />
             ))}
           </StyledTitle>
           <StyledParagraphy>
-            <Card review={review}
-          additional={additional}
-        /> 
-      </StyledParagraphy>   
-      </div> 
-    </div>
+            <Card review={review} additional={additional} />
+            <div className="sterling">
+              Powered by <img src={sterling} alt="sterling" />
+            </div>
+          </StyledParagraphy>
+        </div>
+      </div>
     </StyledContainer>
-  )
+  );
 }
 
 export default Finance;
