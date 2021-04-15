@@ -17,7 +17,7 @@ export const StyledDiv = styled.div`
   p {
     font-size: 16px;
     line-height: 32px;
-    text-align: justify;
+    text-align: left;
     font-style: normal;
   }
   .logo {
