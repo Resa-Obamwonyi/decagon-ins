@@ -81,18 +81,17 @@ export const StyledParagraphy = styled.div`
   font-size: 16px;
   line-height: 32px;
   z-index: 99;
-  .sterling
-  {
-    display:flex;
-    align-items:center;
+  .sterling {
+    display: flex;
+    align-items: center;
     img {
-    width: 60px;
-    height: 34px;
-    background:#ffffff;
-    padding:5px;
-    border-radius:8px;
-    margin-left:10px;
-  }
+      width: 42.26px;
+      height: 22.3px;
+      background: #ffffff;
+      padding: 5px;
+      border-radius: 8px;
+      margin-left: 10px;
+    }
   }
 `;
 
