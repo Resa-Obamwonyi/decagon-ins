@@ -70,7 +70,7 @@ const StyledItem = styled.div`
     font-size: 16px;
     line-height: 32px;
     text-align: left;
-    width: 70%;
+    width: 90%;
   }
   @media only screen 
   and (max-width : 675px) 
