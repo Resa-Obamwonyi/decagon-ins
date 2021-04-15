@@ -12,7 +12,7 @@ export const StyledItem = styled.div`
   p {
     font-size: 16px;
     line-height: 32px;
-    text-align: justify;
+    text-align: left;
   }
   img {
     /* width: 80%; */
