@@ -75,13 +75,26 @@ export const StyledTitle = styled.div`
 `
 export const StyledParagraphy = styled.div`
   width: 95%;
-  background: #F7F8F0;
+  background: #f7f8f0;
   padding: 3em;
   padding-top: 5em;
   font-size: 16px;
   line-height: 32px;
   z-index: 99;
-`
+  .sterling
+  {
+    display:flex;
+    align-items:center;
+    img {
+    width: 60px;
+    height: 34px;
+    background:#ffffff;
+    padding:5px;
+    border-radius:8px;
+    margin-left:10px;
+  }
+  }
+`;
 
 export const StyledHeading = styled.div`
     background: ${props => props.color? ' #34A853': 'white'};
