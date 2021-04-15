@@ -69,7 +69,7 @@ const StyledItem = styled.div`
   p {
     font-size: 16px;
     line-height: 32px;
-    text-align: justify;
+    text-align: left;
     width: 70%;
   }
   @media only screen 
