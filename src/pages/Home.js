@@ -34,18 +34,20 @@ const HomeStyle = styled.div`
 
 function Home() {
   return (
-    <HomeStyle>
+    <div>
       <Header />
-      <Banner />
-      <WhyDecadev />
-      <HowItWorks />
-      <About />
-      <Testimonials />
-      <DecadevsProfile />
-      <Partners />
-      <ApplyBanner />
-      <Footer />
-    </HomeStyle>
+      <HomeStyle>
+        <Banner />
+        <WhyDecadev />
+        <HowItWorks />
+        <About />
+        <Testimonials />
+        <DecadevsProfile />
+        <Partners />
+        <ApplyBanner />
+        <Footer />
+      </HomeStyle>
+    </div>
   );
 }
 
