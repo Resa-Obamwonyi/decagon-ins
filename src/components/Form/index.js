@@ -49,7 +49,7 @@ function FormDiv() {
         validationSchema={validationSchema}
         validateOnChange={false}
         validateOnBlur={false}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, resetForm }) => {
           handleButtonActive(true);
           axios
             .post(
@@ -79,10 +79,12 @@ function FormDiv() {
               (response) => {
                 handleButtonActive(false);
                 toast.success(response.data.data.application_message);
+                resetForm();
               },
               (error) => {
                 handleButtonActive(false);
                 toast.error(error);
+                resetForm();
               }
             );
         }}
@@ -97,7 +99,7 @@ function FormDiv() {
             handleSubmit,
           } = props;
           return (
-            <Form className="form-area" onSubmit={handleSubmit}>
+            <Form className="form-area" onSubmit={handleSubmit} id="form-data">
               <ErrorMessage
                 name="name"
                 component="p"
@@ -120,16 +122,23 @@ function FormDiv() {
                   className={errors.name && touched.name && "error"}
                 />
               </div>
-              <ErrorMessage
-                name="gender"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
-              <ErrorMessage
-                name="dob"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
+              <div className="error-div">
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="gender"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="dob"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+              </div>
+
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -209,16 +218,22 @@ function FormDiv() {
                   className={errors.email && touched.email && "error"}
                 />
               </div>
-              <ErrorMessage
-                name="state_of_origin"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
-              <ErrorMessage
-                name="current_location"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
+              <div className="error-div">
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="state_of_origin"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="current_location"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+              </div>
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -269,16 +284,23 @@ function FormDiv() {
                   </select>
                 </div>
               </div>
-              <ErrorMessage
-                name="highest_qualification"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
-              <ErrorMessage
-                name="institution"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
+              <div className="error-div">
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="highest_qualification"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="institution"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+              </div>
+
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -325,16 +347,23 @@ function FormDiv() {
                   />
                 </div>
               </div>
-              <ErrorMessage
-                name="course_of_study"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
-              <ErrorMessage
-                name="degree"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
+              <div className="error-div">
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="course_of_study"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="degree"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+              </div>
+
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">
@@ -376,16 +405,22 @@ function FormDiv() {
                   </select>
                 </div>
               </div>
-              <ErrorMessage
-                name="programming_experience"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
-              <ErrorMessage
-                name="nysc_status"
-                component="p"
-                style={{ color: "red", fontSize: "12px" }}
-              />
+              <div className="error-div">
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="programming_experience"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+                <div className="single-error-div">
+                  <ErrorMessage
+                    name="nysc_status"
+                    component="p"
+                    style={{ color: "red", fontSize: "12px" }}
+                  />
+                </div>
+              </div>
               <div className="double-input">
                 <div className="wrapper double-wrapper-left">
                   <div className="label">

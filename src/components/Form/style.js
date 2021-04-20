@@ -101,7 +101,15 @@ export const FormStyle = styled.div`
     margin-top: 30px;
   }
 
-  @media (max-width: 790px) {
+  .error-div {
+    display: flex;
+  }
+
+  .single-error-div{
+    flex-basis:50%;
+  } 
+  
+@media (max-width: 790px) {
     .form-area {
       width: 80%;
       margin: 50px 10%;

@@ -1,6 +1,6 @@
 import * as Yup from "yup";
 
-const phoneRegExp = /(^[0]\d{10}$)|(^[\+]?[234]\d{12}$)/;
+const phoneRegExp = /(^[0]\d{10}$)|(^[+]?[234]\d{12}$)/;
 
 export const validationSchema = Yup.object().shape({
   name: Yup.string()
