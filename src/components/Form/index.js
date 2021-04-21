@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 import { FormStyle } from "./style";
 import Button from "../Button";
-import { Formik, Form, ErrorMessage} from 'formik';
-import { gender, state, qualification, info, grade, experience, nysc } from "./data";
+import { Formik, Form, ErrorMessage } from "formik";
+import {
+  gender,
+  state,
+  qualification,
+  info,
+  grade,
+  experience,
+  nysc,
+} from "./data";
 import { validationSchema } from "./validationSchema";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
-
 function FormDiv() {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   const handleButtonActive = (state) => {
-    setActive(state)
-  }
+    setActive(state);
+  };
 
   return (
     <FormStyle>
