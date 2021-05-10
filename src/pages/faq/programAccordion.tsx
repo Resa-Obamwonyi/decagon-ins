@@ -17,7 +17,7 @@ export default () => {
           Is Decagon located in all states in NIgeria?
         </label>
         <div className="tab-content">
-          Decagon is currently active only in Lagos.
+          Decagon is currently active in Edo and Lagos State.
         </div>
       </div>
       <div className="tab">
@@ -48,24 +48,17 @@ export default () => {
         <label className="tab-label" htmlFor="chck5">
           What programming languages are taught during the program?
         </label>
-        <div className="tab-content">Java, C#, Node, Android.</div>
+        <div className="tab-content">
+	  The program is a full stack program with specializations in Node,
+	  Java, .Net, Python, Android, IOS, and QA.
+	</div>
       </div>
       <div className="tab">
         <input type="checkbox" id="chck6" />
         <label className="tab-label" htmlFor="chck6">
 		What is the tuition fee?
         </label>
-        <div className="tab-content">The tuition fee is N2,000,000.</div>
-      </div>
-      <div className="tab">
-        <input type="checkbox" id="chck7" />
-        <label className="tab-label" htmlFor="chck7">
-		Are there any additional fees?
-        </label>
-        <div className="tab-content">
-          We also offer support in the form of a laptop, accommodation, and a
-          monthly stipend for an additional N1,000,000.
-        </div>
+        <div className="tab-content">The tuition fee is N3,000,000.</div>
       </div>
       <div className="tab">
         <input type="checkbox" id="chck8" />
@@ -80,15 +73,6 @@ export default () => {
           loan.
         </div>
       </div>
-      {/* <div className="tab">
-				<input type="checkbox" id="chck9" />
-				<label className="tab-label" htmlFor="chck9">
-					What can I do to get financial aid  (Loan) via Learn-Then-Earn payment credit funding
-				</label>
-				<div className="tab-content">
-					Applicants are to choose or specify their preferred payment plan during application.
-				</div>
-			</div> */}
     </div>
   );
 };

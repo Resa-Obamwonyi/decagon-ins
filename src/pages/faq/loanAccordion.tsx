@@ -83,7 +83,7 @@ export default () => {
           When should all requirements for Learn-Then-Earn (LTE) credit be
           provided?
         </label>
-        <div className="tab-content">During the In-Person Interview</div>
+        <div className="tab-content">During the In-Person Assessment</div>
       </div>
     </div>
   );

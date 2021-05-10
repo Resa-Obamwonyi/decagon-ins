@@ -75,7 +75,7 @@ export default () => {
 					What happens after I apply?
 				</label>
 				<div className="tab-content">
-				You will receive a Home study Pack as soon as you hit the apply button. You should start learning immediately. Afterwards, take our free  Assessment and Cognitive tests online. Based on the outcome of your aptitude tests, If you are selected,  you will be invited for an in-person interview in Lagos. You will be interviewed by the faculty, and successful candidates will be admitted into the Decagon Software Engineering Fellowship program.
+				You will receive a Home study Pack as soon as you hit the apply button (only when you apply during an active cycle). You should start learning immediately. Afterwards, you will be invited to take a free online assessment at home. This is to test your understanding of the study materials provided. If you are successful in the online assessment, you will be invited for an in-person assessment at any of our locations. This assessment will include a series of technical and non technical tests. Successful candidates will be offered admission into the Decagon Software Engineering program.
 				</div>
 			</div>
 			<div className="tab">
