@@ -1,0 +1,40 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 1.5rem;
+    h1 {
+      animation: blinking 2s infinite;
+      color: #58a75d;
+      font-size: 31px;
+      padding: 1rem 0;
+    }
+    @keyframes blinking {
+      0% {
+        color: white;
+      }
+      100% {
+        color: #58a75d;
+      }
+    }
+    .back-button {
+      margin-top: 2rem;
+      .btn-back {
+        background: #58a75d;
+        color: white;
+        border-radius: 5px;
+        padding: 0.7rem 1rem;
+        border: none;
+      }
+    }
+  }
+}
