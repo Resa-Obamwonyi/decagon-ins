@@ -4,7 +4,7 @@ import FormDiv from "../components/Form";
 import Footer from "../components/Footer";
 import React from "react";
 
-function Testimonials() {
+function Apply() {
   return (
     <div>
       <Header backgroundColor="#2D2F48" color="#ffffff" position="relative" location="apply"/>
@@ -14,4 +14,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Apply;
