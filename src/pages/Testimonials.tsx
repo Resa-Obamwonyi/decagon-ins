@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import StudentMain from "../components/StudentMain";
 import TestimonyWrap from "../components/TestimonyWrap";
 import ApplyBanner from "../components/ApplyBanner";
-import Footer from "../components/Footer/footer";
+import Index from "../components/footer";
 
 function Testimonials() {
   return (
@@ -12,7 +12,7 @@ function Testimonials() {
       <StudentMain heading={"Student Testimonials"} />
       <TestimonyWrap />
       <ApplyBanner />
-      <Footer />
+      <Index />
     </div>
   );
 }

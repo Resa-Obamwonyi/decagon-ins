@@ -8,7 +8,7 @@ import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import DecadevsProfile from "../components/DecadevsProfile";
 import Partners from "../components/Partners";
-import Footer from "../components/Footer/footer";
+import Index from "../components/footer";
 import styled from "styled-components";
 
 const HomeStyle = styled.div`
@@ -45,7 +45,7 @@ function Home() {
         <DecadevsProfile />
         <Partners />
         <ApplyBanner />
-        <Footer />
+        <Index />
       </HomeStyle>
     </div>
   );

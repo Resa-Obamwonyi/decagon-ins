@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import StudentMain from "../components/StudentMain";
 import Questions from "../components/Questions";
 import ApplyBanner from "../components/ApplyBanner";
-import Footer from "../components/Footer/footer";
+import Index from "../components/footer";
 
 function FAQ() {
   return (
@@ -12,7 +12,7 @@ function FAQ() {
       <StudentMain heading={"FAQs"} />
       <Questions />
       <ApplyBanner />
-      <Footer />
+      <Index />
     </div>
   );
 }

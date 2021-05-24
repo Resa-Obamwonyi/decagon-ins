@@ -5,7 +5,7 @@ import decagon from '../../images/decagon.svg';
 import { FiInstagram } from "react-icons/fi";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 
-function Footer() {
+function Index() {
   return (
     <FooterStyle>
       <div className="upper-footer">
@@ -40,4 +40,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Index;
