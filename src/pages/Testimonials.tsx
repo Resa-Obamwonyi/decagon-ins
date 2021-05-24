@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import StudentMain from "../components/StudentMain";
 import TestimonyWrap from "../components/TestimonyWrap";
 import ApplyBanner from "../components/ApplyBanner";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/footer";
 
 function Testimonials() {
   return (

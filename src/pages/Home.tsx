@@ -8,7 +8,7 @@ import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import DecadevsProfile from "../components/DecadevsProfile";
 import Partners from "../components/Partners";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/footer";
 import styled from "styled-components";
 
 const HomeStyle = styled.div`
