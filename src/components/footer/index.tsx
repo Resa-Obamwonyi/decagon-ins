@@ -5,7 +5,6 @@ import decagon from '../../images/decagon.svg';
 import { FiInstagram } from "react-icons/fi";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 
-
 function Footer() {
   return (
     <FooterStyle>
