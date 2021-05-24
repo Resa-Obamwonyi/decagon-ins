@@ -1,4 +1,4 @@
-// import "./App.css";
+import React from "react";
 import Header from "../components/Header";
 import ApplyBanner from "../components/ApplyBanner";
 import Banner from "../components/Banner";
@@ -10,7 +10,6 @@ import DecadevsProfile from "../components/DecadevsProfile";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
 import styled from "styled-components";
-import React from "react";
 
 const HomeStyle = styled.div`
   padding-right: 15px;

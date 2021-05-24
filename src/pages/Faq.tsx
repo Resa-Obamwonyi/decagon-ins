@@ -1,10 +1,9 @@
-import "../App.css";
+import React from "react";
 import Header from "../components/Header";
 import StudentMain from "../components/StudentMain";
 import Questions from "../components/Questions";
 import ApplyBanner from "../components/ApplyBanner";
 import Footer from "../components/Footer";
-import React from "react";
 
 function FAQ() {
   return (

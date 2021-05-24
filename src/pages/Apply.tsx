@@ -1,8 +1,7 @@
-import "../App.css";
+import React from "react";
 import Header from "../components/Header";
 import FormDiv from "../components/Form";
 import Footer from "../components/Footer";
-import React from "react";
 
 function Apply() {
   return (

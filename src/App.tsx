@@ -1,11 +1,11 @@
-import "./App.css";
+import React, {Suspense} from "react";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Apply from "./pages/Apply";
 import Testimonials from "./pages/Testimonials";
 import Home from "./pages/Home";
 import Faq from "./pages/Faq";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Program from "./pages/Program";
-import React, {Suspense} from "react";
+import "./App.css";
 
 function App() {
     return (
