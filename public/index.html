@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'
+      https://www.googletagmanager.com
+      https://connect.facebook.net
+      https://decabelle-email-service.herokuapp.com
+      https://www.facebook.com
+      https://www.googletagmanager.com
+      https://googleads.g.doubleclick.net
+      https://cdnjs.cloudflare.com
+      https://cdn.jsdelivr.net/npm
+      https://js.hs-scripts.com
+      https://js.hscollectedforms.net
+      https://js.hs-banner.com
+      https://www.google-analytics.com
+      https://www.googleadservices.com
+      https://js.hs-analytics.net;
+      img-src 'self' https://track.hubspot.com data:
+      https://www.google-analytics.com https://forms.hsforms.com
+      https://www.facebook.com https://dhq-recruitment-app.herokuapp.com
+      https://connect.facebook.net;
+      script-src 'self' 'unsafe-inline'
+      https://*.google.com
+      https://www.googletagmanager.com
+      https://connect.facebook.net
+      https://www.facebook.com
+      https://www.googletagmanager.com
+      https://googleads.g.doubleclick.net
+      https://cdnjs.cloudflare.com
+      https://cdn.jsdelivr.net/npm
+      https://js.hs-scripts.com
+      https://js.hscollectedforms.net
+      https://js.hs-banner.com
+      https://www.google-analytics.com
+      https://www.googleadservices.com
+      https://js.hs-analytics.net;
+      connect-src 'self' https://forms.hsforms.com https://forms.hubspot.com
+      https://dhq-recruitment-staging.herokuapp.com
+      https://dhq-recruitment-app.herokuapp.com
+      https://www.google-analytics.com;
+      style-src 'self' 'unsafe-inline';">
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Decagon Institute"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+      content="Decagon is ushering in an era of tech-powered growth and
+      prosperity in Nigeria by training and deploying an army of problem
+      solvers, drivers of innovation and pioneers in tech"
+      />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon-decagon.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,7 +65,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Decagon Institute</title>
+    <title>Become a Decadev</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-173637168-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173637168-1');
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +93,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1869021429786411');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=1869021429786411&ev=PageView
+        &noscript=1"
+        />
+    </noscript>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="https://js.hs-scripts.com/9289848.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </body>
 </html>
