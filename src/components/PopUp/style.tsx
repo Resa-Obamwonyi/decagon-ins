@@ -43,7 +43,8 @@ export const PopUpStyle = styled.div`
     background: #34a853;
     color: #ffffff;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
   }
   table,
   td {
@@ -73,6 +74,8 @@ export const PopUpStyle = styled.div`
   }
   .time-row {
     width: 20%;
+    text-align: left;
+    padding-left: 10px;
   }
   @media (max-width: 790px) {
     .stack-body {

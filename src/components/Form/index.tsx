@@ -51,7 +51,7 @@ function FormDiv() {
               handleButtonActive(true);
               axios
                   .post(
-                      "https://dhq-recruitment-staging.herokuapp.com/api/v1/applicant/register",
+                      `${process.env.REACT_APP_PROD_BASE_URL}/applicant/register`,
                       {
                         bootcamp_location: null,
                         bootcamp_name: null,
