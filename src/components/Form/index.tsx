@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {FormStyle} from "./style";
 import Button from "../Button";
 import {ErrorMessage, Form, Formik} from "formik";
-import {experience, gender, grade, info, nysc, qualification, state,} from "./data";
+import {experience, gender, grade, info, nysc, qualification, state, guarantor, paymentOption} from "./data";
 import {validationSchema} from "./validationSchema";
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
@@ -33,16 +33,18 @@ function FormDiv() {
               degree: "",
               dob: "",
               email: "",
-              name: "",
+              first_name: "",
               gender: "",
               hear_about_us: "",
               highest_qualification: "",
               institution: "",
-              // last_name: "",
+              last_name: "",
               nysc_status: "",
               phone_number: "",
               programming_experience: "",
               state_of_origin: "",
+              guarantor: "",
+              payment_option: ""
             }}
             validationSchema={validationSchema}
             validateOnChange={false}
@@ -61,16 +63,18 @@ function FormDiv() {
                         degree: values.degree,
                         dob: values.dob,
                         email: values.email,
-                        first_name: values.name.split(" ")[0],
+                        first_name: values.first_name,
                         gender: values.gender,
                         hear_about_us: values.hear_about_us,
                         highest_qualification: values.highest_qualification,
                         institution: values.institution,
-                        last_name: values.name.split(" ")[1],
+                        last_name: values.last_name,
                         nysc_status: values.nysc_status,
                         phone_number: values.phone_number,
                         programming_experience: values.programming_experience,
                         state_of_origin: values.state_of_origin,
+                        guarantor: values.guarantor,
+                        payment_option: values.payment_option
                       }
                   )
                   .then(
@@ -98,26 +102,51 @@ function FormDiv() {
             } = props;
             return (
                 <Form className="form-area" onSubmit={handleSubmit} id="form-data">
-                  <ErrorMessage
-                      name="name"
-                      render={(msg) => <p style={{color: "red", fontSize: "12px"}}>{msg}</p>}
-                  />
+                  <div className="error-div">
+                    <div className="single-error-div">
+                      <ErrorMessage
+                          name="first_name"
+                          render={(msg) => <p style={{color: "red", fontSize: "12px"}}>{msg}</p>}
+                      />
+                    </div>
+                    <div className="single-error-div">
+                      <ErrorMessage
+                          name="last_name"
+                          render={(msg) => <p style={{color: "red", fontSize: "12px"}}>{msg}</p>}
+                      />
+                    </div>
+                  </div>
 
                   <ToastContainer autoClose={10000} limit={1}/>
-                  <div className="wrapper">
-                    <div className="label">
-                      <span>Your name is</span>
+                  <div className="double-input">
+                    <div className="wrapper double-wrapper-left">
+                      <div className="label">
+                        <span>First Name</span>
+                      </div>
+                      <input
+                          name="first_name"
+                          type="text"
+                          placeholder="Enter first name here"
+                          value={values.first_name}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={(errors.first_name && touched.first_name) ? "error" : ''}
+                      />
                     </div>
-
-                    <input
-                        name="name"
-                        type="text"
-                        placeholder="Enter full name here"
-                        value={values.name}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        className={(errors.name && touched.name) ? "error" : ''}
-                    />
+                    <div className="wrapper double-wrapper-right">
+                      <div className="label">
+                        <span>Last Name</span>
+                      </div>
+                      <input
+                          name="last_name"
+                          type="text"
+                          placeholder="Enter last name here"
+                          value={values.last_name}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={(errors.last_name && touched.last_name) ? "error" : ''}
+                      />
+                    </div>
                   </div>
                   <div className="error-div">
                     <div className="single-error-div">
@@ -307,13 +336,13 @@ function FormDiv() {
                     </div>
                     <div className="wrapper double-wrapper-right">
                       <div className="label">
-                        <span>Institute</span>
+                        <span>Institution</span>
                       </div>
 
                       <input
                           name="institution"
                           type="text"
-                          placeholder="Institute"
+                          placeholder="Institution"
                           value={values.institution}
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -425,6 +454,60 @@ function FormDiv() {
                         {nysc.map((nysc) => (
                             <option value={nysc.value} key={nysc.value}>
                               {nysc.label}
+                            </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                  <div className="error-div">
+                    <div className="single-error-div">
+                      <ErrorMessage
+                          name="payment_option"
+                          render={(msg) => <p style={{color: "red", fontSize: "12px"}}>{msg}</p>}
+                      />
+                    </div>
+                    <div className="single-error-div">
+                      <ErrorMessage
+                          name="guarantor"
+                          render={(msg) => <p style={{color: "red", fontSize: "12px"}}>{msg}</p>}
+                      />
+                    </div>
+                  </div>
+                  <div className="double-input">
+                    <div className="wrapper double-wrapper-left">
+                      <div className="label">
+                        <span>Payment Option</span>
+                      </div>
+                      <select
+                          name="payment_option"
+                          value={values.payment_option}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={(errors.payment_option && touched.payment_option) ? "error" : ''}
+                      >
+                        <option>Select option</option>
+                        {paymentOption.map((info) => (
+                            <option value={info.value} key={info.value}>
+                              {info.label}
+                            </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="wrapper double-wrapper-right">
+                      <div className="label">
+                        <span>Do you have a guarantor</span>
+                      </div>
+                      <select
+                          name="guarantor"
+                          value={values.guarantor}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={(errors.guarantor && touched.guarantor) ? "error" : ''}
+                      >
+                        <option>Select option</option>
+                        {guarantor.map((info) => (
+                            <option value={info.value} key={info.value}>
+                              {info.label}
                             </option>
                         ))}
                       </select>

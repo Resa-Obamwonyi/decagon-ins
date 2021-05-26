@@ -266,3 +266,23 @@ export const info = [
     value: "Other",
   },
 ];
+export const paymentOption = [
+  {
+    label: "Self Sponsorship",
+    value: "Self-Sponsorship"
+  },
+  {
+    label: "Learn then earn(Student loan)",
+    value: "Learn-then-earn"
+  }
+];
+export const guarantor = [
+  {
+    label: "Yes",
+    value: "yes"
+  },
+  {
+    label: "No",
+    value: "no"
+  }
+]
