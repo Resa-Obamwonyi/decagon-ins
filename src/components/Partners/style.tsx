@@ -36,8 +36,8 @@ export const StyledList = styled.div`
 `
 
 export const StyledContainer = styled.div`
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    //margin: 0 auto;
     margin-top: 80px;
     font-family: "Mulish", sans-serif;
 

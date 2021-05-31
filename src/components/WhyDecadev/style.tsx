@@ -76,8 +76,8 @@ export const StyledContainer = styled.div`
   color: #171825;
 
   .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    //margin: 0 auto;
     margin-bottom: 3em;
     margin-top: 3em;
 
@@ -87,7 +87,7 @@ export const StyledContainer = styled.div`
 
     .container {
       width: 100%;
-      padding-left: 1em;
+      //padding-left: 1em;
     }
   }
 `

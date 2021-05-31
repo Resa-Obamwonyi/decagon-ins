@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
-  width: 90%;
-  margin: auto 5%;
+  width: 100%;
+  //margin: auto 5%;
   .upper-footer {
     text-align: center;
     margin-top: 100px;

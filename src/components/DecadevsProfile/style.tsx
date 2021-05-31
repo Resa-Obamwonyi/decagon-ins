@@ -35,8 +35,9 @@ export const StyledList = styled.div`
 `
 
 export const StyledContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  //margin: 0 auto;
+  padding: 20px 0;
   margin-bottom: 4em;
   background: #171825;
   font-weight: 900;

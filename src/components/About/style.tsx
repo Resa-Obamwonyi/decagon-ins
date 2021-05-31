@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 
 export const StyledDiv = styled.div`
-  width: 90%;
+  width: 100%;
   max-height: 100%;
-  margin: 0 auto;
+  //margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 3em;
   font-family: "Mulish", sans-serif;
@@ -52,7 +52,7 @@ export const StyledDiv = styled.div`
     .container {
       flex-direction: column;
       align-items: center;
-      padding: 2em;
+      //padding: 2em;
     }
     .about-decagon {
       width: 100%;
@@ -60,7 +60,7 @@ export const StyledDiv = styled.div`
       padding-left: 0;
     }
     .about-pic {
-      min-width: 80%;
+      min-width: 100%;
       margin-right: 0;
     }
     h2 {

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const ApplyBannerStyle = styled.div<{background?: string}>`
   margin-top: 100px;
   width: 100%;

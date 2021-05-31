@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const NavStyle = styled.li`
   display: flex;
-  padding: 20px 15px;
+  padding: 20px 15px 20px 0;
   a {
     text-decoration: none;
     color: ${({ color }) => (color ? color : "#171825")};

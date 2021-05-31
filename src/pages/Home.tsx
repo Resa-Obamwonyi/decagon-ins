@@ -8,7 +8,7 @@ import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import DecadevsProfile from "../components/DecadevsProfile";
 import Partners from "../components/Partners";
-import Index from "../components/footer";
+import Footer from "../components/footer";
 import styled from "styled-components";
 
 const HomeStyle = styled.div`
@@ -17,19 +17,19 @@ const HomeStyle = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-@media (min-width: 768px) {
-  max-width: 730px;
-}
-
-@media (min-width: 992px) {
-  max-width: 940px;
-}
-@media (min-width: 1200px) {
-  max-width: 1130px;
-}
-@media (min-width: 1360px) {
-  max-width: 1500px;
-}
+  @media (min-width: 768px) {
+    max-width: 730px;
+  }
+  
+  @media (min-width: 992px) {
+    max-width: 940px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1130px;
+  }
+  @media (min-width: 1360px) {
+    max-width: 1500px;
+  }
 `;
 
 function Home() {
@@ -45,7 +45,9 @@ function Home() {
         <DecadevsProfile />
         <Partners />
         <ApplyBanner />
-        <Index />
+      </HomeStyle>
+      <HomeStyle>
+        <Footer />
       </HomeStyle>
     </div>
   );

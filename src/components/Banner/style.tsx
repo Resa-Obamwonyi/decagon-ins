@@ -5,8 +5,9 @@ export const StyledDiv = styled.div`
   width: 100%;
   height: 80%;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  //align-items: center;
+  //justify-content: flex-end;
+  margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 7em;
 
@@ -14,7 +15,7 @@ export const StyledDiv = styled.div`
     background-size: cover;
     z-index: 100;
     height: 100%;
-    width: 85%;
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -53,6 +54,7 @@ export const StyledDiv = styled.div`
     cursor: pointer;
   }
   @media (max-width: 1090px) {
+    margin-left: 0;
     .background-container {
       width: 100%;
       justify-content: center;
@@ -72,6 +74,7 @@ export const StyledDiv = styled.div`
     }
   }
   @media (max-width: 516px) {
+    margin-left: 0;
     .left {
       width: 100%;
       margin-top:0;
@@ -83,6 +86,7 @@ export const StyledDiv = styled.div`
     }
   }
   @media (max-width: 480px) {
+    margin-left: 0;
     .left {
       background: rgba(0, 0, 0, 0.7);
       width: 100%;
