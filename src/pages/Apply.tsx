@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import FormDiv from "../components/Form";
 import Index from "../components/footer";
-import {IndexStyle} from "./style"
+import { IndexStyle } from "./style";
 
 function Apply() {
   return (
