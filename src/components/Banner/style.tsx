@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 
 export const StyledDiv = styled.div`
-  width: 100%;
+  width: 90%;
   height: 80%;
   display: flex;
   //align-items: center;
   //justify-content: flex-end;
-  margin-left: 10%;
+  padding-left: 10%;
   margin-top: 100px;
   margin-bottom: 7em;
 
@@ -28,7 +28,7 @@ export const StyledDiv = styled.div`
     z-index: 1000;
     padding: 2rem;
     display: flex;
-    margin-left: -10%;
+    margin-left: -11%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -55,6 +55,8 @@ export const StyledDiv = styled.div`
   }
   @media (max-width: 1090px) {
     margin-left: 0;
+    padding: 0;
+    width: 100%;
     .background-container {
       width: 100%;
       justify-content: center;

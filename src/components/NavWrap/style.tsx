@@ -3,16 +3,17 @@ import styled from 'styled-components';
 
 export const NavWrapStyle = styled.div`
   display: flex;
-  width: 90%;
-  margin: 15px 5%;
+  width: 100%;
+  margin: 15px 0;
   align-items: center;
+  justify-content: space-between;
   
   .ham-menu {
     display: none;
   }
   .left-nav {
     display: flex;
-    flex-basis: 85%;
+    flex-basis: 75%;
     align-items: center;
   }
   .right-nav {
@@ -39,8 +40,7 @@ export const NavWrapStyle = styled.div`
 
     .ham-menu {
       display: flex;
-      width: 95%;
-      margin: auto 2.5%;
+      width: 100%;
       align-items: center;
     }
     .menu {

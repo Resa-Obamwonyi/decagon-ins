@@ -4,16 +4,17 @@ import StudentMain from "../components/StudentMain";
 import Questions from "../components/Questions";
 import ApplyBanner from "../components/ApplyBanner";
 import Index from "../components/footer";
+import {IndexStyle} from "./style"
 
 function FAQ() {
   return (
-    <div>
+    <IndexStyle>
       <Header />
       <StudentMain heading={"FAQs"} />
       <Questions />
       <ApplyBanner />
       <Index />
-    </div>
+    </IndexStyle>
   );
 }
 
