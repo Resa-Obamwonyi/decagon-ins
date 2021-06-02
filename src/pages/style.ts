@@ -14,6 +14,6 @@ export const IndexStyle = styled.div`
     max-width: 1130px;
   }
   @media (min-width: 1360px) {
-    max-width: 1500px;
+    max-width: 1300px;
   }
 `;
