@@ -45,7 +45,6 @@ export const ProgramBarStyle = styled.div`
   }
 
   .sticky {
-
     position: fixed;
     top: 120px;
     z-index: 999;
@@ -77,6 +76,35 @@ export const ProgramBarStyle = styled.div`
     }
     .transition-items {
       width: 100%;
+    }
+    .sticky {
+      width: 94%;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .sticky {
+      width: 96%;
+    }
+  }
+  @media (min-width: 768px) {
+    .sticky {
+      width: 730px;
+    }
+  }
+  @media (min-width: 992px) {
+    .sticky {
+      width: 940px;
+    }  
+  }
+  @media (min-width: 1200px) {
+    .sticky {
+      width: 1130px;
+    }
+  }
+  @media (min-width: 1360px) {
+    .sticky {
+      width: 1300px;
     }
   }
 `;

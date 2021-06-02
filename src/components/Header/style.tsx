@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyle = styled.div<{backgroundColor?: string, position?: string}>`
+export const HeaderStyle = styled.div<{backgroundColor?: string, position?: string, maxWidth?: string, padding?: string}>`
   position: ${({ position }: any) =>
     position ? position : "fixed"};
   top: 0;
@@ -12,18 +12,18 @@ export const HeaderStyle = styled.div<{backgroundColor?: string, position?: stri
   left: 0;
   right: 0;
   margin: auto;
-  padding: 0 15px;
+  padding: ${({ padding }: any) => padding ? padding : "0"};
 
   @media (min-width: 768px) {
-    max-width: 730px;
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "730px"};
   }
   @media (min-width: 992px) {
-    max-width: 940px;
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "940px"};
   }
   @media (min-width: 1200px) {
-    max-width: 1130px;
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "1130px"};
   }
   @media (min-width: 1360px) {
-    max-width: 1300px;
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "1300px"};
   }
 `;

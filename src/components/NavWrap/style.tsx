@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const NavWrapStyle = styled.div`
+export const NavWrapStyle = styled.div<{maxWidth?: string}>`
   display: flex;
   width: 100%;
   margin: 15px 0;
@@ -30,6 +30,7 @@ export const NavWrapStyle = styled.div`
     display: block;
     width: 100%;
     margin: 0%;
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "100%"};
 
     .left-nav {
       display: none;
@@ -62,6 +63,7 @@ export const NavWrapStyle = styled.div`
   }
 
   @media (max-width: 480px) {
+    max-width: ${({ maxWidth }: any) => maxWidth ? maxWidth : "100%"};
     .menu {
       flex-basis: 15%;
     }

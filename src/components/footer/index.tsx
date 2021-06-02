@@ -5,9 +5,9 @@ import decagon from '../../images/decagon.svg';
 import { FiInstagram } from "react-icons/fi";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 
-function Index() {
+function Index({width, padding}: any) {
   return (
-    <FooterStyle>
+    <FooterStyle width={width} padding={padding}>
       <div className="upper-footer">
         <div className="logo">
           <img src={decagon} alt="decagon-logo" />

@@ -5,7 +5,7 @@ import decagon from '../../images/decagon.svg';
 import dec from '../../images/dec.svg';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavWrap = ({ color, location }: any) => {
+const NavWrap = ({ color, location, maxWidth }: any) => {
   
   const imgFix = () => {
     if (location === "apply") {
@@ -24,7 +24,7 @@ const NavWrap = ({ color, location }: any) => {
   }
 
     return (
-      <NavWrapStyle color={color}>
+      <NavWrapStyle color={color} maxWidth={maxWidth}>
         <div className="left-nav">
           <Nav link="/" color={color}>
             <img src={imgFix()} alt="decagon-logo" />

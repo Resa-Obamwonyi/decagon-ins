@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const FooterStyle = styled.footer`
-  width: 100%;
+export const FooterStyle = styled.footer<{width?: string, padding?: string}>`
+  width: ${({ width }: any) => width ? width : "100%"};
+  padding: ${({ padding }: any) => padding ? padding : "0"};
   //margin: auto 5%;
   .upper-footer {
     text-align: center;
