@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {FormStyle} from "./style";
 import Button from "../Button";
 import {ErrorMessage, Form, Formik} from "formik";
@@ -14,6 +14,22 @@ function FormDiv() {
     setActive(state);
   };
 
+  const [notActiveMsg, setNotActiveMsg] = useState('');
+  const [cycleError, setCycleError] = useState('');
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_PROD_BASE_URL}/cycle/is_active`)
+    .then(res =>{
+        const isActive = res?.data.data.is_active;
+        const message = res?.data.data.message;
+        if (!isActive) {
+            setNotActiveMsg(message)
+        }
+    })
+    .catch(error =>{
+        setCycleError(error?.response?.data.error)
+    })
+  }, [])
+
   return (
       <FormStyle>
         <div className="form-header">
@@ -23,6 +39,8 @@ function FormDiv() {
           <p>
             Provide your details below and we will follow up in less than 24Hrs.
           </p>
+          <p className="no-cycle-text">{notActiveMsg}</p>
+          <p className="no-cycle-text">{cycleError}</p>
         </div>
         <Formik
             initialValues={{

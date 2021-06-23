@@ -12,14 +12,6 @@ export const FormStyle = styled.div`
     line-height: 69px;
     text-align: center;
   }
-  .no-cycle-text{
-    color: red;
-    text-align: center;
-  }
-  .colorcode {
-    color: #b8d344;
-  }
-
   p {
     font-weight: normal;
     font-size: 20px;
@@ -28,8 +20,12 @@ export const FormStyle = styled.div`
   }
   .form-area {
     width: 30%;
-    margin: 50px 35%;
+    margin: 30px 35%;
   }
+  .colorcode {
+    color: #b8d344;
+  }
+  
   input,
   select {
     width: 100%;
@@ -80,7 +76,6 @@ export const FormStyle = styled.div`
     font-size: 12px;
     text-align: left;
   }
-
   .wrapper {
     background: rgba(203, 203, 203, 0.2);
     border: 1px solid #ededed;
@@ -88,7 +83,6 @@ export const FormStyle = styled.div`
     padding: 8px 10px 5px;
     margin: 2px 0px 15px;
   }
-
   .double-input {
     display: flex;
   }
@@ -100,19 +94,23 @@ export const FormStyle = styled.div`
     flex-basis: 48.5%;
     margin-left: 1.5%;
   }
-
-  .btn {
-    margin-top: 30px;
+  .update-info {
+    text-align: center;
+    color: red;
   }
 
-  .error-div {
-    display: flex;
+  .error-container{
+    width: 60%;
+    margin: 50px auto 200px;
+  }
+  .error-message{
+    margin: 30px 0;
+    text-align: center;
+  }
+  .error-btn{
+    text-align: center;
   }
 
-  .single-error-div{
-    flex-basis:50%;
-  } 
-  
   @media (max-width: 790px) {
     .form-area {
       width: 80%;
